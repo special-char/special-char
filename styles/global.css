@@ -4,7 +4,11 @@
 
 @layer base {
   body {
+<<<<<<< HEAD
     @apply min-h-screen text-lg;
+=======
+    @apply min-h-screen  text-lg;
+>>>>>>> a0c56d4d1dd1ab278dc1b687e0403acf54068564
   }
 
   h1 {
@@ -129,15 +133,24 @@
     @apply max-w-full rounded-md  px-8 text-left drop-shadow-lg transition-all;
 
     & > summary {
+<<<<<<< HEAD
       @apply flex cursor-pointer list-none items-start justify-start border-b-[1px] border-neutral-100 py-6 text-xl font-bold md:items-center;
+=======
+      @apply flex cursor-pointer list-none items-start justify-start text-3xl font-bold  md:items-center;
+>>>>>>> a0c56d4d1dd1ab278dc1b687e0403acf54068564
 
       &::marker {
         @apply hidden;
       }
 
       &::before {
+<<<<<<< HEAD
         content: '+';
         @apply aspect-square h-12 w-12 rotate-180 text-center text-5xl duration-300 md:h-12 md:w-12;
+=======
+        content: "+";
+        @apply mr-8 aspect-square h-12 w-12 rotate-180 rounded-full text-center text-6xl font-bold duration-300 md:h-12 md:w-12;
+>>>>>>> a0c56d4d1dd1ab278dc1b687e0403acf54068564
       }
     }
     & > p {
@@ -147,6 +160,11 @@
 
   details[open] {
     & > summary {
+<<<<<<< HEAD
+=======
+      @apply text-neutral-100;
+
+>>>>>>> a0c56d4d1dd1ab278dc1b687e0403acf54068564
       &::before {
         content: '-';
         @apply flex rotate-[15px] items-center justify-center duration-300;
@@ -186,7 +204,11 @@
     } */
 
     &--white {
+<<<<<<< HEAD
       @apply border-[1px] border-neutral-500 text-secondary1;
+=======
+      @apply text-secondary1 border-[1px] border-neutral-500;
+>>>>>>> a0c56d4d1dd1ab278dc1b687e0403acf54068564
     }
 
     &-white:hover {
@@ -203,7 +225,11 @@
   }
 
   .chip {
+<<<<<<< HEAD
     @apply items-center justify-center rounded-full border-[1px] border-neutral-400 py-3 px-4 align-middle text-xs font-bold sm:px-6;
+=======
+    @apply items-center justify-center border-[1px] border-neutral-400 rounded-full py-3 px-4 align-middle text-xs font-bold sm:px-6;
+>>>>>>> a0c56d4d1dd1ab278dc1b687e0403acf54068564
 
     &.icon {
       @apply flex justify-between gap-32 py-8 px-8;
