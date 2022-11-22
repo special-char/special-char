@@ -1,5 +1,5 @@
-import React from "react";
-import Home from "../page";
+import React from 'react';
+import Home from '../page';
 
 interface Props {}
 

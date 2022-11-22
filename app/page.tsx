@@ -1,3 +1,13 @@
-export default function Home() {
-  return <h1 className="bg-red-500 underline"></h1>;
-}
+import React from 'react';
+import Home from './development/home';
+
+interface Props {}
+
+export const Page = (props: Props) => {
+  return (
+    <>
+      <Home />
+    </>
+  );
+};
+export default Page;
