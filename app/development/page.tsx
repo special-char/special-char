@@ -1,14 +1,11 @@
 import React from 'react';
-import Home from '../page';
+import Faq from './faq';
 
-interface Props {}
-
-const page = (props: Props) => {
+const Page = () => {
   return (
     <>
-      <Home />
+      <Faq />
     </>
   );
 };
-
-export default page;
+export default Page;

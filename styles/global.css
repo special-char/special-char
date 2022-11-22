@@ -4,47 +4,47 @@
 
 @layer base {
   body {
-    @apply min-h-screen font-sans text-lg text-neutral-600;
+    @apply min-h-screen text-lg;
   }
 
   h1 {
-    @apply mb-6 font-serif text-5xl font-semibold text-neutral-800 sm:text-7xl md:text-8xl lg:text-9xl;
+    @apply mb-6 font-sans text-5xl font-semibold text-primary sm:text-8xl md:text-8xl lg:text-8xl;
   }
 
   h2 {
-    @apply mb-4 font-serif text-3xl font-semibold text-neutral-800 sm:text-2xl md:text-4xl;
+    @apply mb-4 font-serif text-3xl font-semibold text-primary sm:text-2xl md:text-4xl;
   }
 
   h3 {
-    @apply text-xl font-bold text-neutral-700 sm:text-xxl md:text-2xl;
+    @apply text-xl font-bold text-primary sm:text-xxl md:text-2xl;
   }
 
   h4 {
-    @apply text-lg font-bold text-neutral-700 sm:text-xl;
+    @apply text-lg font-bold text-primary sm:text-xl;
   }
 
   h5 {
-    @apply text-base font-semibold text-neutral-800 sm:text-lg;
+    @apply text-base font-semibold text-primary sm:text-lg;
   }
 
   h6 {
-    @apply text-xs font-semibold text-neutral-800 sm:text-base;
+    @apply text-xs font-semibold text-primary sm:text-base;
   }
 
   p {
-    @apply mb-5;
+    @apply mb-5 text-secondary1;
   }
 
   p.small {
-    @apply text-sm;
+    @apply text-sm  text-secondary1;
   }
 
   p.large {
-    @apply text-2xl;
+    @apply text-2xl  text-secondary1;
   }
 
   a {
-    @apply text-neutral-400 no-underline;
+    @apply text-neutral-100 no-underline;
     -webkit-transition: color 300ms ease;
     transition: color 300ms ease;
   }
@@ -54,7 +54,7 @@
   }
 
   label {
-    @apply mb-4 block font-bold text-neutral-700;
+    @apply mb-4 block font-bold;
   }
 
   blockquote {
@@ -126,10 +126,10 @@
   }
 
   details {
-    @apply mb-4 max-w-full rounded-md bg-neutral-100 px-8 py-4 text-left drop-shadow-lg;
+    @apply max-w-full rounded-md  px-8 text-left drop-shadow-lg transition-all;
 
     & > summary {
-      @apply flex cursor-pointer list-none items-start justify-start text-3xl font-bold text-neutral-600 md:items-center;
+      @apply flex cursor-pointer list-none items-start justify-start border-b-[1px] border-neutral-100 py-6 text-xl font-bold md:items-center;
 
       &::marker {
         @apply hidden;
@@ -137,21 +137,19 @@
 
       &::before {
         content: '+';
-        @apply mr-8 aspect-square h-12 w-12 rotate-180 rounded-full bg-neutral-300 text-center text-6xl font-bold text-neutral-600 duration-300 md:h-12 md:w-12;
+        @apply aspect-square h-12 w-12 rotate-180 text-center text-5xl duration-300 md:h-12 md:w-12;
       }
     }
     & > p {
-      @apply overflow-hidden border-none pt-2 pl-20 text-left text-base md:pl-20;
+      @apply mb-0 overflow-hidden border-none py-4 pl-4 text-left text-base;
     }
   }
 
   details[open] {
     & > summary {
-      @apply text-neutral-800;
-
       &::before {
         content: '-';
-        @apply bottom-2 flex rotate-[15px] items-center justify-center bg-primary pb-2 text-neutral-100 duration-300;
+        @apply flex rotate-[15px] items-center justify-center duration-300;
       }
     }
   }
@@ -159,7 +157,7 @@
 
 @layer components {
   .btn {
-    @apply inline-block rounded-full py-6 px-10 text-center text-base font-bold uppercase tracking-[0.08em];
+    @apply inline-block rounded-lg py-4 px-6 text-center text-base font-bold uppercase tracking-[0.08em];
     transition: transform 300ms ease, background-color 300ms ease;
     transform-style: preserve-3d;
 
@@ -172,27 +170,27 @@
     }
 
     &--primary {
-      @apply bg-primary text-neutral-100;
+      @apply bg-secondary2 text-secondary1;
     }
 
     &--primary:hover {
-      @apply bg-neutral-800 text-neutral-100;
+      @apply bg-neutral-300 text-neutral-400;
     }
 
-    &--secondary {
+    /* &--secondary {
       @apply bg-neutral-300 text-neutral-700;
     }
 
     &--secondary:hover {
       @apply bg-neutral-400 text-neutral-700;
-    }
+    } */
 
     &--white {
-      @apply bg-neutral-100 text-neutral-800;
+      @apply border-[1px] border-neutral-500 text-secondary1;
     }
 
     &-white:hover {
-      @apply bg-secondary1 text-neutral-800;
+      @apply;
     }
 
     &--small {
@@ -205,23 +203,23 @@
   }
 
   .chip {
-    @apply flex items-center justify-center  rounded-full py-3 px-4 align-middle text-xs font-bold shadow-base sm:px-6;
+    @apply items-center justify-center rounded-full border-[1px] border-neutral-400 py-3 px-4 align-middle text-xs font-bold sm:px-6;
 
     &.icon {
       @apply flex justify-between gap-32 py-8 px-8;
     }
 
     &--primary {
-      @apply bg-primary text-neutral-100;
+      @apply bg-transparent text-neutral-400;
     }
 
-    &--secondary {
+    /* &--secondary {
       @apply bg-neutral-300 text-neutral-700;
     }
 
     &--white {
       @apply bg-neutral-100 text-neutral-800;
-    }
+    } */
   }
 
   .avatar {
