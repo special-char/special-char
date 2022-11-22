@@ -4,11 +4,11 @@
 
 @layer base {
   body {
-    @apply min-h-screen  text-lg;
+    @apply min-h-screen text-primary text-lg;
   }
 
   h1 {
-    @apply mb-6 font-sans text-5xl font-semibold text-primary sm:text-8xl md:text-8xl lg:text-8xl;
+    @apply mb-6 font-sans text-6xl font-semibold text-primary sm:text-6xl md:text-7xl lg:text-8xl;
   }
 
   h2 {
@@ -32,7 +32,7 @@
   }
 
   p {
-    @apply mb-5 text-secondary1;
+    @apply mb-5 text-secondary1 text-xxl;
   }
 
   p.small {
@@ -44,13 +44,13 @@
   }
 
   a {
-    @apply text-neutral-100 no-underline;
+    @apply text-primary no-underline;
     -webkit-transition: color 300ms ease;
     transition: color 300ms ease;
   }
 
   a:hover {
-    @apply text-secondary3;
+    @apply text-primary underline;
   }
 
   label {
@@ -126,10 +126,10 @@
   }
 
   details {
-    @apply mb-4 max-w-full rounded-md bg-neutral-100 px-8 py-4 text-left drop-shadow-lg;
+    @apply max-w-full rounded-md  px-8 text-left drop-shadow-lg transition-all;
 
     & > summary {
-      @apply flex cursor-pointer list-none items-start justify-start text-3xl font-bold  md:items-center;
+      @apply flex cursor-pointer list-none items-start justify-start border-b-[1px] border-neutral-100 py-6 text-xl font-bold md:items-center;
 
       &::marker {
         @apply hidden;
@@ -137,21 +137,19 @@
 
       &::before {
         content: "+";
-        @apply mr-8 aspect-square h-12 w-12 rotate-180 rounded-full text-center text-6xl font-bold duration-300 md:h-12 md:w-12;
+        @apply aspect-square h-12 w-12 rotate-180 text-center text-5xl duration-300 md:h-12 md:w-12;
       }
     }
     & > p {
-      @apply overflow-hidden border-none pt-2 pl-20 text-left text-base md:pl-20;
+      @apply mb-0 overflow-hidden border-none py-4 pl-4 text-left text-base;
     }
   }
 
   details[open] {
     & > summary {
-      @apply text-neutral-100;
-
       &::before {
         content: "-";
-        @apply bottom-2 flex rotate-[15px] items-center justify-center bg-primary pb-2 text-neutral-100 duration-300;
+        @apply flex rotate-[15px] items-center justify-center duration-300;
       }
     }
   }
@@ -159,7 +157,7 @@
 
 @layer components {
   .btn {
-    @apply inline-block rounded-lg py-4 px-6 text-center text-base font-bold uppercase tracking-[0.08em];
+    @apply inline-block rounded-lg py-4 px-6 text-center text-sm uppercase tracking-[0.08em];
     transition: transform 300ms ease, background-color 300ms ease;
     transform-style: preserve-3d;
 
