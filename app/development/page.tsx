@@ -10,12 +10,11 @@ type Props = {};
 const Page = (props: Props) => {
   return (
     <>
-      <Crocard />
-      {/* <Video />
-      <Card />
-      <Footer /> */}
-      {/* <Card /> */}
       <Banner />
+      <Crocard />
+      <Video />
+      <Card />
+      <Footer />
     </>
   );
 };

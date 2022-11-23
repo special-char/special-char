@@ -1,0 +1,14 @@
+.carosol{
+    @apply w-10/12 mx-auto grid md:grid-cols-2 lg:grid-cols-5 lg:overflow-scroll
+}
+.carocard{
+  @apply px-container bg-secondary1 aspect-square relative lg:w-[550px] lg:h-[550px] lg:gap-4;
+  
+}
+.chipset {
+    @apply absolute bottom-4 left-1/4 text-center flex justify-end content-center mx-auto lg:flex-row lg:left-0 lg:w-[550px]
+    justify-items-center items-center justify-between px-4;
+    & h3,p{
+        @apply text-neutral-400 m-0;
+      }
+  }
