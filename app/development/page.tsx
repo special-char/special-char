@@ -7,8 +7,8 @@ type Props = {};
 const Page = (props: Props) => {
   return (
     <>
-      <Card />
-      {/* <Banner /> */}
+      {/* <Card /> */}
+      <Banner />
     </>
   );
 };
