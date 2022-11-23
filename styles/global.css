@@ -44,7 +44,7 @@
   } */
 
   a {
-    @apply text-primary no-underline;
+    @apply text-primary text-base no-underline;
     -webkit-transition: color 300ms ease;
     transition: color 300ms ease;
   }
