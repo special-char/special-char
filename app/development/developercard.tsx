@@ -63,7 +63,6 @@ const Developercard = (props: Props) => {
             <div className="card__body">
               <h3 className="card__title">{x.title}</h3>
               <p className="card__desc">{x.desc}</p>
-              <div className="card__actions"></div>
             </div>
           </a>
         ))}

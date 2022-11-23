@@ -3,7 +3,29 @@ import React from "react";
 import Image from "next/image";
 
 type Props = {};
+const data = [
+  {
+    id: 1,
+    title: "7",
+    description: "Members",
+  },
 
+  {
+    id: 2,
+    title: "340+",
+    description: "Project Done",
+  },
+  {
+    id: 3,
+    title: "99%",
+    description: "Top Feedback",
+  },
+  {
+    id: 4,
+    title: "4",
+    description: "Global Offices",
+  },
+];
 function Funfacts({}: Props) {
   return (
     <section className=" facts">
@@ -17,23 +39,15 @@ function Funfacts({}: Props) {
           />
         </div>
         <div className=" facts__content">
-          <h3 className=" font-bold">Fun Facts</h3>
-          <div className="">
-            <h3 className=" font-bold">7</h3>
-            <span className="">Members</span>
-          </div>
-          <div className="">
-            <h3 className=" font-bold">340 + </h3>
-            <span>Project Done</span>
-          </div>
-          <div className="">
-            <h3 className=" font-bold">99 %</h3>
-            <span>Top Feedback</span>
-          </div>
-          <div className="">
-            <h3 className=" font-bold">4</h3>
-            <span>Global Officies</span>
-          </div>
+          <h2>Fun Facts</h2>
+          {data.map((x) => (
+            <>
+              <div className="">
+                <h2>{x.title}</h2>
+                <span className="">{x.description}</span>
+              </div>
+            </>
+          ))}
           <div className="">
             <button className="btn btn--primary">Join us</button>
           </div>
