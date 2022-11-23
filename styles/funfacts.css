@@ -1,0 +1,16 @@
+.facts {
+  @apply px-container mx-auto;
+  &__header {
+    @apply grid lg:grid-cols-2 gap-2 mx-auto;
+  }
+  &__image {
+    @apply relative  min-h-[300px] md:h-[500px] w-full overflow-hidden rounded  lg:min-h-[600px];
+  }
+
+  &__content {
+    @apply w-8/12 flex flex-col gap-10 mt-5 mb-2 lg:pl-12 pt-10 mx-auto md:gap-6;
+    & div {
+      @apply flex;
+    }
+  }
+}

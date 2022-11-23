@@ -158,52 +158,6 @@
 }
 
 @layer components {
-  .btn {
-    @apply inline-block rounded-full py-6 px-10 text-center text-base font-bold uppercase tracking-[0.08em];
-    transition: transform 300ms ease, background-color 300ms ease;
-    transform-style: preserve-3d;
-
-    &:hover {
-      transform: scale3d(0.96, 0.96, 1.01);
-    }
-
-    &--round {
-      @apply inline-flex aspect-square items-center justify-center p-0;
-    }
-
-    &--primary {
-      @apply bg-primary text-neutral-100;
-    }
-
-    &--primary:hover {
-      @apply bg-neutral-800 text-neutral-100;
-    }
-
-    &--secondary {
-      @apply bg-neutral-300 text-neutral-700;
-    }
-
-    &--secondary:hover {
-      @apply bg-neutral-400 text-neutral-700;
-    }
-
-    &--white {
-      @apply bg-neutral-100 text-neutral-800;
-    }
-
-    &-white:hover {
-      @apply bg-secondary1 text-neutral-800;
-    }
-
-    &--small {
-      @apply py-5 px-8 text-base;
-    }
-
-    &--large {
-      @apply py-6 px-[68px] text-xxl;
-    }
-  }
-
   .chip {
     @apply flex items-center justify-center  rounded-full py-3 px-4 align-middle text-xs font-bold shadow-base sm:px-6;
 

@@ -1,12 +1,18 @@
 import React from "react";
-import Card from "./card";
+import Button from "./button";
+import Developercard from "./developercard";
+import Funfacts from "./funfacts";
+import Icon from "./icon";
 
 type Props = {};
 
 const Page = (props: Props) => {
   return (
     <>
-      <Card />
+      <Button />
+      <Icon />
+      <Developercard />
+      <Funfacts />
     </>
   );
 };
