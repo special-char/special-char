@@ -47,7 +47,7 @@ const Footer = (props: Props) => {
           <Link href="#">+91 3285445152</Link>
         </div>
       </div>
-      <p className="mb-0 ">
+      <p className="footer__copyright">
         Copyright © TSC | Designed by TSC - Powered by TSC
       </p>
     </section>
