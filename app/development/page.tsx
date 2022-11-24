@@ -1,4 +1,5 @@
 import React from "react";
+import Aboutkofo from "./aboutkofo";
 import Banner from "./banner";
 import Button from "./button";
 import Developercard from "./developercard";
@@ -15,6 +16,7 @@ const Page = (props: Props) => {
       {/* <Icon /> */}
       <Developercard />
       <Funfacts />
+      <Aboutkofo />
     </>
   );
 };
