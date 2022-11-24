@@ -20,7 +20,7 @@
   }
 
   h4 {
-    @apply text-lg font-bold text-primary sm:text-xl;
+    @apply text-lg font-bold text-primary sm:text-xxl;
   }
 
   /* h5 {
@@ -32,7 +32,7 @@
   } */
 
   p {
-    @apply mb-5 text-secondary1 text-xxl;
+    @apply mb-5 text-secondary1 text-xl;
   }
 
   /* p.small {
@@ -157,7 +157,7 @@
 
 @layer components {
   .btn {
-    @apply inline-block rounded-lg py-4 px-6 text-center text-sm uppercase tracking-[0.08em];
+    @apply inline-block rounded-lg py-4 px-5 text-center text-sm tracking-[0.08em];
     transition: transform 300ms ease, background-color 300ms ease;
     transform-style: preserve-3d;
 
@@ -359,14 +359,14 @@
   }
 
   .card {
-    @apply grid overflow-hidden rounded-2xl shadow-dark;
+    @apply grid overflow-hidden rounded-2xl;
 
     &__image {
       @apply relative h-full;
     }
-    &__chipset {
+    /* &__chipset {
       @apply absolute top-3 flex justify-end gap-3;
-    }
+    } */
 
     &__body {
       @apply p-6 pt-0;
@@ -383,7 +383,7 @@
     &__desc {
       @apply text-neutral-500 line-clamp-3;
     }
-    &__actions {
+    /* &__actions {
       @apply flex items-center gap-4;
     }
 
@@ -393,7 +393,7 @@
 
     &__hori {
       @apply grid md:grid-cols-2;
-    }
+    } */
   }
 
   .newsletter {

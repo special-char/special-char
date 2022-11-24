@@ -1,0 +1,7 @@
+.ourNews {
+  @apply min-h-fit content-center items-center lg:justify-items-center gap-8 py-20;
+
+  &__content {
+    @apply grid gap-4 lg:grid-cols-2 px-sm-container lg:px-20;
+  }
+}

@@ -1,22 +1,9 @@
 .card {
-  @apply m-4 grid max-w-lg grid-cols-1 overflow-hidden rounded-lg bg-neutral-400;
-
-  &--hoz {
-    @apply grid max-w-full gap-8;
-    grid-template-columns: 1fr 2fr;
-  }
+  @apply grid grid-cols-1 overflow-hidden rounded-lg bg-neutral-400;
 
   /* replace aspect ratio */
   &__image {
-    @apply relative;
-    aspect-ratio: 3 / 2;
-    &__chips {
-      @apply absolute right-3 top-3 flex gap-4;
-
-      &--left {
-        @apply left-3;
-      }
-    }
+    @apply aspect-h-image;
   }
   &__body {
     @apply px-4 py-8;
@@ -26,12 +13,8 @@
     }
     &__actions {
     }
-    &__time {
-    }
     &__date {
-      @apply text-xl;
-    }
-    &__date-full {
+      @apply text-lg;
     }
   }
 }

@@ -29,7 +29,7 @@ const Banner = (props: Props) => {
             impact impact that you seek."
           </p>
         </div>
-        <button className="btn btn--primary">view on Designer</button>
+        <button className="btn btn--primary">View on Designer</button>
       </div>
     </section>
   );
