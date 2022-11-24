@@ -1,12 +1,9 @@
 import React from 'react';
 import '@/styles/testimonial.css';
 import clsx from 'clsx';
-import Rating from '@/ui/Rating';
 import TitlePage from '@/ui/titlePage';
-import ActionBar from '@/ui/ActionBar';
 
 type Props = {
-  className: any;
   id: any;
   description: string;
   star: any;
@@ -33,10 +30,12 @@ const Data1 = [
     id: 3,
     description:
       '"The public is more fam, in effect, conditioned to prefer bad design, because that is what it lives with."',
+    name: 'Company Name',
+    designation: 'Junior Designer at Facebook',
   },
 ];
 
-const Testimonial = ({ className, description, star }: Props) => {
+const Testimonial = ({ className, id, description, star }: Props) => {
   return (
     <section
       id={clsx('Testimonial', {
@@ -50,20 +49,10 @@ const Testimonial = ({ className, description, star }: Props) => {
 "
         className={''}
       />
-      <div className="testimonial__section">
-        {Data1.map((val) => (
-          <div
-            key={val.id}
-            className={clsx('testimonial__paragraph', {
-              [className]: !!className,
-            })}
-          >
-            <Rating rate={4} />
-            <p className="text-center">{val.description}</p>
-
-            <ActionBar />
-          </div>
-        ))}
+      <div key={id} className="">
+        {Data1.map((Testimonial1) => (
+          <Testimonial1 data1={Testimonial1} />
+        ))}{' '}
       </div>
     </section>
   );

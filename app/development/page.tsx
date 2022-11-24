@@ -1,6 +1,8 @@
 import TitlePage from '@/ui/titlePage';
 import React from 'react';
+import Banner from './Banner';
 import Faq from './faq';
+
 import Testimonial from './testimonial';
 
 const Page = () => {
@@ -11,14 +13,12 @@ const Page = () => {
         desc="View Our Work
 "
       />
+      <Banner />
       <Faq
         title="We are blessed to work with leading brands."
         desc="View Our Work"
       />
-      <Testimonial
-        title="Our clients feedback is important for us."
-        desc="Work With Us"
-      />
+      {/* <Testimonial /> */}
     </>
   );
 };

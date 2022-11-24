@@ -1,4 +1,4 @@
-.testimonial {
+testimonial {
   @apply grid min-h-screen content-center items-center justify-center gap-4 bg-secondary3 py-12 px-4 md:px-6 lg:gap-12 lg:px-container;
 }
 .testimonial__section {

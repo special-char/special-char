@@ -1,0 +1,12 @@
+.banner {
+  @apply grid min-h-screen content-center items-center justify-center py-24 px-4 sm:px-sm-container md:py-44 md:px-6 lg:gap-24 lg:py-40 lg:px-container;
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.banner__body {
+  @apply grid;
+}
+.banner__page {
+  @apply grid justify-center pt-16 text-center;
+}
