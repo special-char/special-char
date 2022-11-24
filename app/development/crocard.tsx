@@ -9,11 +9,13 @@ const Crocard = (props: Props) => {
     <section className="bg-secondary2">
       <div className="carosol">
         <div className="carocard">
-          <Image
-            src="https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg"
-            alt="crow"
-            fill
-          />
+          <div>
+            <Image
+              src="https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg"
+              alt="crow"
+              fill
+            />
+          </div>
           <div className="chipset">
             <h3 className=" ">Confrence</h3>
             <p className="chip">Art Direction,Design</p>
