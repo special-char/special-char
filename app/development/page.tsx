@@ -3,7 +3,7 @@ import Banner from "./banner";
 import Card from "./card";
 import Contact from "./contact";
 import Fromblog from "./fromblog";
-import OurNew from "./ourNew";
+import OurNews from "./ourNews";
 import OurOffice from "./ourOffice";
 import Title from "./title";
 import Work from "./work";
@@ -17,8 +17,8 @@ const Page = (props: Props) => {
       <Banner />
       <Work />
       <Fromblog />
+      <OurNews />
       {/* <Title /> */}
-      <OurNew />
       <OurOffice />
       <Contact />
     </>

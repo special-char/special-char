@@ -1,20 +1,17 @@
 .card {
-  @apply grid grid-cols-1 overflow-hidden rounded-lg bg-neutral-400;
+  @apply grid bg-neutral-400 max-w-[500px] grid-cols-1 overflow-hidden;
 
   /* replace aspect ratio */
   &__image {
-    @apply aspect-h-image;
+    aspect-ratio: 3 / 2;
   }
   &__body {
-    @apply px-4 py-8;
+    @apply p-8;
     &__title {
     }
     &__desc {
     }
-    &__actions {
-    }
     &__date {
-      @apply text-lg;
     }
   }
 }

@@ -33,7 +33,7 @@ const OurOffice = (props: Props) => {
                 Gujrat 382470
               </div>
             </address>
-            <button className="btn btn--primary">find on map</button>
+            <button className="btn btn--primary">Find on Map</button>
           </div>
         </div>
       </div>

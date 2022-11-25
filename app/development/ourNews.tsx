@@ -3,8 +3,20 @@ import Card from "./card";
 import Title from "./title";
 import "@/styles/ourNews.css";
 import "@/styles/card.css";
+import "@/styles/title.css";
 
-type Props = {};
+type Props = {
+  btn: any;
+  title: String;
+  description: String;
+};
+
+const data = {
+  btn: "Work with Us",
+  title: "Our",
+  title1: "News",
+  description: "We share our thoughts on design. We design awesome things.",
+};
 
 const NewsData = [
   {
@@ -30,10 +42,20 @@ const NewsData = [
   },
 ];
 
-const OurNew = (props: Props) => {
+const OurNews = ({ btn, description, title }: Props) => {
   return (
     <section id="ourNews" className="ourNews">
-      {/* <Title /> */}
+      <div className="ourNews__title">
+        <h1>
+          {data.title}
+          <br />
+          <span className="text-secondary1 font-normal">{data.title1}</span>
+        </h1>
+        <div>
+          <p>{data.description}</p>
+          <button className="btn btn--primary">{data.btn}</button>
+        </div>
+      </div>
       <div className="ourNews__content">
         {NewsData.map((card) => (
           <Card data={card} />
@@ -43,4 +65,4 @@ const OurNew = (props: Props) => {
   );
 };
 
-export default OurNew;
+export default OurNews;

@@ -1,8 +1,5 @@
 .title {
-  @apply grid  gap-5 px-container sm:px-sm-container lg:px-container lg:justify-items-center;
-  @media only screen and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-  }
+  @apply grid gap-5 lg:items-center justify-between;
 
   &__body {
     @apply m-0;

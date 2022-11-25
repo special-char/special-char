@@ -37,7 +37,7 @@ const Fromblog = ({ url, btn, date, title, link }: Props) => {
           <Link href="#">View All Post</Link>
         </div>
       </div>
-      <div className="fromblog__body">
+      <div className="fromblog__body  ">
         {CardData.map((card) => (
           <Card data={card} />
         ))}

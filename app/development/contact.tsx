@@ -1,56 +1,67 @@
 import React from "react";
 import "@/styles/contact.css";
+import Title from "./title";
 
-type Props = {};
+type Props = {
+  btn: any;
+  title: String;
+  description: String;
+};
+
+const data = {
+  btn: "View all Work",
+  title: "Contact",
+  description: "We'd love to hear from you.",
+};
 
 const FormData = [
   {
     id: "txtName",
-    label: "Name",
     type: "name",
     placeholder: "Name*",
   },
   {
     id: "txtName",
-    label: "Company Name",
     type: "company name",
     placeholder: "Company Name",
   },
   {
     id: "txtEmail",
-    label: "Email",
     type: "email",
     placeholder: "Email*",
   },
 
   {
     id: "txtPhone",
-    label: "Phone Number",
     type: "tel",
     placeholder: "+91 1234 5678 90",
   },
   {
     id: "txtWebsite URL",
-    label: "Website URL",
     type: "txtWebsite URL",
     placeholder: "Website URL*",
   },
   {
     id: "txtProject Details",
-    label: "Project Details",
     type: "textarea",
     placeholder: "Project Details*",
   },
 ];
 
-const Contact = (props: Props) => {
+const Contact = ({ btn, description, title }: Props) => {
   return (
     <section id="contact" className="contact">
+      <div className="contact__title">
+        <h1>{data.title}</h1>
+        <div>
+          <p>{data.description}</p>
+          <button className="btn btn--primary">{data.btn}</button>
+        </div>
+      </div>
       <div className="contact__body">
         {FormData.map((formData) => {
           return (
             <div className="form">
-              <label className="form__label">{formData.label}</label>
               {formData.type === "textarea" ? (
                 <textarea
                   name=""

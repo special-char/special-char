@@ -1,5 +1,5 @@
 .ourOffice {
-  @apply grid min-h-screen content-center justify-items-center py-24 px-sm-container lg:px-20 md:py-36 lg:py-48;
+  @apply grid min-h-screen content-center justify-items-center py-24 md:py-36 lg:py-48;
 
   &__title {
     @apply text-primary;

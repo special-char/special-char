@@ -41,7 +41,7 @@ module.exports = {
       "6xl": ["54px", "1.289em"],
       "7xl": ["60px", "1.289em"],
       "8xl": ["100px", "1.3em"],
-      "9xl": ["102px", "1.3em"],
+      "9xl": ["150px", "1.3em"],
     },
     boxShadow: {
       base: "0 5px 15px 0 rgb(30 61 96 / 3%)",
@@ -51,11 +51,7 @@ module.exports = {
       spacing: {
         container: `max(
           1rem,
-          calc((100vw - calc(1280px - 1rem * 2)) / 2)
-        )`,
-        "sm-container": `max(
-          1rem,
-          calc((100vw - calc(550px - 1rem * 2)) / 2)
+          calc((100vw - calc(1200px - 1rem * 2)) / 2)
         )`,
       },
       aspectRatio: {
