@@ -1,15 +1,15 @@
-.carosol{
-  @apply w-10/12 mx-auto grid lg:flex lg:gap-4 md:grid-cols-2 py-8 lg:overflow-x-scroll;
+.carosol {
+  @apply grid lg:flex lg:gap-4 md:grid-cols-2 py-8 lg:overflow-x-scroll;
 }
-.carocard{ 
+.carocard {
   @apply px-container bg-secondary1 aspect-square relative lg:w-[550px] lg:h-[550px] lg:gap-4;
-  
 }
 .chipset {
   @apply absolute bottom-4  text-center flex  content-center flex-col lg:flex-row left-1/2  lg:w-[550px] -translate-x-1/2 lg:first-letter:translate-x-0
   justify-items-center items-center justify-between lg:px-8;
-  
-  & h3,p{
+
+  & h3,
+  p {
     @apply text-neutral-400 m-0;
   }
 }

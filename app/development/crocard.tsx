@@ -33,7 +33,7 @@ const CroData = [
 
 const Crocard = (props: Props) => {
   return (
-    <section className="bg-secondary2">
+    <section className="bg-secondary2 px-container">
       <div className="carosol">
         {CroData.map((crodData) => (
           <div className="carocard">

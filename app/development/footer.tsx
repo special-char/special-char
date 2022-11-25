@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import "@/styles/footer.css";
+import SocialIcon from "./SocialIcon";
 
 type Props = {};
 
@@ -37,11 +38,7 @@ const Footer = (props: Props) => {
         </div>
         <div className="footer__info">
           <div className="footer__socialicons">
-            <a>O</a>
-            <a>O</a>
-            <a>O</a>
-            <a>O</a>
-            <a>O</a>
+            <SocialIcon />
           </div>
           <Link href="#">hello@TSC.com</Link>
           <Link href="#">+91 3285445152</Link>

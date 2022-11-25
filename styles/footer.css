@@ -1,4 +1,4 @@
-a,div{color: black;}
+a,div {color: black;}
 .footer {
     @apply gap-3 bg-[#f1f1f1] px-4 pt-16 md:px-16 lg:px-container overflow-hidden ;
     &__line {
@@ -9,7 +9,7 @@ a,div{color: black;}
       @apply py-10  lg:py-16 text-center items-center;
     }
     &__p2 {
-      @apply py-10 grid grid-cols-1 md:grid-cols-2 md:grid-rows-1  lg:py-16 md:w-4/5 mx-auto  content-between;
+      @apply py-10 grid grid-cols-1 md:grid-cols-2 md:grid-rows-1  lg:py-16 mx-auto  content-between;
     }
 
     &__links {
@@ -20,8 +20,8 @@ a,div{color: black;}
         @apply grid md:text-end;
     }
   
-    &__socialicons {
-      @apply flex gap-6 md:justify-end mb-8;
+    &__socialicons {justify-content: flex-end;
+      @apply flex gap-6 md:justify-end mb-8 ;
     }
     &__copyright{
       @apply mb-0 text-base md:text-xxl
