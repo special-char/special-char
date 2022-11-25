@@ -4,15 +4,15 @@
 
 @layer base {
   body {
-    @apply min-h-screen  text-lg;
+    @apply min-h-screen text-lg text-primary;
   }
 
   h1 {
-    @apply mb-6 font-sans text-5xl font-semibold text-primary sm:text-8xl md:text-8xl lg:text-8xl;
+    @apply mb-6 font-sans text-7xl font-semibold text-primary sm:text-8xl md:text-8xl lg:text-9xl;
   }
 
   h2 {
-    @apply mb-4 font-serif text-3xl font-semibold text-primary sm:text-2xl md:text-4xl;
+    @apply mb-4 font-serif text-3xl font-semibold text-primary sm:text-3xl md:text-5xl lg:text-6xl;
   }
 
   h3 {
@@ -23,25 +23,25 @@
     @apply text-lg font-bold text-primary sm:text-xl;
   }
 
-  h5 {
+  /* h5 {
     @apply text-base font-semibold text-primary sm:text-lg;
   }
 
   h6 {
     @apply text-xs font-semibold text-primary sm:text-base;
-  }
+  } */
 
   p {
-    @apply mb-5 text-secondary1;
+    @apply mb-5 text-xxl text-secondary1;
   }
 
-  p.small {
+  /* p.small {
     @apply text-sm  text-secondary1;
   }
 
   p.large {
     @apply text-2xl  text-secondary1;
-  }
+  } */
 
   a {
     @apply text-neutral-100 no-underline;
@@ -50,7 +50,7 @@
   }
 
   a:hover {
-    @apply text-secondary3;
+    @apply text-primary underline;
   }
 
   label {
@@ -126,9 +126,11 @@
   }
 
   details {
+    @apply max-w-full rounded-md  px-8 text-left drop-shadow-lg transition-all;
     @apply max-w-full rounded-md px-2 text-left drop-shadow-lg transition-all md:px-8;
 
     & > summary {
+      @apply flex cursor-pointer list-none items-start justify-start border-b-[1px] border-neutral-100 py-6 text-xl font-bold md:items-center;
       @apply flex cursor-pointer list-none items-start justify-start border-b-[1px] border-neutral-100 py-6 text-xl font-bold md:items-center;
 
       &::marker {
@@ -138,9 +140,12 @@
       &::before {
         content: '+';
         @apply aspect-square h-12 w-12 rotate-180 text-center text-5xl duration-300 md:h-12 md:w-12;
+        content: '+';
+        @apply aspect-square h-12 w-12 rotate-180 text-center text-5xl duration-300 md:h-12 md:w-12;
       }
     }
     & > p {
+      @apply mb-0 overflow-hidden border-none py-4 pl-4 text-left text-base;
       @apply mb-0 overflow-hidden border-none py-4 text-left text-base md:pl-4;
     }
   }
@@ -150,6 +155,8 @@
       &::before {
         content: '-';
         @apply flex rotate-[15px] items-center justify-center duration-300;
+        content: '-';
+        @apply flex rotate-[15px] items-center justify-center duration-300;
       }
     }
   }
@@ -157,7 +164,7 @@
 
 @layer components {
   .btn {
-    @apply inline-block rounded-lg py-4 px-6 text-center text-base font-bold uppercase tracking-[0.08em];
+    @apply inline-block rounded-lg py-4 px-6 text-center text-sm uppercase tracking-[0.08em];
     transition: transform 300ms ease, background-color 300ms ease;
     transform-style: preserve-3d;
 

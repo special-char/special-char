@@ -1,0 +1,33 @@
+.work {
+  @apply px-container sm:px-sm-container lg:px-container py-20;
+
+  &__title {
+    @apply text-left mb-8;
+  }
+
+  &__item {
+    @apply grid gap-8 justify-items-center;
+    @media only screen and (min-width: 1010px) {
+      grid-template-columns: repeat(3, auto);
+    }
+  }
+  &__card {
+    @apply max-w-xl justify-between overflow-hidden  bg-secondary2 shadow-dark duration-500 hover:scale-y-105;
+
+    &__figure {
+      @apply relative m-0 aspect-h-image w-full p-0;
+    }
+
+    &__content {
+      @apply flex h-full flex-col justify-between p-8;
+    }
+
+    &__title {
+      @apply mb-4 h-9 line-clamp-1;
+    }
+
+    &__desc {
+      @apply mb-7 my-0 h-16 p-0 line-clamp-2;
+    }
+  }
+}

@@ -1,16 +1,24 @@
-import React from "react";
+import '@/styles/card.css';
+import Image, { ImageProps } from 'next/image';
+import Link from 'next/link';
+import '@/styles/socialicon.css';
 
-type Props = {};
-
-const Card = (props: Props) => {
+export default function Card({ data }) {
   return (
-    <div className="text-9xl">
-      Card
-      {/* <button className="btn btn--primary">submit</button> */}
-      <button className="btn btn--white">stay in touch</button>
-      <span className="chip chip--primary text-primary">use interface</span>
+    <div className="card">
+      <div className="card__image">
+        <Image src={data.url} alt="image" fill />
+      </div>
+      <div className="card__body">
+        <div className="flex content-start items-baseline gap-3">
+          <button className="btn btn--white py-2 px-2">{data.btn}</button>
+          <p className="card__body__date">{data.date}</p>
+        </div>
+        <h3 className="card__body__title">{data.title}</h3>
+        <Link href={data.href} className="text-base">
+          Read More
+        </Link>
+      </div>
     </div>
   );
-};
-
-export default Card;
+}

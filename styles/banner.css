@@ -1,0 +1,16 @@
+.banner {
+  @apply grid min-h-fit content-center items-center gap-8 px-container py-20 sm:px-sm-container lg:justify-items-center lg:px-container;
+  @media only screen and (min-width: 1010px) {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &__body {
+    @apply m-0;
+  }
+  &__title {
+    @apply text-left;
+  }
+  &__content {
+    @apply lg:pt-10;
+  }
+}
