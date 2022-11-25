@@ -5,7 +5,6 @@ import Card from "./card";
 import Crocard from "./crocard";
 import Footer from "./footer";
 import Video from "./video";
-import Review from "./review";
 
 type Props = {};
 
