@@ -1,8 +1,8 @@
 .testimonial {
-  @apply grid content-center py-12 md:px-6 lg:px-container;
+  @apply grid content-center py-12 md:px-6;
 }
 .testimonialcard {
-  @apply flex flex-col items-center justify-center overflow-x-hidden  md:flex-row;
+  @apply flex flex-col items-center justify-center overflow-x-hidden md:flex-row;
 }
 .testimonial__paragraph {
   @apply m-2 flex flex-col items-center justify-center  bg-neutral-100 py-4  hover:bg-secondary2;

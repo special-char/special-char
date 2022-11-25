@@ -1,5 +1,5 @@
 .banner {
-  @apply grid min-h-fit content-center items-center gap-8 px-container py-20 sm:px-sm-container lg:justify-items-center lg:px-container;
+  @apply grid min-h-fit content-center items-center gap-8 py-20 sm:px-sm-container lg:justify-items-center;
   @media only screen and (min-width: 1010px) {
     grid-template-columns: 2fr 1fr;
   }

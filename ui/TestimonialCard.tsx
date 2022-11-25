@@ -5,8 +5,8 @@ import '@/styles/testimonial.css';
 
 export default function TestimonialCard({ data }) {
   return (
-    <section className="testimonial__page">
-      <div className="testimonial__paragraph ">
+    <section className="testimonial__page bg-neutral-300">
+      <div className="testimonial__paragraph">
         <Rating rate={4} />
         <p className="text-center">{data.description}</p>
         {/* <ActionBar /> */}
