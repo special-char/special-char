@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "./card";
+import Link from "next/link";
+import "@/styles/fromblog.css";
 
 type Props = {
   btn: any;
@@ -28,10 +30,18 @@ const CardData = [
 
 const Fromblog = ({ url, btn, date, title, link }: Props) => {
   return (
-    <section>
-      {CardData.map((card) => (
-        <Card data={card} />
-      ))}
+    <section id="fromblog" className="fromblog">
+      <div className="fromblog__content">
+        <h2>From Blog</h2>
+        <div>
+          <Link href="#">View All Post</Link>
+        </div>
+      </div>
+      <div className="fromblog__body  ">
+        {CardData.map((card) => (
+          <Card data={card} />
+        ))}
+      </div>
     </section>
   );
 };

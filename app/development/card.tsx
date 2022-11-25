@@ -14,7 +14,7 @@ export default function Card({ data }) {
           <button className="btn btn--white py-2 px-2">{data.btn}</button>
           <p className="card__body__date">{data.date}</p>
         </div>
-        <h3 className="card__body__title">{data.title}</h3>
+        <h4 className="card__body__title">{data.title}</h4>
         <Link href={data.href} className="text-base">
           Read More
         </Link>

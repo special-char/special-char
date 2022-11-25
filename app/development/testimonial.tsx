@@ -21,8 +21,7 @@ const Data1 = [
     url: 'https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f1ff9fd9e0e1686d26497_image-3-profile-picture-small-teacher-education-x-template.jpg',
   },
   {
-    id: 2,
-
+    id: 1,
     description:
       '"The public is more fam, in effect, conditioned to prefer bad design, because that is what it lives with."',
     name: 'pruthvish',
@@ -30,15 +29,7 @@ const Data1 = [
     url: 'https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f1ff9fd9e0e1686d26497_image-3-profile-picture-small-teacher-education-x-template.jpg',
   },
   {
-    id: 3,
-    description:
-      '"The public is more fam, in effect, conditioned to prefer bad design, because that is what it lives with."',
-    name: 'pruthvish',
-    designation: 'developer',
-    url: 'https://assets.website-files.com/607de2d8e8911ebf197a3f0f/607f1ff9fd9e0e1686d26497_image-3-profile-picture-small-teacher-education-x-template.jpg',
-  },
-  {
-    id: 3,
+    id: 1,
     description:
       '"The public is more fam, in effect, conditioned to prefer bad design, because that is what it lives with."',
     name: 'pruthvish',

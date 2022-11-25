@@ -1,11 +1,11 @@
 .testimonial {
-  @apply grid content-center py-12 md:px-6;
+  @apply grid  content-center  py-12 md:px-6;
 }
 .testimonialcard {
-  @apply flex flex-col items-center justify-center overflow-x-hidden md:flex-row;
+  @apply flex  flex-col items-center justify-center overflow-x-hidden  md:flex-row;
 }
 .testimonial__paragraph {
-  @apply m-2 flex flex-col items-center justify-center  bg-neutral-100 py-4  hover:bg-secondary2;
+  @apply m-2 flex max-w-[420px] flex-col  items-center justify-center bg-neutral-100  py-10 px-4  hover:bg-secondary2;
 }
 
 .testimonial__actions {

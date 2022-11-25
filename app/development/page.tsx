@@ -1,9 +1,10 @@
 import React from 'react';
 import Banner from './banner';
-import Card from './card';
+import Contact from './contact';
 import Fromblog from './fromblog';
+import OurNews from './ourNews';
+import OurOffice from './ourOffice';
 import Work from './work';
-
 import Faq from './faq';
 import TitlePage from '@/ui/titlePage';
 import Testimonial from './testimonial';
@@ -11,24 +12,17 @@ import Testimonial from './testimonial';
 const Page = () => {
   return (
     <>
-      {/* <Card /> */}
-
-      {/* <Work /> */}
-      {/* <Fromblog /> */}
-      <Testimonial />
-
-      <Banner>
-        <div className="">
-          <h1></h1>
-          <span>this is 2</span>
-          <h1>this is 2</h1>
-        </div>
-      </Banner>
       {/* <Faq /> */}
-      {/* <TitlePage
-        title="Our clients feedback is important for us."
-        desc="Work With Us"
-      /> */}
+      <Testimonial />
+      {/* <TitlePage /> */}
+      {/* <Card /> */}
+      {/* <Banner />
+      <Work />
+      <Fromblog />
+      <OurNews /> */}
+      {/* <Title /> */}
+      {/* <OurOffice />
+      <Contact /> */}
     </>
   );
 };

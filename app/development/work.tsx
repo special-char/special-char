@@ -28,18 +28,20 @@ const Work = (props: Props) => {
   return (
     <section id="work" className="work">
       <h3 className="work__title">
-        "We worry about the details so you don't have to. When you work with our
-        web agency, you can be certain that your website meets every standard."
+        We worry about the details so you don't have to. When you work with our
+        web agency, you can be certain that your website meets every standard.
       </h3>
       <div className="work__item">
         {WorkData.map((work) => {
           return (
             <div className="work__card">
               <div className="work__card__content">
-                <figure className="w-16 h-16">{work.svg}</figure>
-                <h3 className="work__card__title">{work.title}</h3>
-                <p className="work__card__desc">{work.description}</p>
-                <Link href="#">Learn More</Link>
+                <figure className="w-14 h-14 mb-8">{work.svg}</figure>
+                <div>
+                  <h4 className="work__card__title">{work.title}</h4>
+                  <p className="work__card__desc">{work.description}</p>
+                  <Link href="#">Learn More</Link>
+                </div>
               </div>
             </div>
           );
