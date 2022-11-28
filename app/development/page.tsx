@@ -12,11 +12,10 @@ const Page = (props: Props) => {
   return (
     <>
       <NavBar />
-      {/* <Banner /> */}
+      <Banner />
       <Crocard />
-      {/* <Review /> */}
       <Video />
-      {/* <Card /> */}
+      <Card />
       <Footer />
     </>
   );

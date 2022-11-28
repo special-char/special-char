@@ -32,14 +32,16 @@ const SocialIcon = (props: Props) => {
   return (
     <div className="socialicons">
       {socialicon.map((icon) => (
-        <Link key={icon.icon} href={icon.link} target="_blank">
-          <Icon
-            className="hover:bg-neutral-300 hover:scale-110 ease-in-out duration-300 hover:rounded-full"
-            name={icon.icon}
-            height={20}
-            width={20}
-          />
-        </Link>
+        <span className="p-4 h-4 w-4 box-content rounded-full hover:bg-neutral-200 hover:scale-110 ease-in-out duration-300 hover:rounded-full hover:fill-neutral-400">
+          <Link key={icon.icon} href={icon.link} target="_blank">
+            <Icon
+              className=" hover:fill-neutral-400"
+              name={icon.icon}
+              height={16}
+              width={16}
+            />
+          </Link>
+        </span>
       ))}
     </div>
   );
