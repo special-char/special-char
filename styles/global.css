@@ -157,7 +157,8 @@
 
 @layer components {
   .btn {
-    @apply inline-block rounded-lg py-4 px-6 text-center text-sm uppercase tracking-[0.08em];
+    @apply inline-block rounded-lg py-4 px-6 text-center text-sm 
+     tracking-[0.08em];
     transition: transform 300ms ease, background-color 300ms ease;
     transform-style: preserve-3d;
 
@@ -174,7 +175,7 @@
     }
 
     &--primary:hover {
-      @apply bg-neutral-300 text-neutral-400;
+      @apply bg-[#064EA4] text-neutral-400;
     }
 
     /* &--secondary {

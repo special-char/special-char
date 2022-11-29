@@ -1,0 +1,6 @@
+.apple {
+  @apply grid grid-rows-2 px-container text-center;
+  &__p {
+    @apply pb-4;
+  }
+}

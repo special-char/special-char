@@ -1,4 +1,4 @@
-.card {
+ /* .card {
   @apply m-4 grid max-w-lg grid-cols-1 overflow-hidden rounded-lg bg-neutral-400;
 
   &--hoz {
@@ -7,7 +7,7 @@
   }
 
   /* replace aspect ratio */
-  &__image {
+  /* &__image {
     @apply relative;
     aspect-ratio: 3 / 2;
     &__chips {
@@ -33,5 +33,5 @@
     }
     &__date-full {
     }
-  }
-}
+  } */
+} */

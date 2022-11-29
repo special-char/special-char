@@ -1,6 +1,7 @@
 import React from "react";
 import Aboutkofo from "./aboutkofo";
 import Banner from "./banner";
+import Blackapple from "./blackapple";
 import Button from "./button";
 import Developercard from "./developercard";
 import Funfacts from "./funfacts";
@@ -14,9 +15,10 @@ const Page = (props: Props) => {
       {/* <Banner /> */}
       <Button />
       {/* <Icon /> */}
-      <Developercard />
+      {/* <Developercard /> */}
       <Funfacts />
       <Aboutkofo />
+      <Blackapple />
     </>
   );
 };

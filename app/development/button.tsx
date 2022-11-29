@@ -6,7 +6,7 @@ type Props = {};
 function Button({}: Props) {
   return (
     <div className="pt-12 text-center">
-      <div className="p-10">
+      <div className="p-10 ">
         <button className="btn btn--primary"> View on Designer</button>
       </div>
       <div className="">

@@ -16,7 +16,7 @@
   }
 
   &--primary:hover {
-    @apply bg-[#3898ec] text-neutral-100;
+    @apply bg-[#064EA4] text-neutral-100;
   }
   &--secondary {
     @apply border-2 border-[#c9c9c9] py-2 px-3 rounded text-[#747474] font-medium;
