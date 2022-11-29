@@ -1,0 +1,33 @@
+.work {
+  @apply grid min-h-fit content-center items-center py-20;
+
+  &__title {
+    @apply text-left mb-8;
+  }
+
+  &__item {
+    @apply grid gap-8 justify-items-center;
+    @media only screen and (min-width: 1010px) {
+      grid-template-columns: repeat(3, auto);
+    }
+  }
+  &__card {
+    @apply justify-between overflow-hidden  bg-secondary2;
+
+    &__figure {
+      @apply relative m-0 aspect-h-image w-full p-0;
+    }
+
+    &__content {
+      @apply flex h-full flex-col gap-10 justify-between p-8;
+    }
+
+    &__title {
+      @apply mb-4 mt-5 line-clamp-1;
+    }
+
+    &__desc {
+      @apply mb-7 my-0 h-16 p-0 line-clamp-2;
+    }
+  }
+}

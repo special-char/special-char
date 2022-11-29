@@ -1,6 +1,13 @@
 import React from "react";
 import Aboutkofo from "./aboutkofo";
 import Banner from "./banner";
+import Card from "./card";
+import Contact from "./contact";
+import Fromblog from "./fromblog";
+import OurNews from "./ourNews";
+import OurOffice from "./ourOffice";
+import Title from "./title";
+import Work from "./work";
 import Blackapple from "./blackapple";
 import Button from "./button";
 import Developercard from "./developercard";
@@ -19,6 +26,12 @@ const Page = (props: Props) => {
     <>
       <NavBar />
       <Banner />
+      <Work />
+      <Fromblog />
+      <OurNews />
+      {/* <Title /> */}
+      <OurOffice />
+      <Contact />
 
       <Video />
       <Crocard />
