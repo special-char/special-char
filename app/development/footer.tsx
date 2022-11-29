@@ -17,7 +17,7 @@ const Footer = (props: Props) => {
   return (
     <section id="footer" className="footer">
       <div className="footer__p1">
-        <button>Stay in touch</button>
+        <button className="btn btn--white">Stay in touch</button>
         <h1 className="">Ready to Talk</h1>
         <p className="">Feel free to Contact us</p>
         <div>Veiw on Designer</div>

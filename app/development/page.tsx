@@ -1,7 +1,13 @@
 import React from "react";
-import NavBar from "./navBar";
+import Aboutkofo from "./aboutkofo";
 import Banner from "./banner";
-import Card from "./card";
+import Blackapple from "./blackapple";
+import Button from "./button";
+import Developercard from "./developercard";
+import Funfacts from "./funfacts";
+import Icon from "./icon";
+import NavBar from "./navBar";
+
 import Crocard from "./crocard";
 import Footer from "./footer";
 import Video from "./video";
@@ -13,9 +19,15 @@ const Page = (props: Props) => {
     <>
       <NavBar />
       <Banner />
-      <Crocard />
+
       <Video />
-      <Card />
+      <Crocard />
+      {/* <Button /> */}
+      {/* <Icon /> */}
+      {/* <Developercard /> */}
+      <Funfacts />
+      <Aboutkofo />
+      {/* <Blackapple /> */}
       <Footer />
     </>
   );

@@ -1,6 +1,6 @@
 header {
   .Navigation {
-    position: sticky;
+    position: fixed;
     height: 15vh;
     width: 100%;
     @apply bg-neutral-400 flex flex-row justify-between px-4 lg:px-20 md:px-10 items-center m-0  top-0 z-10;
@@ -75,6 +75,6 @@ header {
   .humbur {
     /* active:-rotate-45 */
     @apply hover:bg-neutral-300 duration-200 transition-all
-    rounded-full p-4 m-0;
+    rounded-full p-4 m-0 hover:fill-neutral-400;
   }
 }
