@@ -3,8 +3,7 @@ import TitlePage from '@/ui/titlePage';
 import Testimonial from './testimonial';
 import React from 'react';
 import Aboutkofo from './aboutkofo';
-import Banner from './banner';
-import Card from './card';
+import Banner from './Banner';
 import Contact from './contact';
 import Fromblog from './fromblog';
 import OurNews from './ourNews';
@@ -25,19 +24,19 @@ import Video from './video';
 const Page = () => {
   return (
     <>
-      {/* <Faq /> */}
+      <Faq />
       <Testimonial />
-      {/* <TitlePage /> */}
+      <TitlePage />
       {/* <Card /> */}
-      {/* <Banner />
+      <Banner />
       <NavBar />
       <Banner />
       <Work />
       <Fromblog />
-      <OurNews /> */}
+      <OurNews />
       {/* <Title /> */}
-      {/* <OurOffice />
-      <Contact /> */}
+      <OurOffice />
+      <Contact />
       <OurOffice />
       <Contact />
 
