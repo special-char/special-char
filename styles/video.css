@@ -1,9 +1,28 @@
-.effort{
-    
-    @apply w-11/12 grid md:grid-cols-2 mx-auto md:gap-32;
-    
+.effort {
+  @apply grid md:grid-cols-2  md:gap-32 justify-items-stretch;
+
+  __info {
+    @apply flex gap-4;
+  }
+
+  .vidimg {
+    @apply bg-neutral-300 box-content p-3 rounded-full;
+    animation: spin 8s linear infinite;
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  svg {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
 }
-.company{
-    display: grid;
-    @apply grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-8 mb-28 gap-4 justify-items-center;
+.company {
+  display: grid;
+  @apply grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-8 mb-28 gap-4 justify-items-center;
 }
