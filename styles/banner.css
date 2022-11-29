@@ -1,0 +1,16 @@
+.banner {
+  @apply grid px-container lg:justify-items-center gap-8 py-20;
+  @media only screen and (min-width: 994px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__body {
+    @apply m-0;
+  }
+  &__title {
+    @apply text-left;
+  }
+  &__content {
+    @apply lg:pt-10;
+  }
+}
