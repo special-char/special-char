@@ -1,0 +1,38 @@
+.contact {
+  @apply pt-8 pb-8;
+
+  &__title {
+    @apply grid gap-5 md:items-center justify-between pb-14;
+    @media only screen and (min-width: 1010px) {
+      grid-template-columns: 2fr 1fr;
+    }
+    &__body {
+      @apply m-0;
+    }
+    &__title {
+      @apply text-left m-0;
+    }
+    &__content {
+      @apply mb-7 lg:pt-16;
+    }
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+    @apply mb-0 pt-8 text-center text-4xl lg:text-left;
+  }
+  &__desc {
+    grid-column: 1 / -1;
+    @apply text-center md:mx-12 lg:mx-0 lg:text-left;
+  }
+
+  &__body {
+    @apply grid gap-8;
+
+    & .form {
+      &:nth-child(6) {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+}

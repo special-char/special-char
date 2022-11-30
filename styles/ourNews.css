@@ -1,0 +1,26 @@
+.ourNews {
+  @apply min-h-fit content-center justify-items-center gap-8 py-20;
+
+  &__title {
+    @apply grid gap-5 md:items-center justify-between pb-14;
+    @media only screen and (min-width: 1010px) {
+      grid-template-columns: 2fr 1fr;
+    }
+    &__body {
+      @apply m-0;
+    }
+    &__title {
+      @apply text-left m-0;
+    }
+    &__content {
+      @apply mb-7 lg:pt-16;
+    }
+  }
+
+  &__content {
+    @apply grid gap-4;
+    @media only screen and (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
