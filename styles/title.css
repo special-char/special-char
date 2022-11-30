@@ -1,0 +1,13 @@
+.title {
+  @apply grid gap-5 lg:items-center justify-between;
+
+  &__body {
+    @apply m-0;
+  }
+  &__title {
+    @apply text-left m-0;
+  }
+  &__content {
+    @apply mb-7 lg:pt-16;
+  }
+}

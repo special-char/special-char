@@ -1,31 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}"],
+  content: ['./app/**/*.{js,ts,jsx,tsx}', './ui/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
-      transparent: "transparent",
-      primary: "#000000",
-      secondary1: "#747474",
-      secondary2: "#E2E2E2",
-      secondary3: "#F1F1F1",
-
+      transparent: 'transparent',
+      primary: '#000000',
+      secondary1: '#747474',
+      secondary2: '#E2E2E2',
+      secondary3: '#F1F1F1',
       neutral: {
-        100: "#D3D3D3",
-        200: "#8F8F8F",
-        300: "#4353ff",
-        400: "#fff",
-        500: "#c9c9c9",
+        100: '#D3D3D3',
+        200: '#8F8F8F',
+        300: '#4353ff',
+        400: '#fff',
+        500: '#c9c9c9',
       },
     },
     screens: {
-      xs: "320px",
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
+      xs: '320px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
     },
     fontFamily: {
-      sans: ["Kumbh Sans", "sans-serif"],
-      serif: ["Newsreader", "serif"],
+      sans: ['Kumbh Sans', 'sans-serif'],
+      serif: ['Newsreader', 'serif'],
     },
     fontSize: {
       xs: ["14px", "1.5em"],
@@ -41,31 +40,27 @@ module.exports = {
       "6xl": ["54px", "1.289em"],
       "7xl": ["60px", "1.289em"],
       "8xl": ["100px", "1.3em"],
-      "9xl": ["102px", "1.3em"],
+      "9xl": ["150px", "1.3em"],
     },
     boxShadow: {
-      base: "0 5px 15px 0 rgb(30 61 96 / 3%)",
-      dark: "0 15px 15px 0.01px rgba(30, 61, 96, 0.03)",
+      base: '0 5px 15px 0 rgb(30 61 96 / 3%)',
+      dark: '0 15px 15px 0.01px rgba(30, 61, 96, 0.03)',
     },
     extend: {
       spacing: {
         container: `max(
           1rem,
-          calc((100vw - calc(1280px - 1rem * 2)) / 2)
-        )`,
-        "sm-container": `max(
-          1rem,
-          calc((100vw - calc(550px - 1rem * 2)) / 2)
+          calc((100vw - calc(1200px - 1rem * 2)) / 2)
         )`,
       },
       aspectRatio: {
-        image: "3 / 4",
-        "h-image": "4 / 3",
+        image: '3 / 4',
+        'h-image': '4 / 3',
       },
     },
   },
   plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/line-clamp"),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
   ],
 };

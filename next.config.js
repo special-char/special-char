@@ -9,19 +9,20 @@ const nextConfig = {
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
-      use: ["@svgr/webpack"],
+      use: ['@svgr/webpack'],
     });
 
     return config;
   },
   images: {
     domains: [
-      "assets.website-files.com",
-      "ik.imagekit.io",
-      "tse3.mm.bing.net",
-      "images.unsplash.com",
-      "media.istockphoto.com",
-      "images.pexels.com",
+      'assets.website-files.com',
+      'ik.imagekit.io',
+      'tse3.mm.bing.net',
+      'images.unsplash.com',
+      'media.istockphoto.com',
+      'images.pexels.com',
+      'placeimg.com',
     ],
   },
   typescript: {

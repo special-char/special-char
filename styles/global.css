@@ -4,7 +4,11 @@
 
 @layer base {
   body {
-    @apply min-h-screen text-primary text-lg;
+    @apply min-h-screen text-lg text-primary;
+  }
+
+  section {
+    @apply px-container;
   }
 
   h1 {
@@ -20,7 +24,7 @@
   }
 
   h4 {
-    @apply text-lg font-bold text-primary sm:text-xl;
+    @apply text-lg font-bold text-primary sm:text-xxl;
   }
 
   /* h5 {
@@ -32,7 +36,7 @@
   } */
 
   p {
-    @apply mb-5 text-secondary1 text-xxl;
+    @apply mb-5 text-lg text-secondary1;
   }
 
   /* p.small {
@@ -44,7 +48,7 @@
   } */
 
   a {
-    @apply text-primary no-underline;
+    @apply text-neutral-100 no-underline;
     -webkit-transition: color 300ms ease;
     transition: color 300ms ease;
   }
@@ -60,7 +64,7 @@
   blockquote {
     @apply mb-2 bg-neutral-100 py-10 px-5 text-lg shadow-base sm:py-12 sm:px-[50px] sm:text-xl md:py-[58px] md:px-[63px] md:text-xxl lg:py-[70px] lg:pr-[76px] lg:pl-[126px] lg:text-2xl;
     border-radius: 10px 20px 20px 10px;
-    border-left: 11px solid theme("colors.secondary3");
+    border-left: 11px solid theme('colors.secondary3');
   }
 
   figure {
@@ -127,8 +131,10 @@
 
   details {
     @apply max-w-full rounded-md  px-8 text-left drop-shadow-lg transition-all;
+    @apply max-w-full rounded-md px-2 text-left drop-shadow-lg transition-all md:px-8;
 
     & > summary {
+      @apply flex cursor-pointer list-none items-start justify-start border-b-[1px] border-neutral-100 py-6 text-xl font-bold md:items-center;
       @apply flex cursor-pointer list-none items-start justify-start border-b-[1px] border-neutral-100 py-6 text-xl font-bold md:items-center;
 
       &::marker {
@@ -136,19 +142,24 @@
       }
 
       &::before {
-        content: "+";
+        content: '+';
+        @apply aspect-square h-12 w-12 rotate-180 text-center text-5xl duration-300 md:h-12 md:w-12;
+        content: '+';
         @apply aspect-square h-12 w-12 rotate-180 text-center text-5xl duration-300 md:h-12 md:w-12;
       }
     }
     & > p {
       @apply mb-0 overflow-hidden border-none py-4 pl-4 text-left text-base;
+      @apply mb-0 overflow-hidden border-none py-4 text-left text-base md:pl-4;
     }
   }
 
   details[open] {
     & > summary {
       &::before {
-        content: "-";
+        content: '-';
+        @apply flex rotate-[15px] items-center justify-center duration-300;
+        content: '-';
         @apply flex rotate-[15px] items-center justify-center duration-300;
       }
     }
@@ -157,8 +168,7 @@
 
 @layer components {
   .btn {
-    @apply inline-block rounded-lg py-4 px-6 text-center text-sm 
-     tracking-[0.08em];
+    @apply inline-block rounded-lg py-4 px-5 text-center text-sm tracking-[0.08em];
     transition: transform 300ms ease, background-color 300ms ease;
     transform-style: preserve-3d;
 
@@ -187,7 +197,7 @@
     } */
 
     &--white {
-      @apply text-secondary1 border-[1px] border-neutral-500;
+      @apply border-[1px] border-neutral-500 text-secondary1;
     }
 
     &-white:hover {
@@ -204,7 +214,7 @@
   }
 
   .chip {
-    @apply items-center justify-center border-[1px] border-neutral-400 rounded-full py-3 px-4 align-middle text-xs font-bold sm:px-6;
+    @apply items-center justify-center rounded-full border-[1px] border-neutral-400 py-3 px-4 align-middle text-xs font-bold sm:px-6;
 
     &.icon {
       @apply flex justify-between gap-32 py-8 px-8;
@@ -291,7 +301,7 @@
     }
 
     input:checked ~ input,
-    input[aria-checked="true"] ~ input {
+    input[aria-checked='true'] ~ input {
       @apply bg-opacity-20;
     }
 
@@ -360,17 +370,14 @@
   }
 
   .card {
-    @apply grid overflow-hidden rounded-2xl shadow-dark;
+    @apply grid overflow-hidden;
 
     &__image {
-      @apply relative h-full;
-    }
-    &__chipset {
-      @apply absolute top-3 flex justify-end gap-3;
+      @apply relative;
     }
 
     &__body {
-      @apply p-6 pt-0;
+      @apply pt-0;
     }
 
     &__title {
@@ -383,17 +390,6 @@
 
     &__desc {
       @apply text-neutral-500 line-clamp-3;
-    }
-    &__actions {
-      @apply flex items-center gap-4;
-    }
-
-    &__avatar {
-      @apply aspect-square w-10 overflow-hidden rounded-full;
-    }
-
-    &__hori {
-      @apply grid md:grid-cols-2;
     }
   }
 
@@ -414,58 +410,15 @@
     }
   }
 
-  /* .card {
-      @apply relative flex min-h-full flex-col overflow-hidden rounded-[20px] bg-neutral-100 shadow-base;
-      transform: translate(0px, 0px);
-      transition: box-shadow 300ms ease, transform 300ms ease;
-      transform-style: preserve-3d;
-      color: #62778f;
-      text-decoration: none;
-      &:hover {
-        box-shadow: 0 15px 15px 0.01px rgba(30, 61, 96, 0.03);
-        transform: translate3d(0px, -10px, 0.01px);
-        color: #62778f;
-      }
-      &.compact {
-        .card-body {
-          @apply p-4 text-sm;
-        }
-      }
-      &-tags {
-        @apply absolute top-6 right-4 flex flex-col gap-2 sm:top-8 sm:right-6 sm:flex-row;
-      }
-      &-body {
-        @apply flex flex-auto flex-col px-6 pt-8 pb-10 sm:px-10 sm:pt-9 sm:pb-10 md:px-12 md:pb-12 md:pt-11;
-        :where(p) {
-          @apply mb-6 flex-grow line-clamp-2 sm:mb-7 md:mb-8;
-        }
-        :last-child {
-          @apply mb-0;
-        }
-      }
-      &-date {
-        @apply mb-4 text-base font-bold text-neutral-600 line-clamp-1;
-      }
-      &-title {
-        @apply mb-[6px] flex items-center line-clamp-1 sm:mb-[10px] md:mb-3;
-      }
-      &-actions {
-        @apply flex flex-wrap items-start;
-      }
-      & figure {
-        @apply mb-0 flex min-h-[200px] items-center justify-center;
-      }
-    } */
-
   .form {
-    @apply w-full px-4;
+    @apply w-full;
 
     &__label {
       @apply m-0 mb-3 text-xl;
     }
 
     &__input {
-      @apply h-14 w-full rounded-full bg-neutral-200 px-6 py-2 outline-neutral-400 focus:outline;
+      @apply h-14 w-full py-2 outline-neutral-400 focus:outline;
     }
   }
 }
