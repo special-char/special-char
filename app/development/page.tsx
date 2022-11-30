@@ -12,17 +12,17 @@ import Testimonial from './testimonial';
 const Page = () => {
   return (
     <>
-      {/* <Faq /> */}
+      <Faq />
       <Testimonial />
-      {/* <TitlePage /> */}
+      <TitlePage />
       {/* <Card /> */}
-      {/* <Banner />
+      <Banner />
       <Work />
       <Fromblog />
-      <OurNews /> */}
+      <OurNews />
       {/* <Title /> */}
-      {/* <OurOffice />
-      <Contact /> */}
+      <OurOffice />
+      <Contact />
     </>
   );
 };
