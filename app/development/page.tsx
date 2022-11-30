@@ -17,11 +17,11 @@ type Props = {};
 const Page = (props: Props) => {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <Banner />
 
       <Video />
-      <Crocard />
+      {/* <Crocard />  */}
       {/* <Button /> */}
       {/* <Icon /> */}
       {/* <Developercard /> */}

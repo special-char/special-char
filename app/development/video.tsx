@@ -9,7 +9,7 @@ type Props = {};
 const Video = (props: Props) => {
   return (
     <section className="px-container">
-      <div className="company">
+      {/* <div className="company">
         <span>
           <Iceberg />
         </span>
@@ -25,18 +25,20 @@ const Video = (props: Props) => {
         <span>
           <Iceberg />
         </span>
-      </div>
+      </div> */}
       <div className="effort">
-        <img
+        <Image
           src="https://assets.website-files.com/6315d6de2357050021f26e96/63172900c798f906c10618bf_photo-1-p-500.jpg"
           alt="Hardwork"
+          height={400}
+          width={700}
           className="md:order-1"
         />
         <div className="effort__info">
-          <p className=" py-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sequi
-            repudiandae ipsum vero. Quibusdam, numquam quas? Iste, quasi.
-            Molestias cupiditate eius voluptates debitis beatae cumque?
+          <p className="py-8">
+            We bring together innovative designers, pixel perfect developers and
+            data driven strategy to create a boutique experience at enterprise
+            scale.
           </p>
           <div>
             <Link href="#" className="relative">

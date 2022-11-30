@@ -10,7 +10,7 @@ const Banner = (props: Props) => {
         <h1 className="banner__title">
           Think.
           <br />
-          <span className="text-neutral-200 font-normal">
+          <span className="text-neutral-200 font-semibold">
             Create.
             <br />
           </span>
@@ -20,14 +20,13 @@ const Banner = (props: Props) => {
       <div className="banner__content">
         <div className="flex flex-col gap-8">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem sit, soluta numquam non eum officiis minima! Quis
-            eaque aspernatur officiis!
+            We are an award-winning branding and web agency committed to
+            excellence since forever.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            reiciendis odit quo inventore, ad quae impedit recusandae
-            voluptatibus totam repellat.
+          <p className="pb-4">
+            We set the standard of exceptional design creatively, technically,
+            sustainably, and ethically so that you can make the extraordinary
+            impact impact that you seek.
           </p>
         </div>
         <button className="btn btn--primary">view on Designer</button>

@@ -8,9 +8,9 @@
     @apply m-0;
   }
   &__title {
-    @apply text-left;
+    @apply text-left lg:text-[170px];
   }
   &__content {
-    @apply lg:pt-10;
+    @apply lg:pt-28;
   }
 }

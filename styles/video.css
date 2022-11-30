@@ -1,5 +1,5 @@
 .effort {
-  @apply grid md:grid-cols-2  md:gap-32 justify-items-stretch;
+  @apply grid md:grid-cols-2 px-container md:gap-32 py-20 justify-items-stretch;
 
   __info {
     @apply flex gap-4;

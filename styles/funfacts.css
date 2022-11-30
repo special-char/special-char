@@ -1,5 +1,5 @@
 .facts {
-  @apply px-container mx-auto pt-10;
+  @apply px-container mx-auto py-20 lg:px-9 lg:justify-items-center  pt-10;
   &__header {
     @apply grid lg:grid-cols-2 gap-6;
   }
