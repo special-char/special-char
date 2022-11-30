@@ -1,8 +1,8 @@
-import React from "react";
-import "@/styles/video.css";
-import Image from "next/image";
-import Iceberg from "@/public/Iceberg.svg";
-import Link from "next/link";
+import React from 'react';
+import '@/styles/video.css';
+import Image from 'next/image';
+import Iceberg from '@/public/Iceberg.svg';
+import Link from 'next/link';
 
 type Props = {};
 
