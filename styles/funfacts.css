@@ -4,7 +4,7 @@
     @apply grid lg:grid-cols-2 gap-6;
   }
   &__image {
-    @apply relative mx-auto md:justify-center min-h-[300px] md:h-[500px]  w-full  overflow-hidden rounded  lg:min-h-[650px] lg:w-[500px];
+    @apply relative mx-auto md:justify-center min-h-[300px] md:h-[500px]  w-full overflow-hidden rounded  lg:min-h-[650px] lg:w-[500px];
   }
 
   &__content {
