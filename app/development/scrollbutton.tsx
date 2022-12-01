@@ -1,14 +1,42 @@
-import React from 'react';
+'use client';
+
+import Link from 'next/link';
+import React, { useState } from 'react';
+import '@/styles/scrollbutton.css';
 
 type Props = {};
 
 const Srollbutton = (props: Props) => {
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
+    }
+  };
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+      /* you can also use 'auto' behaviour
+  	in place of 'smooth' */
+    });
+  };
+
+  window.addEventListener('scroll', toggleVisible);
+
   return (
     <div>
       <button
         id="myBtn"
         title="Go to top"
-        className="h-16 w-16 rounded-full bg-neutral-100 text-neutral-200 fixed bottom-10 right-4 hover:bg-primary hover:text-neutral-400 transition-all duration-300 active:bg-neutral-300"
+        className="srcbtn"
+        onClick={goToTop}
+        style={{ display: visible ? 'inline' : 'none' }}
       >
         Up
       </button>
