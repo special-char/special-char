@@ -54,7 +54,7 @@
   }
 
   a:hover {
-    @apply text-primary underline;
+    @apply text-primary;
   }
 
   label {
@@ -185,7 +185,7 @@
     }
 
     &--primary:hover {
-      @apply bg-neutral-300 text-neutral-400;
+      @apply bg-[#064EA4] text-neutral-400;
     }
 
     /* &--secondary {

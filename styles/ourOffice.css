@@ -7,8 +7,27 @@
   &__content {
     @apply m-0;
   }
-
   &__card {
+    @apply justify-between overflow-hidden md:w-[400px];
+
+    &__figure {
+      @apply relative m-0 aspect-h-image w-full p-0;
+    }
+
+    &__content {
+      @apply flex h-full flex-col justify-between gap-10 p-8;
+    }
+
+    &__title {
+      @apply mb-4 line-clamp-1;
+    }
+
+    &__desc {
+      @apply my-0 mb-7 h-16 p-0 line-clamp-2;
+    }
+  }
+
+  /* &__card {
     @apply max-w-xl justify-between overflow-hidden rounded-2xl bg-secondary3;
 
     &__figure {
@@ -16,15 +35,15 @@
     }
 
     &__content {
-      @apply h-full flex-col justify-between p-8;
+      @apply h-full flex-col justify-between py-8 px-14;
     }
 
     &__title {
-      @apply mb-1 h-9 line-clamp-1;
+      @apply mb-2 h-9 line-clamp-1;
     }
 
     &__desc {
-      @apply m-0 my-0 h-16 p-0 line-clamp-2;
+      @apply m-2 my-0 h-16 p-0 line-clamp-2;
     }
-  }
+  } */
 }

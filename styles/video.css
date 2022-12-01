@@ -1,0 +1,28 @@
+.effort {
+  @apply grid justify-items-stretch py-16 md:grid-cols-2 md:gap-32;
+
+  __info {
+    @apply flex gap-4;
+  }
+
+  .vidimg {
+    @apply box-content rounded-full bg-neutral-300 p-3;
+    animation: spin 8s linear infinite;
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  svg {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
+}
+.company {
+  display: grid;
+  @apply mt-6 mb-8 grid-cols-2 justify-items-center gap-4 md:mb-24 md:grid-cols-3 lg:grid-cols-5;
+}

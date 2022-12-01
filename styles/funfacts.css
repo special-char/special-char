@@ -1,0 +1,24 @@
+.facts {
+  @apply mx-auto px-container pt-40;
+  &__header {
+    @apply grid gap-6 lg:grid-cols-2;
+  }
+  &__image {
+    @apply relative mx-auto min-h-[300px] w-full overflow-hidden  rounded  md:h-[500px] md:justify-center  lg:min-h-[650px] lg:w-[500px];
+  }
+
+  &__content {
+    @apply mx-auto flex w-8/12 flex-col  gap-4 md:gap-4 lg:justify-center lg:pl-1 lg:pt-8 lg:pb-10 lg:text-xl;
+    & div {
+      align-items: flex-end;
+      @apply flex gap-1;
+      & h2 {
+        @apply m-0;
+      }
+
+      & span {
+        @apply md:text-2xl lg:text-2xl;
+      }
+    }
+  }
+}
