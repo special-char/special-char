@@ -40,7 +40,7 @@ const Video = (props: Props) => {
           />
         </div>
         <div className="effort__info">
-          <p className="pb-8 text-xxl">
+          <p className="pb-8">
             We bring together innovative designers, pixel perfect developers and
             data driven strategy to create a boutique experience at enterprise
             scale.
