@@ -8,7 +8,7 @@
   }
 
   &__content {
-    @apply w-8/12 flex flex-col lg:justify-center  gap-4 lg:pl-1 mx-auto md:gap-4 lg:text-xl lg:pt-8 lg:pb-10;
+    @apply w-8/12 flex flex-col lg:justify-center  gap-4 lg:pl-1 md:gap-4 lg:text-xl lg:pt-8 lg:pb-10;
     & div {
       align-items: flex-end;
       @apply flex gap-1;

@@ -1,6 +1,6 @@
+import '@/styles/testimonial.css';
 import React from 'react';
 import Rating from '@/ui/Rating';
-import '@/styles/testimonial.css';
 
 export default function TestimonialCard({ data }) {
   return (

@@ -56,8 +56,7 @@ const Testimonial = ({
     >
       <TitlePage
         title="Our clients feedback is important for us."
-        desc="Work With Us
-"
+        desc="Work With Us"
       />
       <div key={id} className="testimonialcard">
         {Data1.map((x) => (

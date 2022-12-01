@@ -36,16 +36,12 @@
   } */
 
   p {
-    @apply mb-5 text-lg text-secondary1;
+    @apply mb-5 text-xxl text-secondary1;
   }
 
-  /* p.small {
-    @apply text-sm  text-secondary1;
+  p.small {
+    @apply text-lg  text-secondary1;
   }
-
-  p.large {
-    @apply text-2xl  text-secondary1;
-  } */
 
   a {
     @apply text-neutral-100 no-underline;
@@ -187,14 +183,6 @@
     &--primary:hover {
       @apply bg-[#064EA4] text-neutral-400;
     }
-
-    /* &--secondary {
-      @apply bg-neutral-300 text-neutral-700;
-    }
-
-    &--secondary:hover {
-      @apply bg-neutral-400 text-neutral-700;
-    } */
 
     &--white {
       @apply border-[1px] border-neutral-500 text-secondary1;

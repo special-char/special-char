@@ -1,26 +1,26 @@
-import React from "react";
-import "@/styles/work.css";
-import Link from "next/link";
-import GraphicSvg from "@/public/icons/graphic.svg";
-import DevelopmentSvg from "@/public/icons/development.svg";
-import TrainingSvg from "@/public/icons/training.svg";
+import React from 'react';
+import '@/styles/work.css';
+import Link from 'next/link';
+import GraphicSvg from '@/public/icons/graphic.svg';
+import DevelopmentSvg from '@/public/icons/development.svg';
+import TrainingSvg from '@/public/icons/training.svg';
 type Props = {};
 
 const WorkData = [
   {
     svg: <GraphicSvg />,
-    title: "Graphic Designer",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    title: 'Graphic Designer',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
   },
   {
     svg: <DevelopmentSvg />,
-    title: "Development",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    title: 'Development',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
   },
   {
     svg: <TrainingSvg />,
-    title: "Training",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    title: 'Training',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
   },
 ];
 
@@ -34,7 +34,7 @@ const Work = (props: Props) => {
       <div className="work__item">
         {WorkData.map((work) => {
           return (
-            <div className="work__card">
+            <div className="work__card" key="work.id">
               <div className="work__card__content">
                 <figure className="w-14 h-14 mb-8">{work.svg}</figure>
                 <div>
