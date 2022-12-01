@@ -1,15 +1,20 @@
-import React from "react";
-import "@/styles/video.css";
-import Image from "next/image";
-import Iceberg from "@/public/Iceberg.svg";
-import Link from "next/link";
+import '@/styles/video.css';
+import React from 'react';
+import Image from 'next/image';
+import TitlePage from '@/ui/titlePage';
+import Iceberg from '@/public/Iceberg.svg';
+import Link from 'next/link';
 
 type Props = {};
 
 const Video = (props: Props) => {
   return (
-    <section className="px-container">
-      {/* <div className="company">
+    <section>
+      <TitlePage
+        title="We are blessed to work with leading brands."
+        desc="Work With Us"
+      />
+      <div className="company">
         <span>
           <Iceberg />
         </span>
@@ -25,17 +30,17 @@ const Video = (props: Props) => {
         <span>
           <Iceberg />
         </span>
-      </div> */}
+      </div>
       <div className="effort">
-        <Image
-          src="https://assets.website-files.com/6315d6de2357050021f26e96/63172900c798f906c10618bf_photo-1-p-500.jpg"
-          alt="Hardwork"
-          height={400}
-          width={700}
-          className="md:order-1"
-        />
+        <div className="effort__image md:order-1">
+          <Image
+            src="https://assets.website-files.com/6315d6de2357050021f26e96/63172900c798f906c10618bf_photo-1-p-500.jpg"
+            alt="Hardwork"
+            fill
+          />
+        </div>
         <div className="effort__info">
-          <p className="py-8">
+          <p className="pb-8 text-xxl">
             We bring together innovative designers, pixel perfect developers and
             data driven strategy to create a boutique experience at enterprise
             scale.
