@@ -27,7 +27,7 @@ function Projectcard({}: Props) {
   return (
     <section className="bg-secondary3 py-10">
       <div className="header">
-        <h2>From Blog</h2>
+        <h2 className="pl-5">From Blog</h2>
         <div>
           <Link href="#" className="btn btn--white border-0">
             View All Post
