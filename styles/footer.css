@@ -3,7 +3,11 @@ div {
   color: black;
 }
 .footer {
-  @apply gap-3 overflow-hidden bg-[#f1f1f1] px-4 pt-16 pb-7 md:px-16 lg:px-container;
+  @apply relative gap-3 bg-secondary3 px-4 pt-16 pb-7 md:px-16;
+  &__svg {
+    @apply absolute -top-12 right-32 hidden w-16 md:block;
+  }
+
   &__line {
     @apply h-[1px] w-[100%] rounded-full bg-secondary1 lg:col-span-2;
   }

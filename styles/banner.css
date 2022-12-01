@@ -13,4 +13,24 @@
   &__content {
     @apply lg:pt-10;
   }
+  &__desc {
+    @apply flex flex-col gap-16;
+  }
+  &__button {
+    @apply relative my-8 flex items-center;
+  }
+  &__svg {
+    @apply absolute right-0 hidden w-28 md:block;
+    animation: mymove 3s 1;
+    @keyframes mymove {
+      0% {
+        top: 0px;
+        transform: translateX(260px);
+      }
+      100% {
+        top: 0px;
+        transform: translateX(0px);
+      }
+    }
+  }
 }

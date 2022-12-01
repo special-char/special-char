@@ -1,5 +1,6 @@
 import React from 'react';
 import '@/styles/banner.css';
+import RoketSvg from '@/public/icons/roket.svg';
 
 type Props = {};
 
@@ -18,7 +19,7 @@ const Banner = (props: Props) => {
         </h1>
       </div>
       <div className="banner__content">
-        <div className="flex flex-col gap-8">
+        <div className="banner__desc">
           <p>
             "We are an award-winning branding and web agency committed to
             excellence since forever."
@@ -29,7 +30,10 @@ const Banner = (props: Props) => {
             impact impact that you seek."
           </p>
         </div>
-        <button className="btn btn--primary">View on Designer</button>
+        <div className="banner__button">
+          <button className="btn btn--primary">View on Designer</button>
+          <RoketSvg className="banner__svg" />
+        </div>
       </div>
     </section>
   );
