@@ -39,13 +39,9 @@ function Projectcard({}: Props) {
           // eslint-disable-next-line react/jsx-key
           <div className="bg-neutral-400">
             <Link href="#">
-              <Image
-                src={x.img}
-                alt=""
-                className="projectcard__image"
-                height={500}
-                width={700}
-              />
+              <div className="projectcard__image">
+                <Image src={x.img} alt="" fill />
+              </div>
             </Link>
 
             <div className="projectcard__body">
