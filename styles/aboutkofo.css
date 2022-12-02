@@ -1,4 +1,4 @@
-.about {
+.aboutkofo {
   @apply lg:items-center lg:pl-10 pt-10 md:w-8/12 py-20 lg:justify-items-center lg:w-11/12 md:mx-auto grid lg:grid-cols-2 mx-auto lg:gap-32;
   &__image {
     @apply relative mx-auto md:justify-center min-h-[300px] md:h-[400px] md:w-[300px] w-full  overflow-hidden rounded  lg:min-h-[650px] lg:w-[450px];
@@ -10,11 +10,11 @@
     @apply lg:pt-8 lg:pb-10;
   }
 }
-.airplane {
+/* .airplane {
   left: auto;
   top: auto;
   right: 100px;
   bottom: 100px;
   width: 110px;
   opacity: 1;
-}
+} */
