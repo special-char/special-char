@@ -3,7 +3,7 @@ div {
   color: black;
 }
 .footer {
-  @apply relative gap-3 bg-secondary3 px-4 pt-16 pb-7 md:px-16;
+  @apply relative gap-3 bg-secondary3  pt-16  px-container;
   &__svg {
     @apply absolute -top-12 right-32 hidden w-16 md:block;
   }

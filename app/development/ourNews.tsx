@@ -1,8 +1,7 @@
 import React from 'react';
-import Card from './card';
 import Title from './title';
 import '@/styles/ourNews.css';
-import '@/styles/card.css';
+
 import '@/styles/title.css';
 
 type Props = {

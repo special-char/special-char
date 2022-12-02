@@ -3,7 +3,7 @@
 }
 
 .title__body {
-  @apply mx-auto ml-0 mr-0 flex max-w-[585px] justify-end text-center md:px-6;
+  @apply mx-auto ml-0 mr-0 flex max-w-[585px]  flex-col  text-center md:px-6;
 }
 .title__h4 {
   @apply underline;

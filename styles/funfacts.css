@@ -1,14 +1,14 @@
 .facts {
-  @apply px-container mx-auto py-20 lg:px-9 lg:justify-items-center  pt-10;
+  @apply mx-auto py-20  lg:justify-items-center  pt-10;
   &__header {
-    @apply grid gap-6 lg:grid-cols-2;
+    @apply grid gap-10 lg:grid-cols-2;
   }
   &__image {
-    @apply relative mx-auto md:justify-center min-h-[300px] md:h-[500px]  w-full overflow-hidden rounded  lg:min-h-[650px] lg:w-[500px];
+    @apply relative mx-auto md:justify-center min-h-[300px] md:h-[500px]  w-full overflow-hidden rounded  lg:min-h-[650px] lg:w-[450px];
   }
 
   &__content {
-    @apply w-8/12 flex flex-col lg:justify-center  lg:mx-0 mx-auto gap-4 lg:pl-1 md:gap-4 lg:text-xl lg:pt-8 lg:pb-10;
+    @apply w-8/12 flex flex-col lg:justify-center lg:mx-0 gap-4 lg:pl-1 md:gap-4 lg:text-xl lg:pt-8 lg:pb-10;
     & div {
       align-items: flex-end;
       @apply flex gap-1;

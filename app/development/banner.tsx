@@ -1,5 +1,5 @@
-import React from 'react';
 import '@/styles/banner.css';
+import React from 'react';
 import RoketSvg from '@/public/icons/roket.svg';
 
 type Props = {};

@@ -20,7 +20,7 @@ const Footer = (props: Props) => {
       <ThreelineSvg className="footer__svg" />
       <div className="footer__p1">
         <button className="btn btn--white">Stay in touch</button>
-        <h1 className="">Ready to Talk</h1>
+        <h2 className="md:text-[85px]">Ready to Talk</h2>
         <p className="">Feel free to Contact us</p>
         <div>Veiw on Designer</div>
       </div>

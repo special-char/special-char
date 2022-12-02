@@ -37,11 +37,13 @@ const Developercard = (props: Props) => {
       <div className="main">
         {teacherData.map((x) => (
           <a key={x.id} href="#" className="">
-            <Image src={x.img} alt="" height={500} width={500} />
+            <div className="relative min-h-[200px]">
+              <Image src={x.img} alt="" className="" fill />
+            </div>
             <div className="card__body">
               <h3 className="card__title">{x.title}</h3>
               <p className="card__desc">{x.desc}</p>
-              <SocialIcon />
+              {/* <SocialIcon /> */}
             </div>
           </a>
         ))}

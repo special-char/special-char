@@ -5,12 +5,6 @@ import TitlePage from '@/ui/titlePage';
 import Iceberg from '@/public/Iceberg.svg';
 import Link from 'next/link';
 import TwolineSvg from '@/public/icons/twoline.svg';
-import '@/styles/video.css';
-import React from 'react';
-import Image from 'next/image';
-import TitlePage from '@/ui/titlePage';
-import Iceberg from '@/public/Iceberg.svg';
-import Link from 'next/link';
 
 type Props = {};
 
@@ -19,7 +13,7 @@ const Video = (props: Props) => {
     <section className="py-16">
       <TitlePage
         title="We are blessed to work with leading brands."
-        desc="Work With Us"
+        desc="View Our Work"
       />
 
       <div className="company">

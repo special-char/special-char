@@ -27,29 +27,26 @@ const Page = () => {
   return (
     <>
       <NavBar />
-      {/* <Title /> */}
-      <TitlePage />
+      {/* <Title /> 
+       <TitlePage />  */}
       <Banner />
       <Video />
       <Crocard />
       <Work />
       <Testimonial />
       <Funfacts />
-      <Contact />
-      <Faq />
-      <Footer />
-      <Fromblog />
-      <OurOffice />
-      <OurNews />
-      <Aboutkofo />
-
+      <Projectcard />
+      {/* <Contact /> */}
+      {/* <Faq /> */}
+      {/* <Fromblog /> */}
+      {/* <OurOffice /> */}
+      {/* <OurNews /> */}
+      {/* <Aboutkofo /> */}
       {/* <Button /> */}
-
       {/* <Developercard /> */}
-      <Aboutkofo />
-      <Blackapple />
+      {/* <Blackapple /> */}
       <Footer />
-      <TitlePage />
+      {/* <TitlePage /> */}
     </>
   );
 };

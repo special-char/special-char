@@ -1,4 +1,4 @@
-import '@/styles/about.css';
+import '@/styles/aboutkofo.css';
 import Image from 'next/image';
 import React from 'react';
 import RoketSvg from '@/public/icons/roket.svg';
@@ -27,7 +27,7 @@ function Aboutkofo({}: Props) {
 
         <div className="about__button">
           <button className="btn btn--primary">View On Designer</button>
-          <RoketSvg className="about__svg" />
+          {/* <RoketSvg className="about__svg" /> */}
         </div>
       </div>
     </section>
