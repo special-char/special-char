@@ -7,27 +7,27 @@ const CroData = [
   {
     url: 'https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg',
     name: 'Confrence',
-    chip: 'Art&nbsp;Direction,Design',
+    chip: 'Art Direction, Design',
   },
   {
     url: 'https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg',
     name: 'Confrence',
-    chip: 'Art&nbsp;Direction,Design',
+    chip: 'Art Direction, Design',
   },
   {
     url: 'https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg',
     name: 'Confrence',
-    chip: 'Art&nbsp;Direction,Design',
+    chip: 'Art Direction, Design',
   },
   {
     url: 'https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg',
     name: 'Confrence',
-    chip: 'Art&nbsp;Direction,Design',
+    chip: 'Art Direction, Design',
   },
   {
     url: 'https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg',
     name: 'Confrence',
-    chip: 'Art&nbsp;Direction,Design',
+    chip: 'Art Direction, Design',
   },
 ];
 
@@ -42,8 +42,8 @@ const Crocard = (props: Props) => {
               <Image src={crodData.url} alt="crow" fill />
             </div>
             <div className="chipset">
-              <h3 className=" ">{crodData.name}</h3>
-              <p className="chip">{crodData.chip}</p>
+              <h3 className="">{crodData.name}</h3>
+              <p className="chip border-neutral-200">{crodData.chip}</p>
             </div>
           </div>
         ))}

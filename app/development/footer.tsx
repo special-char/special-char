@@ -1,24 +1,24 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import "@/styles/footer.css";
-import SocialIcon from "./SocialIcon";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import '@/styles/footer.css';
+import SocialIcon from './SocialIcon';
 
 type Props = {};
 
 const links = [
-  { page: "Home" },
-  { page: "About" },
-  { page: "Style Guide" },
-  { page: "Lisensing" },
-  { page: "Instuction" },
+  { page: 'Home' },
+  { page: 'About' },
+  { page: 'Style Guide' },
+  { page: 'Lisensing' },
+  { page: 'Instuction' },
 ];
 const Footer = (props: Props) => {
   return (
     <section id="footer" className="footer">
       <div className="footer__p1">
-        <button className="btn btn--white">Stay in touch</button>
-        <h1 className="">Ready to Talk</h1>
+        <button className="btn btn--white px-2 py-2">Stay in touch</button>
+        <h2 className="text-">Ready to Talk</h2>
         <p className="">Feel free to Contact us</p>
         <div>Veiw on Designer</div>
       </div>
@@ -32,7 +32,7 @@ const Footer = (props: Props) => {
           </p>
           <div className="footer__links">
             {links.map((val) => (
-              <Link href={"#"}>{val.page}</Link>
+              <Link href={'#'}>{val.page}</Link>
             ))}
           </div>
         </div>

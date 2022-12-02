@@ -25,28 +25,28 @@ import Scrollbutton from './scrollbutton';
 const Page = () => {
   return (
     <>
+      <Scrollbutton />
       <NavBar />
       <Banner />
-      <Scrollbutton />
       <Video />
       <Crocard />
       <Work />
-      {/* <Testimonial /> */}
-      <Faq />
-      {/* <TitlePage /> */}
-      {/* <Card /> */}
-      {/* <Fromblog /> */}
-      {/* <OurNews /> */}
-      {/* <Title /> */}
-      {/* <OurOffice /> */}
-      <Contact />
-      {/* <OurOffice /> */}
-      {/* <Button /> */}
-      {/* <Icon /> */}
-      {/* <Developercard /> */}
+      <Testimonial />
       <Funfacts />
+      <Faq />
+      <TitlePage />
+      {/* <Card /> */}
+      <Fromblog />
+      <OurNews />
+      {/* <Title /> */}
+      <OurOffice />
+      <Contact />
+      <OurOffice />
+      <Button />
+      <Icon />
+      <Developercard />
       <Aboutkofo />
-      {/* <Blackapple /> */}
+      <Blackapple />
       <Footer />
     </>
   );

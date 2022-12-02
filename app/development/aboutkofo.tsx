@@ -1,12 +1,12 @@
-import "@/styles/about.css";
-import Image from "next/image";
-import React from "react";
+import '@/styles/about.css';
+import Image from 'next/image';
+import React from 'react';
 
 type Props = {};
 
 function Aboutkofo({}: Props) {
   return (
-    <section className="about">
+    <section className="about ">
       <div className="about__image">
         <Image
           src="https://assets.website-files.com/6315d6de2357050021f26e96/63187ca7418405f870aba348_photo-4.jpg"
