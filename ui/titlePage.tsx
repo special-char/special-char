@@ -10,9 +10,15 @@ type Props = {
 
 const TitlePage = ({ className, title, desc }: Props) => {
   return (
-    <div className={clsx('title__body', { [className]: !!className })}>
-      <h2 className="text-neutral-700">{title}</h2>
-      <h4 className="title__h4">{desc}</h4>
+    <div className="container">
+      <div
+        className={clsx('title__body', {
+          [className]: !!className,
+        })}
+      >
+        <h2 className="text-neutral-700">{title}</h2>
+        <h4 className="title__h4">{desc}</h4>
+      </div>
     </div>
   );
 };

@@ -1,21 +1,23 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import "@/styles/footer.css";
-import SocialIcon from "./SocialIcon";
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import '@/styles/footer.css';
+import SocialIcon from './SocialIcon';
+import ThreelineSvg from '@/public/icons/threeline.svg';
 
 type Props = {};
 
 const links = [
-  { page: "Home" },
-  { page: "About" },
-  { page: "Style Guide" },
-  { page: "Lisensing" },
-  { page: "Instuction" },
+  { page: 'Home' },
+  { page: 'About' },
+  { page: 'Style Guide' },
+  { page: 'Lisensing' },
+  { page: 'Instuction' },
 ];
 const Footer = (props: Props) => {
   return (
     <section id="footer" className="footer">
+      <ThreelineSvg className="footer__svg" />
       <div className="footer__p1">
         <button className="btn btn--white">Stay in touch</button>
         <h1 className="">Ready to Talk</h1>
@@ -32,7 +34,7 @@ const Footer = (props: Props) => {
           </p>
           <div className="footer__links">
             {links.map((val) => (
-              <Link href={"#"}>{val.page}</Link>
+              <Link href={'#'}>{val.page}</Link>
             ))}
           </div>
         </div>

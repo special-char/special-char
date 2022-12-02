@@ -26,24 +26,25 @@ import Projectcard from './projectcard';
 const Page = () => {
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
+      {/* <Title /> */}
+      <TitlePage />
       <Banner />
       <Video />
       <Crocard />
       <Work />
       <Testimonial />
       <Funfacts />
-      <Projectcard />
-      <Faq />
-
-      {/* <Fromblog /> */}
-      {/* <OurNews /> */}
-      {/* <Title /> */}
-      {/* <OurOffice /> */}
       <Contact />
+      <Faq />
+      <Footer />
+      <Fromblog />
+      <OurOffice />
+      <OurNews />
+      <Aboutkofo />
 
       {/* <Button /> */}
-      {/* <Icon /> */}
+
       {/* <Developercard /> */}
       <Aboutkofo />
       <Blackapple />

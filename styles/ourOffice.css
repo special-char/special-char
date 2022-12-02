@@ -1,5 +1,5 @@
 .ourOffice {
-  @apply grid min-h-screen  content-center justify-items-center py-24 md:py-36 lg:py-48;
+  @apply grid min-h-screen content-center justify-items-center py-24 md:py-36 lg:py-48;
 
   &__title {
     @apply text-primary;
@@ -8,14 +8,14 @@
     @apply m-0;
   }
   &__card {
-    @apply justify-between  w-[400px] overflow-hidden;
+    @apply justify-between overflow-hidden md:w-[400px];
 
     &__figure {
       @apply relative m-0 aspect-h-image w-full p-0;
     }
 
     &__content {
-      @apply flex h-full flex-col gap-10 justify-between p-8;
+      @apply flex h-full flex-col justify-between gap-10 p-8;
     }
 
     &__title {
@@ -23,7 +23,7 @@
     }
 
     &__desc {
-      @apply mb-7 my-0 h-16 p-0 line-clamp-2;
+      @apply my-0 mb-7 h-16 p-0 line-clamp-2;
     }
   }
 

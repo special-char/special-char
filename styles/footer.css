@@ -1,29 +1,37 @@
-a,div {color: black;}
+a,
+div {
+  color: black;
+}
 .footer {
-    @apply gap-3 bg-[#f1f1f1] px-4 pt-16 md:px-16 lg:px-container overflow-hidden ;
-    &__line {
-      @apply h-[1px] w-[100%] rounded-full bg-secondary1 lg:col-span-2;
-    }
-    
-    &__p1 {
-      @apply py-10  lg:py-16 text-center items-center;
-    }
-    &__p2 {
-      @apply py-10 grid grid-cols-1 md:grid-cols-2 md:grid-rows-1  lg:py-16 mx-auto  content-between;
-    }
+  @apply relative gap-3 bg-secondary3 px-4 pt-16 pb-7 md:px-16;
+  &__svg {
+    @apply absolute -top-12 right-32 hidden w-16 md:block;
+  }
 
-    &__links {
-        @apply flex flex-wrap gap-3 mb-6;
-    }
+  &__line {
+    @apply h-[1px] w-[100%] rounded-full bg-secondary1 lg:col-span-2;
+  }
 
-    &__info {
-        @apply grid md:text-end;
-    }
-  
-    &__socialicons {justify-content: flex-end;
-      @apply flex gap-6 md:justify-end mb-8 ;
-    }
-    &__copyright{
-      @apply mb-0 text-base md:text-xxl
-    }
+  &__p1 {
+    @apply items-center  py-10 text-center lg:py-16;
+  }
+  &__p2 {
+    @apply mx-auto grid grid-cols-1 content-between py-10  md:grid-cols-2 md:grid-rows-1  lg:py-16;
+  }
+
+  &__links {
+    @apply mb-6 flex flex-wrap gap-3;
+  }
+
+  &__info {
+    @apply grid md:text-end;
+  }
+
+  &__socialicons {
+    justify-content: flex-end;
+    @apply mb-8 flex gap-6 md:justify-end;
+  }
+  &__copyright {
+    @apply mb-0 text-base md:text-xxl;
+  }
 }

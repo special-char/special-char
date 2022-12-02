@@ -4,16 +4,24 @@ import Image from 'next/image';
 import TitlePage from '@/ui/titlePage';
 import Iceberg from '@/public/Iceberg.svg';
 import Link from 'next/link';
+import TwolineSvg from '@/public/icons/twoline.svg';
+import '@/styles/video.css';
+import React from 'react';
+import Image from 'next/image';
+import TitlePage from '@/ui/titlePage';
+import Iceberg from '@/public/Iceberg.svg';
+import Link from 'next/link';
 
 type Props = {};
 
 const Video = (props: Props) => {
   return (
-    <section>
+    <section className="py-16">
       <TitlePage
         title="We are blessed to work with leading brands."
         desc="Work With Us"
       />
+
       <div className="company">
         <span>
           <Iceberg />
@@ -40,7 +48,7 @@ const Video = (props: Props) => {
           />
         </div>
         <div className="effort__info">
-          <p className="pb-8">
+          <p className="pb-8 text-xxl">
             We bring together innovative designers, pixel perfect developers and
             data driven strategy to create a boutique experience at enterprise
             scale.
@@ -67,6 +75,7 @@ const Video = (props: Props) => {
           </div>
         </div>
       </div>
+      <TwolineSvg className="hidden w-28 md:block" />
     </section>
   );
 };

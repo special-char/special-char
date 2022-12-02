@@ -1,7 +1,7 @@
 .aboutkofo {
   @apply lg:items-center lg:pl-10 pt-10 md:w-8/12 py-20 lg:justify-items-center lg:w-11/12 md:mx-auto grid lg:grid-cols-2 mx-auto lg:gap-32;
   &__image {
-    @apply relative mx-auto md:justify-center min-h-[300px] md:h-[400px] md:w-[300px] w-full  overflow-hidden rounded  lg:min-h-[650px] lg:w-[450px];
+    @apply relative mx-auto min-h-[300px] w-full overflow-hidden rounded md:h-[400px]  md:w-[300px] md:justify-center  lg:min-h-[650px] lg:w-[450px];
   }
   &__content {
     @apply pt-10 lg:gap-4;
