@@ -1,14 +1,20 @@
-import React from "react";
-import "@/styles/video.css";
-import Image from "next/image";
-import Iceberg from "@/public/Iceberg.svg";
-import Link from "next/link";
+import React from 'react';
+import '@/styles/video.css';
+import Image from 'next/image';
+import Iceberg from '@/public/Iceberg.svg';
+import Link from 'next/link';
+import TitlePage from '@/ui/titlePage';
 
 type Props = {};
 
 const Video = (props: Props) => {
   return (
-    <section className="px-container">
+    <section className="">
+      <TitlePage
+        title="We are blessed to work with leading brands"
+        desc="View Our Work"
+        className=""
+      />
       <div className="company">
         <span>
           <Iceberg />
@@ -39,7 +45,10 @@ const Video = (props: Props) => {
             Molestias cupiditate eius voluptates debitis beatae cumque?
           </p>
           <div>
-            <Link href="#" className="relative">
+            <Link
+              href="https://www.youtube.com/watch?v=wkhRnmLxKH4"
+              className="relative"
+            >
               <Image
                 src="https://assets.website-files.com/6315d6de2357050021f26e96/63172afabaf3d9640b2e3b00_play-p-500.png"
                 alt="video"

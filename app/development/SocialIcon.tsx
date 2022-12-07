@@ -15,7 +15,8 @@ const socialicon = [
   {
     icon: "instagram",
     link: "https://www.instagram.com",
-    className: "hover:bg-gradient-to-b from-[#c32aa3] via-[purple] to-[orange]",
+    className:
+      "hover:bg-gradient-to-b from-[#c32aa3] via-[#A15DF0] to-[orange]",
   },
   {
     icon: "facebook",

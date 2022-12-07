@@ -1,5 +1,5 @@
 .about {
-  @apply px-container lg:items-center pt-10 md:w-8/12 lg:w-11/12 md:mx-auto grid lg:grid-cols-2 mx-auto lg:gap-32;
+  @apply px-container lg:items-center pt-10 md:w-8/12 lg:w-11/12 md:mx-auto grid lg:grid-cols-2 mx-auto lg:gap-32 relative top-[15vh];
   &__image {
     @apply relative mx-auto md:justify-center min-h-[300px] md:h-[400px] md:w-[300px] w-full  overflow-hidden rounded  lg:min-h-[650px] lg:w-[450px];
   }

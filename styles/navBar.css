@@ -3,8 +3,11 @@ header {
     position: fixed;
     height: 15vh;
     width: 100%;
-    @apply bg-neutral-400 flex flex-row justify-between px-4 lg:px-20 md:px-10 items-center m-0  top-0 z-10;
+    @apply bg-neutral-400 flex flex-row justify-between  px-container items-center m-0  top-0 z-10;
 
+    h2 {
+      margin: 0;
+    }
     & .clicked {
       display: none;
       + .humbur {
@@ -65,7 +68,7 @@ header {
       }
     }
   }
-  &:has(input[type="checkbox"]:checked) {
+  &:has(input[type='checkbox']:checked) {
     > nav {
       /* display: block; */
       top: 15vh;
@@ -75,6 +78,6 @@ header {
   .humbur {
     /* active:-rotate-45 */
     @apply hover:bg-neutral-300 duration-200 transition-all
-    rounded-full p-4 m-0 hover:fill-neutral-400;
+    rounded-full m-0 hover:fill-neutral-400;
   }
 }

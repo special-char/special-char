@@ -20,34 +20,33 @@ import NavBar from './navBar';
 import Crocard from './crocard';
 import Footer from './footer';
 import Video from './video';
+import Scrollbutton from './scrollbutton';
 
 const Page = () => {
   return (
     <>
-      <Faq />
-      <Testimonial />
-      <TitlePage />
-      {/* <Card /> */}
-      <Banner />
+      <Scrollbutton />
       <NavBar />
       <Banner />
+      <Video />
+      <Crocard />
       <Work />
+      <Testimonial />
+      <Funfacts />
+      <Faq />
+      <TitlePage />
+      {/* <Card /> */}
       <Fromblog />
       <OurNews />
       {/* <Title /> */}
       <OurOffice />
       <Contact />
       <OurOffice />
-      <Contact />
-
-      <Video />
-      <Crocard />
-      {/* <Button /> */}
-      {/* <Icon /> */}
-      {/* <Developercard /> */}
-      <Funfacts />
+      <Button />
+      <Icon />
+      <Developercard />
       <Aboutkofo />
-      {/* <Blackapple /> */}
+      <Blackapple />
       <Footer />
     </>
   );
