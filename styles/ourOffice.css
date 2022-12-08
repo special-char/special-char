@@ -8,7 +8,7 @@
     @apply m-0;
   }
   &__card {
-    @apply justify-between  w-[400px] overflow-hidden;
+    @apply justify-between  md:w-[400px] overflow-hidden;
 
     &__figure {
       @apply relative m-0 aspect-h-image w-full p-0;

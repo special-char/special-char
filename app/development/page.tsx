@@ -17,7 +17,7 @@ import Funfacts from './funfacts';
 import Icon from './icon';
 import NavBar from './navBar';
 
-import Crocard from './crocard';
+import Crocard from './carousel';
 import Footer from './footer';
 import Video from './video';
 import Scrollbutton from './scrollbutton';
@@ -39,14 +39,14 @@ const Page = () => {
       <Fromblog />
       <OurNews />
       {/* <Title /> */}
-      <OurOffice />
+      {/* <OurOffice />
       <Contact />
       <OurOffice />
       <Button />
       <Icon />
       <Developercard />
       <Aboutkofo />
-      <Blackapple />
+      <Blackapple /> */}
       <Footer />
     </>
   );
