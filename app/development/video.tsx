@@ -1,21 +1,20 @@
-import '@/styles/video.css';
 import React from 'react';
+import '@/styles/video.css';
 import Image from 'next/image';
-import TitlePage from '@/ui/titlePage';
 import Iceberg from '@/public/Iceberg.svg';
 import Link from 'next/link';
-import TwolineSvg from '@/public/icons/twoline.svg';
+import TitlePage from '@/ui/titlePage';
 
 type Props = {};
 
 const Video = (props: Props) => {
   return (
-    <section className="py-16">
+    <section className="">
       <TitlePage
-        title="We are blessed to work with leading brands."
+        title="We are blessed to work with leading brands"
         desc="View Our Work"
+        className=""
       />
-
       <div className="company">
         <span>
           <Iceberg />
@@ -48,7 +47,10 @@ const Video = (props: Props) => {
             scale.
           </p>
           <div>
-            <Link href="#" className="relative">
+            <Link
+              href="https://www.youtube.com/watch?v=wkhRnmLxKH4"
+              className="relative"
+            >
               <Image
                 src="https://assets.website-files.com/6315d6de2357050021f26e96/63172afabaf3d9640b2e3b00_play-p-500.png"
                 alt="video"

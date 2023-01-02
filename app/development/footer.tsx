@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React from 'react';
 import '@/styles/footer.css';
 import SocialIcon from './SocialIcon';
-import ThreelineSvg from '@/public/icons/threeline.svg';
 
 type Props = {};
 
@@ -19,8 +18,8 @@ const Footer = (props: Props) => {
     <section id="footer" className="footer">
       <ThreelineSvg className="footer__svg" />
       <div className="footer__p1">
-        <button className="btn btn--white">Stay in touch</button>
-        <h2 className="md:text-[85px]">Ready to Talk</h2>
+        <button className="btn btn--white px-2 py-2">Stay in touch</button>
+        <h2 className="text-">Ready to Talk</h2>
         <p className="">Feel free to Contact us</p>
         <div>Veiw on Designer</div>
       </div>

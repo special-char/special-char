@@ -33,7 +33,8 @@ const teacherData = [
 
 const Developercard = (props: Props) => {
   return (
-    <section className="">
+    <section className="px-container ">
+      <h2 className="text-[85px] text-center mb-10">The Team</h2>
       <div className="main">
         {teacherData.map((x) => (
           <a key={x.id} href="#" className="">

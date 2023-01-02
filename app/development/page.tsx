@@ -18,33 +18,33 @@ import NavBar from './navBar';
 import Crocard from './crocard';
 import Footer from './footer';
 import Video from './video';
-import Banner from './banner';
-import TitlePage from '@/ui/titlePage';
-import Title from './title';
-import Projectcard from './projectcard';
+import Scrollbutton from './scrollbutton';
 
 const Page = () => {
   return (
     <>
+      <Scrollbutton />
       <NavBar />
-      {/* <Title /> */}
-      <TitlePage />
       <Banner />
       <Video />
       <Crocard />
       <Work />
       <Testimonial />
       <Funfacts />
-      <Projectcard />
-      {/* <Contact /> */}
-      {/* <Faq /> */}
-      {/* <Fromblog /> */}
-      {/* <OurOffice /> */}
-      {/* <OurNews /> */}
-      {/* <Aboutkofo /> */}
-      {/* <Button /> */}
-      {/* <Developercard /> */}
-      {/* <Blackapple /> */}
+      <Faq />
+      <TitlePage />
+      {/* <Card /> */}
+      <Fromblog />
+      <OurNews />
+      {/* <Title /> */}
+      <OurOffice />
+      <Contact />
+      <OurOffice />
+      <Button />
+      <Icon />
+      <Developercard />
+      <Aboutkofo />
+      <Blackapple />
       <Footer />
       {/* <TitlePage /> */}
     </>
