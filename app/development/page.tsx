@@ -27,8 +27,8 @@ const Page = () => {
   return (
     <>
       <NavBar />
-      {/* <Title /> 
-       <TitlePage />  */}
+      {/* <Title /> */}
+      <TitlePage />
       <Banner />
       <Video />
       <Crocard />
