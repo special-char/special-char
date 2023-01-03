@@ -25,9 +25,9 @@ header {
       }
     }
     &__footer {
-      @apply flex flex-col items-center gap-4 md:flex-row;
+      @apply flex flex-col items-center gap-4 md:flex-row justify-between;
       &__location {
-        @apply flex md:-order-last items-center;
+        @apply flex items-center;
         & p {
           @apply m-0;
         }

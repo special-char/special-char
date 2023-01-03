@@ -24,7 +24,6 @@ div {
   }
 
   &__socialicons {
-    justify-content: flex-end;
     @apply flex gap-6 md:justify-end mb-8;
   }
   &__copyright {
