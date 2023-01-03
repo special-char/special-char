@@ -7,7 +7,7 @@ type Props = {};
 const OurOffice = (props: Props) => {
   return (
     <section id="ourOffice" className="ourOffice">
-      <div className="text-center md:mx-24 md:mb-6 lg:mx-40">
+      <div className="ourOffice__heading ">
         <h2 className="ourOffice__title">Our Offices</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -20,7 +20,7 @@ const OurOffice = (props: Props) => {
             <OfficeSvg className="w-16" />
             <div>
               <h4 className="ourOffice__card__title">Ahmedabad</h4>
-              <address className="grid-rows-span-3 text-neutral-600 grid">
+              <address className="ourOffice__card__address grid-rows-span-3 text-neutral-600 grid">
                 <a className="w-auto pb-2" href={`#`}>
                   thespecial@character.com
                 </a>

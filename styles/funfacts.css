@@ -8,10 +8,10 @@
   }
 
   &__content {
-    @apply mx-auto flex w-8/12 flex-col  gap-4 md:gap-4 lg:justify-center lg:pl-1 lg:pt-8 lg:pb-10 lg:text-xl;
+    @apply mx-auto flex w-8/12 flex-col gap-4 md:gap-4 lg:justify-center lg:pl-1 lg:pt-8 lg:pb-10 lg:text-xl;
     & div {
       align-items: flex-end;
-      @apply flex gap-1;
+      @apply flex gap-2;
       & h2 {
         @apply m-0;
       }

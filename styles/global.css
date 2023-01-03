@@ -130,10 +130,10 @@
   }
 
   details {
-    @apply max-w-full rounded-md px-2 text-left drop-shadow-lg transition-all md:px-8;
+    @apply max-w-full rounded-md  text-left drop-shadow-lg transition-all md:px-8;
 
     & > summary {
-      @apply flex cursor-pointer list-none items-start justify-start border-b-[1px] border-neutral-100 py-6 text-xl font-bold md:items-center;
+      @apply flex cursor-pointer list-none items-center justify-start border-b-[1px] border-neutral-100 py-6 text-xl font-bold md:items-center;
 
       &::marker {
         @apply hidden;
@@ -141,14 +141,8 @@
 
       &::before {
         content: '\002B';
-        @apply mr-4 aspect-square h-12 w-12 rotate-90 rounded-full text-center text-3xl duration-300;
+        @apply mr-3 aspect-square rotate-90 rounded-full text-center text-3xl duration-300;
       }
-      /* content: '\002B';
-        @apply text-neutral-600 mr-4 aspect-square h-12 w-12 rotate-90 rounded-full bg-neutral-300 text-center text-4xl font-bold duration-300;
-      } */
-      /* content: '+';
-        @apply aspect-square h-12 w-12 rotate-180 text-center text-5xl duration-300 md:h-12 md:w-12;
-      } */
     }
     & > p {
       @apply mb-0 overflow-hidden border-none py-4 text-left text-base md:pl-4;
@@ -159,7 +153,7 @@
     & > summary {
       &::before {
         content: '\2212';
-        @apply mr-4 aspect-square h-12 w-12 rotate-0 rounded-full text-center text-4xl duration-300;
+        @apply mr-3 aspect-square rotate-0 rounded-full text-center text-3xl duration-300;
       }
     }
   }
@@ -186,14 +180,6 @@
     &--primary:hover {
       @apply bg-[#064EA4] text-neutral-400;
     }
-
-    /* &--secondary {
-      @apply bg-neutral-300 text-neutral-700;
-    }
-
-    &--secondary:hover {
-      @apply bg-neutral-400 text-neutral-700;
-    } */
 
     &--white {
       @apply border-[1px] border-neutral-500 text-secondary1;
@@ -222,14 +208,6 @@
     &--primary {
       @apply bg-transparent text-neutral-400;
     }
-
-    /* &--secondary {
-      @apply bg-neutral-300 text-neutral-700;
-    }
-
-    &--white {
-      @apply bg-neutral-100 text-neutral-800;
-    } */
   }
 
   .avatar {

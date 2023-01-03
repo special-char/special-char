@@ -63,7 +63,7 @@ const Contact = ({ btn, description, title }: Props) => {
       <div className="contact__body">
         {FormData.map((formData) => {
           return (
-            <div className="form">
+            <div key={formData.id} className="form">
               {formData.type === 'textarea' ? (
                 <textarea
                   name=""

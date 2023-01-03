@@ -1,29 +1,29 @@
-import "@/styles/funfacts.css";
-import React from "react";
-import Image from "next/image";
+import '@/styles/funfacts.css';
+import React from 'react';
+import Image from 'next/image';
 
 type Props = {};
 const data = [
   {
     id: 1,
-    title: "7",
-    description: "Members",
+    title: '7',
+    description: 'Members',
   },
 
   {
     id: 2,
-    title: "340+",
-    description: "Project Done",
+    title: '340+',
+    description: 'Project Done',
   },
   {
     id: 3,
-    title: "99%",
-    description: "Top Feedback",
+    title: '99%',
+    description: 'Top Feedback',
   },
   {
     id: 4,
-    title: "4",
-    description: "Global Offices",
+    title: '4',
+    description: 'Global Offices',
   },
 ];
 function Funfacts({}: Props) {
@@ -44,7 +44,7 @@ function Funfacts({}: Props) {
             <>
               <div className="">
                 <h2>{x.title}</h2>
-                <span className="">{x.description}</span>
+                <span className="text-neutral-200">{x.description}</span>
               </div>
             </>
           ))}

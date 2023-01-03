@@ -2,6 +2,7 @@ import '@/styles/developercard.css';
 import React from 'react';
 import Image from 'next/image';
 import SocialIcon from './SocialIcon';
+import TwoLineSvg from '@/public/icons/twoline.svg';
 
 type Props = {};
 const teacherData = [
@@ -33,8 +34,8 @@ const teacherData = [
 
 const Developercard = (props: Props) => {
   return (
-    <section className="px-container ">
-      <h2 className="text-[85px] text-center mb-10">The Team</h2>
+    <section className="relative py-48 ">
+      <h2 className="card__header">The Team</h2>
       <div className="main">
         {teacherData.map((x) => (
           <a key={x.id} href="#" className="">
@@ -42,11 +43,12 @@ const Developercard = (props: Props) => {
             <div className="card__body">
               <h3 className="card__title">{x.title}</h3>
               <p className="card__desc">{x.desc}</p>
-              <SocialIcon />
+              {/* <SocialIcon /> */}
             </div>
           </a>
         ))}
       </div>
+      <TwoLineSvg className="card__design" />
     </section>
   );
 };

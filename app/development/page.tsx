@@ -41,12 +41,10 @@ const Page = () => {
       <OurOffice />
       <OurNews />
       <Aboutkofo />
+      <Developercard />
+      {/* <Blackapple /> */}
 
       {/* <Button /> */}
-
-      {/* <Developercard /> */}
-
-      {/* <Blackapple /> */}
     </>
   );
 };

@@ -1,5 +1,5 @@
 .main {
-  @apply grid  gap-10 md:grid-cols-2 lg:grid-cols-4;
+  @apply grid gap-10 py-16 md:grid-cols-2 lg:grid-cols-4;
 }
 .card {
   @apply grid transform overflow-hidden rounded-2xl  shadow-dark transition duration-300 ease-in-out hover:translate-y-1 hover:scale-y-105 md:max-w-full lg:max-w-xl;
@@ -23,6 +23,10 @@
     }
   }
 
+  &__header {
+    @apply mb-10 text-center text-[85px];
+  }
+
   &__body {
     @apply p-6 pt-0;
   }
@@ -37,6 +41,9 @@
 
   &__desc {
     @apply text-neutral-500 line-clamp-4;
+  }
+  &__design {
+    @apply absolute left-12 bottom-52 hidden w-28 lg:block;
   }
   &__actions {
     display: grid;
