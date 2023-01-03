@@ -3,7 +3,7 @@ import TitlePage from '@/ui/titlePage';
 import Testimonial from './testimonial';
 import React from 'react';
 import Aboutkofo from './aboutkofo';
-import Banner from './Banner';
+import Banner from './banner';
 import Contact from './contact';
 import Fromblog from './fromblog';
 import OurNews from './ourNews';
@@ -17,9 +17,10 @@ import Funfacts from './funfacts';
 import Icon from './icon';
 import NavBar from './navBar';
 
-import Crocard from './crocard';
+import Crocard from './carousel';
 import Footer from './footer';
 import Video from './video';
+import Scrollbutton from './scrollbutton';
 
 const Page = () => {
   return (

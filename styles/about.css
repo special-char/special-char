@@ -1,5 +1,5 @@
 .about {
-  @apply mx-auto grid py-16 pt-10 md:w-8/12 lg:mx-0 lg:w-11/12 lg:grid-cols-2 lg:items-center lg:gap-32;
+  @apply px-container lg:items-center pt-10 md:w-8/12 lg:w-11/12 md:mx-auto grid lg:grid-cols-2 mx-auto lg:gap-32 relative top-[15vh];
   &__image {
     @apply relative mx-auto min-h-[300px] w-full overflow-hidden rounded md:h-[400px]  md:w-[300px] md:justify-center  lg:min-h-[650px] lg:w-[450px];
   }

@@ -1,16 +1,41 @@
-import React from "react";
-import Plus from "@/public/icons/plus.svg";
-import "@/styles/navBar.css";
-import Link from "next/link";
-import SocialIcon from "./SocialIcon";
+import React from 'react';
+import Plus from '@/public/icons/plus.svg';
+import '@/styles/navBar.css';
+import Link from 'next/link';
+import SocialIcon from './SocialIcon';
 
 type Props = {};
+
+const navdata = [
+  {
+    id: 1,
+    link: '../development',
+    title: 'Home',
+  },
+  {
+    id: 2,
+    link: '../development/about',
+    title: 'About',
+  },
+  {
+    id: 3,
+    link: '../development/news',
+    title: 'News',
+  },
+  {
+    id: 4,
+    link: '../development/contact',
+    title: 'Contact',
+  },
+];
 
 const NavBar = (props: Props) => {
   return (
     <header>
       <div className="Navigation">
-        <h2>TSC</h2>
+        <Link href="../development">
+          <h2>TSC</h2>
+        </Link>
         <input type="checkbox" id="clicked" className="clicked" name="rGroup" />
         <label htmlFor="clicked" className="humbur">
           {/* <button> */}
@@ -20,26 +45,15 @@ const NavBar = (props: Props) => {
       </div>
       <nav className="flex flex-col justify-between">
         <ul>
-          <li>
-            <a>
-              <h2>Home</h2>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>About</h2>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>News</h2>
-            </a>
-          </li>
-          <li>
-            <a>
-              <h2>Contact</h2>
-            </a>
-          </li>
+          {navdata.map((x) => (
+            <>
+              <li>
+                <Link href={x.link}>
+                  <h2>{x.title}</h2>
+                </Link>
+              </li>
+            </>
+          ))}
         </ul>
         <hr />
         <div className="Navigation__footer">

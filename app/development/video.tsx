@@ -14,6 +14,7 @@ const Video = (props: Props) => {
       <TitlePage
         title="We are blessed to work with leading brands."
         desc="Work With Us"
+        className=""
       />
 
       <div className="company">
@@ -48,7 +49,10 @@ const Video = (props: Props) => {
             scale.
           </p>
           <div>
-            <Link href="#" className="relative">
+            <Link
+              href="https://www.youtube.com/watch?v=wkhRnmLxKH4"
+              className="relative"
+            >
               <Image
                 src="https://assets.website-files.com/6315d6de2357050021f26e96/63172afabaf3d9640b2e3b00_play-p-500.png"
                 alt="video"
