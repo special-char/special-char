@@ -3,7 +3,7 @@ import TitlePage from '@/ui/titlePage';
 import Testimonial from './testimonial';
 import React from 'react';
 import Aboutkofo from './aboutkofo';
-import Banner from './Banner';
+import Banner from './banner';
 import Contact from './contact';
 import Fromblog from './fromblog';
 import OurNews from './ourNews';
@@ -25,29 +25,28 @@ import Scrollbutton from './scrollbutton';
 const Page = () => {
   return (
     <>
-      <Scrollbutton />
       <NavBar />
+      {/* <Title /> */}
+      <TitlePage />
       <Banner />
       <Video />
       <Crocard />
       <Work />
       <Testimonial />
       <Funfacts />
-      <Faq />
-      <TitlePage />
-      {/* <Card /> */}
-      <Fromblog />
-      <OurNews />
-      {/* <Title /> */}
-      {/* <OurOffice />
       <Contact />
-      <OurOffice />
-      <Button />
-      <Icon />
-      <Developercard />
-      <Aboutkofo />
-      <Blackapple /> */}
+      <Faq />
       <Footer />
+      <Fromblog />
+      <OurOffice />
+      <OurNews />
+      <Aboutkofo />
+
+      {/* <Button /> */}
+
+      {/* <Developercard /> */}
+
+      {/* <Blackapple /> */}
     </>
   );
 };

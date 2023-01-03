@@ -1,5 +1,9 @@
+.container {
+  @apply mx-auto flex justify-center py-4 md:py-8;
+}
+
 .title__body {
-  @apply mx-auto justify-center text-center text-6xl md:w-[585px] md:px-6;
+  @apply mx-auto ml-0 mr-0 flex max-w-[585px] justify-end text-center md:px-6;
 }
 .title__h4 {
   @apply underline;

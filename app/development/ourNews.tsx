@@ -1,5 +1,5 @@
 import React from 'react';
-// import Card from "./card";
+import Card from './card';
 import Title from './title';
 import '@/styles/ourNews.css';
 import '@/styles/card.css';
@@ -49,7 +49,7 @@ const OurNews = ({ btn, description, title }: Props) => {
         <h1>
           {data.title}
           <br />
-          <span className="text-secondary1 font-normal">{data.title1}</span>
+          <span className="font-normal text-secondary1">{data.title1}</span>
         </h1>
         <div>
           <p>{data.description}</p>

@@ -1,5 +1,5 @@
 .apple {
-  @apply grid grid-rows-2 px-container text-center;
+  @apply mx-auto grid grid-rows-2 overflow-hidden text-center;
   &__p {
     @apply pb-4;
   }

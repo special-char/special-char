@@ -1,20 +1,22 @@
-import React from 'react';
 import '@/styles/video.css';
+import React from 'react';
 import Image from 'next/image';
+import TitlePage from '@/ui/titlePage';
 import Iceberg from '@/public/Iceberg.svg';
 import Link from 'next/link';
-import TitlePage from '@/ui/titlePage';
+import TwolineSvg from '@/public/icons/twoline.svg';
 
 type Props = {};
 
 const Video = (props: Props) => {
   return (
-    <section className="">
+    <section className="py-16">
       <TitlePage
-        title="We are blessed to work with leading brands"
-        desc="View Our Work"
+        title="We are blessed to work with leading brands."
+        desc="Work With Us"
         className=""
       />
+
       <div className="company">
         <span>
           <Iceberg />
@@ -33,16 +35,18 @@ const Video = (props: Props) => {
         </span>
       </div>
       <div className="effort">
-        <img
-          src="https://assets.website-files.com/6315d6de2357050021f26e96/63172900c798f906c10618bf_photo-1-p-500.jpg"
-          alt="Hardwork"
-          className="md:order-1"
-        />
+        <div className="effort__image md:order-1">
+          <Image
+            src="https://assets.website-files.com/6315d6de2357050021f26e96/63172900c798f906c10618bf_photo-1-p-500.jpg"
+            alt="Hardwork"
+            fill
+          />
+        </div>
         <div className="effort__info">
-          <p className=" py-8">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sequi
-            repudiandae ipsum vero. Quibusdam, numquam quas? Iste, quasi.
-            Molestias cupiditate eius voluptates debitis beatae cumque?
+          <p className="pb-8 text-xxl">
+            We bring together innovative designers, pixel perfect developers and
+            data driven strategy to create a boutique experience at enterprise
+            scale.
           </p>
           <div>
             <Link
@@ -69,6 +73,7 @@ const Video = (props: Props) => {
           </div>
         </div>
       </div>
+      <TwolineSvg className="hidden w-28 md:block" />
     </section>
   );
 };
