@@ -1,20 +1,14 @@
 .aboutkofo {
-  @apply lg:items-center lg:pl-10 pt-10 md:w-8/12 py-20 lg:justify-items-center lg:w-11/12 md:mx-auto grid lg:grid-cols-2 mx-auto lg:gap-32;
+  @apply grid  h-full lg:grid-cols-2 py-20 lg:justify-items-center lg:gap-20 gap-7;
   &__image {
-    @apply relative mx-auto min-h-[300px] w-full overflow-hidden rounded md:h-[400px]  md:w-[300px] md:justify-center  lg:min-h-[650px] lg:w-[450px];
+    @apply relative mx-auto min-h-[300px] md:w-2/5 lg:w-full w-full aspect-image overflow-hidden;
   }
   &__content {
-    @apply pt-10 lg:gap-4;
+    @apply flex flex-col justify-center items-start  md:w-4/5 mx-auto lg:gap-4;
   }
-  &__p {
-    @apply lg:pt-8 lg:pb-10;
+  &__h2 {
+    @apply text-5xl md:text-6xl lg:text-7xl;
   }
 }
-/* .airplane {
-  left: auto;
-  top: auto;
-  right: 100px;
-  bottom: 100px;
-  width: 110px;
-  opacity: 1;
-} */
+
+/* py-10 lg:gap-4 items-center md:mx-auto md:w-8/12 */

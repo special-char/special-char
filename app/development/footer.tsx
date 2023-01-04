@@ -16,7 +16,7 @@ const links = [
 const Footer = (props: Props) => {
   return (
     <section id="footer" className="footer">
-      <ThreelineSvg className="footer__svg" />
+      {/* <ThreelineSvg className="footer__svg" /> */}
       <div className="footer__p1">
         <button className="btn btn--white px-2 py-2">Stay in touch</button>
         <h2 className="text-">Ready to Talk</h2>

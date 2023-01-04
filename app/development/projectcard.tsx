@@ -35,9 +35,9 @@ function Projectcard({}: Props) {
   return (
     <section className="bg-secondary3 py-10">
       <div className="header">
-        <h2 className="pl-5">From Blog</h2>
+        <h2>From Blog</h2>
         <div>
-          <Link href="#" className="btn btn--white border-0">
+          <Link href="#" className="btn btn--white border-0 pl-1">
             View All Post
           </Link>
         </div>
@@ -55,10 +55,10 @@ function Projectcard({}: Props) {
             <div className="projectcard__body">
               <div className="projectcard__content">
                 <button className="btn btn--white p-3">{x.button}</button>
-                <span>{x.date}</span>
+                <span className="text-base">{x.date}</span>
               </div>
-              <h3 className="text-[28px]">{x.description}</h3>
-              <div>{x.cont}</div>
+              <h3 className="h3">{x.description}</h3>
+              <div className="text-base">{x.cont}</div>
             </div>
           </div>
         ))}

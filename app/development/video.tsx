@@ -71,7 +71,8 @@ const Video = (props: Props) => {
           </div>
         </div>
       </div>
-      <TwolineSvg className="hidden w-28 md:block" />
+      {/* <TwolineSvg
+       className="hidden w-28 md:block" /> */}
     </section>
   );
 };

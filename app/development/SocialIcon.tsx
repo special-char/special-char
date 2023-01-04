@@ -36,10 +36,10 @@ const socialicon = [
 
 const SocialIcon = (props: Props) => {
   return (
-    <div className="socialicons">
+    <section className="socialicons">
       {socialicon.map((icon) => (
         <span
-          key={'id'}
+          key={icon.icon}
           className={clsx(
             `p-4 h-4 w-4 box-content rounded-full hover:scale-110 ease-in-out duration-300 hover:rounded-full hover:fill-neutral-400`,
             {
@@ -52,7 +52,7 @@ const SocialIcon = (props: Props) => {
           </Link>
         </span>
       ))}
-    </div>
+    </section>
   );
 };
 

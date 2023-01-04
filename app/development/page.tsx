@@ -19,6 +19,8 @@ import Crocard from './crocard';
 import Footer from './footer';
 import Video from './video';
 import Scrollbutton from './scrollbutton';
+import Banner from './banner';
+import Projectcard from './projectcard';
 
 const Page = () => {
   return (
@@ -29,23 +31,24 @@ const Page = () => {
       <Video />
       <Crocard />
       <Work />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Funfacts />
-      <Faq />
-      <TitlePage />
+      {/* <Faq /> */}
+      {/* <TitlePage /> */}
       {/* <Card /> */}
-      <Fromblog />
-      <OurNews />
+      {/* <Fromblog />
+      <OurNews /> */}
       {/* <Title /> */}
-      <OurOffice />
+      {/* <OurOffice />
       <Contact />
       <OurOffice />
       <Button />
-      <Icon />
-      <Developercard />
+      <Icon /> */}
+      {/* <Developercard /> */}
+      <Projectcard />
       <Aboutkofo />
-      <Blackapple />
-      <Footer />
+      {/* <Blackapple /> */}
+      {/* <Footer /> */}
       {/* <TitlePage /> */}
     </>
   );
