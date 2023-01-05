@@ -16,7 +16,7 @@ function Aboutkofo({}: Props) {
       </div>
       <div className="aboutkofo__content">
         <h2 className="aboutkofo__h2">About Kofo</h2>
-        <p className="">
+        <p>
           We are an award-winning branding and web agency committed to
           excellence since forever.
         </p>
@@ -26,7 +26,7 @@ function Aboutkofo({}: Props) {
           impact impact that you seek.
         </p>
 
-        <div className="aboutkofo__button">
+        <div>
           <button className="btn btn--primary">View On Designer</button>
           {/* <RoketSvg className="about__svg" /> */}
         </div>

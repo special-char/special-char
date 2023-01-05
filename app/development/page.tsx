@@ -2,7 +2,6 @@ import Faq from './faq';
 import Testimonial from './testimonial';
 import React from 'react';
 import Aboutkofo from './aboutkofo';
-import Banner from './banner';
 import Contact from './contact';
 import Fromblog from './fromblog';
 import OurNews from './ourNews';
@@ -21,33 +20,32 @@ import Footer from './footer';
 import Video from './video';
 import Scrollbutton from './scrollbutton';
 import Banner from './banner';
-import Projectcard from './projectcard';
+import Blogcard from './blogcard';
 
 const Page = () => {
   return (
     <>
       <NavBar />
       {/* <Title /> */}
-      <TitlePage />
+      {/* <TitlePage /> */}
       <Banner />
       <Video />
       <Crocard />
-      <Work />
-      <Testimonial />
-      <Funfacts />
-      <Contact />
-      <Faq />
-      <Footer />
-      <Fromblog />
+      {/* <Work />
+      <Testimonial />  */}
+      {/* <Funfacts /> */}
+      {/* <Contact /> */}
+      {/* <Faq />
+      <Footer /> */}
+      {/* <Fromblog />
       <OurOffice />
-      <OurNews />
-      <Aboutkofo />
+      <OurNews /> */}
 
       {/* <Button /> */}
 
       <Scrollbutton />
       <NavBar />
-      <Banner />
+
       <Video />
       <Crocard />
       <Work />
@@ -64,8 +62,8 @@ const Page = () => {
       <OurOffice />
       <Button />
       <Icon /> */}
-      {/* <Developercard /> */}
-      <Projectcard />
+      <Developercard />
+      <Blogcard />
       <Aboutkofo />
       {/* <Blackapple /> */}
       {/* <Footer /> */}
