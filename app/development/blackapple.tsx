@@ -1,5 +1,5 @@
-import "@/styles/blackapple.css";
-import React from "react";
+import '@/styles/blackapple.css';
+import React from 'react';
 
 type Props = {};
 

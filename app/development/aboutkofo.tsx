@@ -1,6 +1,7 @@
 import '@/styles/about.css';
 import Image from 'next/image';
 import React from 'react';
+import RoketSvg from '@/public/icons/roket.svg';
 
 type Props = {};
 
@@ -24,17 +25,11 @@ function Aboutkofo({}: Props) {
           extraordinary impact impact that you seek.
         </p>
 
-        <div className="">
+        <div className="about__button">
           <button className="btn btn--primary">View On Designer</button>
+          <RoketSvg className="about__svg" />
         </div>
       </div>
-      <Image
-        src="https://assets.website-files.com/6315d6de2357050021f26e96/63171d2704da6da8b4049353_sammy-line-paper-plane.svg"
-        alt=""
-        height={100}
-        width={100}
-        className="airplane"
-      />
     </section>
   );
 }

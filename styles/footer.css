@@ -3,20 +3,24 @@ div {
   color: black;
 }
 .footer {
-  @apply gap-3 bg-[#f1f1f1]  pt-16 overflow-hidden;
+  @apply relative gap-3 bg-secondary3 px-4 pt-16 pb-7 md:px-16;
+  &__svg {
+    @apply absolute -top-12 right-32 hidden w-16 md:block;
+  }
+
   &__line {
     @apply h-[1px] w-[100%] rounded-full bg-secondary1 lg:col-span-2;
   }
 
   &__p1 {
-    @apply py-10  lg:py-16 text-center items-center;
+    @apply items-center  py-10 text-center lg:py-16;
   }
   &__p2 {
-    @apply py-10 grid grid-cols-1 md:grid-cols-2 md:grid-rows-1  lg:py-16 mx-auto  content-between;
+    @apply mx-auto grid grid-cols-1 content-between py-10  md:grid-cols-2 md:grid-rows-1  lg:py-16;
   }
 
   &__links {
-    @apply flex flex-wrap gap-3 mb-6;
+    @apply mb-6 flex flex-wrap gap-3;
   }
 
   &__info {
@@ -25,7 +29,7 @@ div {
 
   &__socialicons {
     justify-content: flex-end;
-    @apply flex gap-6 md:justify-end mb-8;
+    @apply mb-8 flex gap-6 md:justify-end;
   }
   &__copyright {
     @apply mb-0 text-base md:text-xxl;

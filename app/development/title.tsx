@@ -1,12 +1,12 @@
-import React from "react";
-import "@/styles/title.css";
+import React from 'react';
+import '@/styles/title.css';
 
 export default function Title({ data }) {
   return (
     <section id="title" className="title">
       <h1 className="title__title">
         {data.title} <br />
-        <span className="text-secondary1 font-light">
+        <span className="font-light text-secondary1">
           {data.title1}
           <br />
         </span>
