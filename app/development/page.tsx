@@ -34,17 +34,8 @@ const Page = () => {
       <Work />
       <Testimonial />
       <Funfacts />
-      <Contact />
-      <Faq />
-      <Footer />
       <Fromblog />
-      <OurOffice />
-      <OurNews />
-      <Aboutkofo />
-      <Developercard />
-      {/* <Blackapple /> */}
-
-      {/* <Button /> */}
+      <Footer />
     </>
   );
 };
