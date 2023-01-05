@@ -1,6 +1,7 @@
 import React from 'react';
 import OfficeSvg from '@/public/icons/office.svg';
 import '@/styles/ourOffice.css';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -33,7 +34,9 @@ const OurOffice = (props: Props) => {
                   <br /> Gujrat 382470
                 </div>
               </address>
-              <button className="btn btn--primary">Find on Map</button>
+              <Link href="/" className="btn btn--primary">
+                Find on Map
+              </Link>
             </div>
           </div>
         </div>

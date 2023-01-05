@@ -1,5 +1,5 @@
 .testimonial {
-  @apply grid content-center justify-items-center;
+  @apply grid content-center justify-items-center pb-16 md:pb-32;
 }
 .testimonialcard {
   @apply mt-8 flex flex-col items-center justify-center overflow-x-hidden md:mt-14  md:flex-row;
@@ -16,5 +16,5 @@
   @apply grid justify-center p-0 text-center;
 }
 .testimonial__avatar {
-  @apply aspect-square w-24 overflow-hidden rounded-full;
+  @apply aspect-square w-20 overflow-hidden rounded-full;
 }

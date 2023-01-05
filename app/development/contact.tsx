@@ -3,6 +3,7 @@ import '@/styles/contact.css';
 import Title from './title';
 import RoketSvg from '@/public/icons/roket.svg';
 import ContactForm from './contact/contactForm';
+import Link from 'next/link';
 type Props = {
   btn: any;
   title: String;
@@ -22,7 +23,9 @@ const Contact = ({ btn, description, title }: Props) => {
         <h1>{data.title}</h1>
         <div className="relative">
           <p>{data.description}</p>
-          <button className="btn btn--primary">{data.btn}</button>
+          <Link href="/" className="btn btn--primary">
+            {data.btn}
+          </Link>
           <RoketSvg className="contact__tag" />
         </div>
       </div>

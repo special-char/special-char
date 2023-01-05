@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 type Props = {};
@@ -61,7 +62,9 @@ const ContactForm = (props: Props) => {
             </div>
           );
         })}
-        <button className="btn btn--primary ">send proposal</button>
+        <Link href="/" className="btn btn--primary ">
+          send proposal
+        </Link>
       </div>
     </section>
   );
