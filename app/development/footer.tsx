@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import '@/styles/footer.css';
 import SocialIcon from './SocialIcon';
+import ThreelineSvg from '@/public/icons/threeline.svg';
 
 type Props = {};
 
