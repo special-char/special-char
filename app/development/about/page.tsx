@@ -14,15 +14,10 @@ const Page = () => {
     <>
       <NavBar />
       <Aboutkofo />
-      <Empty />
       <Video />
-      <Empty />
       <Developercard />
-      <Empty />
       <Work />
-      <Empty />
       <Testimonial />
-      <Empty />
       <Scrollbutton />
       <Footer />
     </>

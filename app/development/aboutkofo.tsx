@@ -2,6 +2,7 @@ import '@/styles/about.css';
 import Image from 'next/image';
 import React from 'react';
 import RoketSvg from '@/public/icons/roket.svg';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -26,7 +27,9 @@ function Aboutkofo({}: Props) {
         </p>
 
         <div className="about__button">
-          <button className="btn btn--primary">View On Designer</button>
+          <Link href="/" className="btn btn--primary">
+            View On Designer
+          </Link>
           <RoketSvg className="about__svg" />
         </div>
       </div>

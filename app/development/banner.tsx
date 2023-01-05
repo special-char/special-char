@@ -1,6 +1,7 @@
 import React from 'react';
 import '@/styles/banner.css';
 import RoketSvg from '@/public/icons/roket.svg';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -31,7 +32,9 @@ const Banner = (props: Props) => {
           </p>
         </div>
         <div className="banner__button">
-          <button className="btn btn--primary">View on Designer</button>
+          <Link href="/" className="btn btn--primary">
+            View on Designer
+          </Link>
           <RoketSvg className="banner__svg" />
         </div>
       </div>
