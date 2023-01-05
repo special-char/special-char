@@ -1,7 +1,7 @@
 import '@/styles/funfacts.css';
 import React from 'react';
 import Image from 'next/image';
-
+import Link from 'next/link';
 type Props = {};
 const data = [
   {
@@ -48,7 +48,9 @@ function Funfacts({}: Props) {
             </>
           ))}
           <div className="">
-            <button className="btn btn--primary">Join us</button>
+            <Link href="/" className="btn btn--primary">
+              Join us
+            </Link>
           </div>
         </div>
       </div>

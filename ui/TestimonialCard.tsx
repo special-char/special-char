@@ -10,7 +10,7 @@ export default function TestimonialCard({ data }) {
         <p className="text-center">{data.description}</p>
 
         <div className="testimonial__actions flex items-center justify-center">
-          <div className="testimonial__avatar placeholder w-12">
+          <div className="testimonial__avatar placeholder">
             <img src={data.url} alt={data.name} />
           </div>
           <div className="testimonial__demo ">

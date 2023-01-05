@@ -31,7 +31,8 @@ const Srollbutton = (props: Props) => {
 
   return (
     <div>
-      <button
+      <Link
+        href="/"
         id="myBtn"
         title="Go to top"
         className="srcbtn"
@@ -39,7 +40,7 @@ const Srollbutton = (props: Props) => {
         style={{ display: visible ? 'inline' : 'none' }}
       >
         Up
-      </button>
+      </Link>
     </div>
   );
 };

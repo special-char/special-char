@@ -1,6 +1,8 @@
 import '@/styles/aboutkofo.css';
 import Image from 'next/image';
 import React from 'react';
+import RoketSvg from '@/public/icons/roket.svg';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -26,9 +28,11 @@ function Aboutkofo({}: Props) {
           impact impact that you seek.
         </p>
 
-        <div>
-          <button className="btn btn--primary">View On Designer</button>
-          {/* <RoketSvg className="about__svg" /> */}
+        <div className="about__button">
+          <Link href="/" className="btn btn--primary">
+            View On Designer
+          </Link>
+          <RoketSvg className="about__svg" />
         </div>
       </div>
     </section>

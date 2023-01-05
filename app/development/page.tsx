@@ -21,6 +21,7 @@ import Crocard from './carousel';
 import Footer from './footer';
 import Video from './video';
 import Scrollbutton from './scrollbutton';
+import Blogcard from './blogcard';
 
 const Page = () => {
   return (
@@ -34,7 +35,7 @@ const Page = () => {
       <Work />
       <Testimonial />
       <Funfacts />
-      <Fromblog />
+      <Blogcard />
       <Footer />
     </>
   );
