@@ -1,26 +1,31 @@
-import React from "react";
-import "@/styles/work.css";
-import Link from "next/link";
-import GraphicSvg from "@/public/icons/graphic.svg";
-import DevelopmentSvg from "@/public/icons/development.svg";
-import TrainingSvg from "@/public/icons/training.svg";
+import React from 'react';
+import '@/styles/work.css';
+import Link from 'next/link';
+import GraphicSvg from '@/public/icons/graphic.svg';
+import DevelopmentSvg from '@/public/icons/development.svg';
+import TrainingSvg from '@/public/icons/training.svg';
 type Props = {};
 
 const WorkData = [
   {
     svg: <GraphicSvg />,
-    title: "Graphic Designer",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    title: 'Graphic Designer',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+  },
+  {
+    svg: <GraphicSvg />,
+    title: 'Graphic Designer',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
   },
   {
     svg: <DevelopmentSvg />,
-    title: "Development",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    title: 'Development',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
   },
   {
     svg: <TrainingSvg />,
-    title: "Training",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    title: 'Training',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
   },
 ];
 
