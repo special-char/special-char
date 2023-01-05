@@ -7,14 +7,14 @@ type Props = {};
 const OurOffice = (props: Props) => {
   return (
     <section id="ourOffice" className="ourOffice">
-      <div className="text-center md:mx-24 md:mb-6 lg:mx-40">
+      <div className="text-center md:mx-24 md:mb-6 lg:mx-40 ">
         <h2 className="ourOffice__title">Our Offices</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.
         </p>
       </div>
-      <div className="ourOffice__content bg-secondary3">
+      <div className="ourOffice__content bg-secondary3 shadow-dark">
         <div className="ourOffice__card">
           <div className="ourOffice__card__content">
             <OfficeSvg className="w-16" />
