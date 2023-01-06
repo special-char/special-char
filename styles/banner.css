@@ -14,7 +14,7 @@
     @apply lg:pt-10;
   }
   &__desc {
-    @apply flex flex-col gap-16;
+    @apply flex flex-col gap-1 md:gap-2;
   }
   &__button {
     @apply relative my-8 flex items-center;
