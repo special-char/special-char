@@ -10,13 +10,12 @@ type Props = {};
 
 const Video = (props: Props) => {
   return (
-    <section className="py-16">
+    <section className="py-10">
       <TitlePage
         title="We are blessed to work with leading brands."
-        desc="Work With Us"
+        desc="View Our Work"
         className=""
       />
-
       <OurCompanies />
       <div className="effort">
         <div className="effort__image md:order-1">
@@ -27,7 +26,7 @@ const Video = (props: Props) => {
           />
         </div>
         <div className="effort__info">
-          <p className="pb-8 text-xxl">
+          <p className="text-xxl">
             We bring together innovative designers, pixel perfect developers and
             data driven strategy to create a boutique experience at enterprise
             scale.
