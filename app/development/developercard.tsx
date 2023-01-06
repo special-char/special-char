@@ -22,7 +22,7 @@ const teacherData = [
     id: 3,
     img: 'https://assets.website-files.com/622f2476e95ec7155b37e7b0/622f2476e95ec7c38b37e87a_team-2.jpg',
     title: 'Demi Mason',
-    desc: 'Social Media Expert',
+    desc: 'Media Expert',
   },
   {
     id: 4,
@@ -34,12 +34,14 @@ const teacherData = [
 
 const Developercard = (props: Props) => {
   return (
-    <section className="relative py-48 ">
-      <h2 className="card__header">The Team</h2>
-      <div className="main">
+    <section className="py-20">
+      <h2 className="h2">The Team</h2>
+      <div className="card">
         {teacherData.map((x) => (
-          <a key={x.id} href="#" className="">
-            <Image src={x.img} alt="" height={500} width={500} />
+          <a key={x.id} href="#">
+            <div className="card__image">
+              <Image src={x.img} alt="" className="" fill />
+            </div>
             <div className="card__body">
               <h3 className="card__title">{x.title}</h3>
               <p className="card__desc">{x.desc}</p>

@@ -1,14 +1,14 @@
 .facts {
-  @apply mx-auto px-container pt-40;
+  @apply mx-auto py-20  lg:justify-items-center  pt-10;
   &__header {
-    @apply grid gap-6 lg:grid-cols-2;
+    @apply grid gap-24 lg:grid-cols-2;
   }
   &__image {
-    @apply relative mx-auto min-h-[300px] w-full overflow-hidden  rounded  md:h-[500px] md:justify-center  lg:min-h-[650px] lg:w-[500px];
+    @apply relative  min-h-[300px]  w-full aspect-image overflow-hidden rounded;
   }
 
   &__content {
-    @apply mx-auto flex w-8/12 flex-col gap-4 md:gap-4 lg:justify-center lg:pl-1 lg:pt-8 lg:pb-10 lg:text-xl;
+    @apply flex flex-col gap-6  justify-center items-start md:w-4/5 mx-auto;
     & div {
       align-items: flex-end;
       @apply flex gap-2;
@@ -22,3 +22,4 @@
     }
   }
 }
+/* lg:justify-center lg:mx-0 gap-4 lg:pl-1 md:gap-4 lg:text-xl lg:pt-8 lg:pb-10 */

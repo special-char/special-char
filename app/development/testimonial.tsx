@@ -52,7 +52,7 @@ const Testimonial = ({
       id={clsx('Testimonial', {
         [className]: !!className,
       })}
-      className="testimonial"
+      className="testimonial "
     >
       <TitlePage
         title="Our clients feedback is important for us."
@@ -62,7 +62,7 @@ const Testimonial = ({
       <div key={id} className="testimonialcard">
         {Data1.map((x) => (
           <TestimonialCard key={x.id} data={x} />
-        ))}{' '}
+        ))}
       </div>
     </section>
   );

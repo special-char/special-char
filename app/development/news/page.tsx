@@ -22,6 +22,7 @@ import Footer from '../footer';
 import Video from '../video';
 import Scrollbutton from '../scrollbutton';
 import Empty from '../empty';
+import Blogcard from '../blogcard';
 
 const Page = () => {
   return (
@@ -29,7 +30,7 @@ const Page = () => {
       <NavBar />
       <OurNews />
       <Empty />
-      <Fromblog />
+      <Blogcard />
       <Scrollbutton />
       <Footer />
     </>

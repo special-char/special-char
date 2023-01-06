@@ -4,12 +4,16 @@ import Link from 'next/link';
 import GraphicSvg from '@/public/icons/graphic.svg';
 import DevelopmentSvg from '@/public/icons/development.svg';
 import TrainingSvg from '@/public/icons/training.svg';
-
 type Props = {};
 
 const WorkData = [
   {
     id: 1,
+    svg: <GraphicSvg />,
+    title: 'Graphic Designer',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+  },
+  {
     svg: <GraphicSvg />,
     title: 'Graphic Designer',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
