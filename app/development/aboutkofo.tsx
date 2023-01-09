@@ -28,11 +28,11 @@ function Aboutkofo({}: Props) {
           impact impact that you seek.
         </p>
 
-        <div className="about__button">
+        <div className="aboutkofo__button">
           <Link href="/" className="btn btn--primary">
             View On Designer
           </Link>
-          <RoketSvg className="about__svg" />
+          <RoketSvg className="aboutkofo__svg" />
         </div>
       </div>
     </section>
