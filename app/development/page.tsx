@@ -31,7 +31,7 @@ const Page = () => {
       <TitlePage />
       <Banner />
       <Video />
-      <Crocard />
+      {/* <Crocard /> */}
       <Work />
       <Testimonial />
       <Funfacts />

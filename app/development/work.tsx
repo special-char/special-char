@@ -4,6 +4,7 @@ import Link from 'next/link';
 import GraphicSvg from '@/public/icons/graphic.svg';
 import DevelopmentSvg from '@/public/icons/development.svg';
 import TrainingSvg from '@/public/icons/training.svg';
+import SkillCard from '@/ui/SkillCard';
 type Props = {};
 
 const WorkData = [
@@ -39,16 +40,17 @@ const Work = (props: Props) => {
       <div className="work__item">
         {WorkData.map((work) => {
           return (
-            <div className="work__card">
-              <div className="work__card__content">
-                <figure className="w-14 h-14 mb-8">{work.svg}</figure>
-                <div>
-                  <h4 className="work__card__title">{work.title}</h4>
-                  <p className="work__card__desc">{work.description}</p>
-                  <Link href="#">Learn More</Link>
-                </div>
-              </div>
-            </div>
+            // <div className="work__card">
+            //   <div className="work__card__content">
+            //     <figure className="w-14 h-14 mb-8">{work.svg}</figure>
+            //     <div>
+            //       <h4 className="work__card__title">{work.title}</h4>
+            //       <p className="work__card__desc">{work.description}</p>
+            //       <Link href="#">Learn More</Link>
+            //     </div>
+            //   </div>
+            // </div>
+            <SkillCard data={work} key={work.id} />
           );
         })}
       </div>
