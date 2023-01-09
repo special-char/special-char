@@ -1,5 +1,6 @@
 import React from 'react';
 import '@/styles/title.css';
+import Link from 'next/link';
 
 export default function Title({ data }) {
   return (
@@ -19,7 +20,9 @@ export default function Title({ data }) {
           <br />
           {data.description1}
         </p>
-        <button className="btn btn--primary">{data.btn}</button>
+        <Link href="/" className="btn btn--primary">
+          {data.btn}
+        </Link>
       </div>
     </section>
   );

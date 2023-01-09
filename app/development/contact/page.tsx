@@ -5,6 +5,7 @@ import Scrollbutton from '../scrollbutton';
 import Faq from '../faq';
 import OurOffice from '../ourOffice';
 import Footer from '../footer';
+import ContactForm from './contactForm';
 
 const Page = () => {
   return (
@@ -12,7 +13,9 @@ const Page = () => {
       <NavBar />
       <Scrollbutton />
       <Contact />
+      <ContactForm />
       <OurOffice />
+
       <Faq />
       <Footer />
     </>

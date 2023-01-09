@@ -21,6 +21,7 @@ import Crocard from './carousel';
 import Footer from './footer';
 import Video from './video';
 import Scrollbutton from './scrollbutton';
+import Blogcard from './blogcard';
 
 const Page = () => {
   return (
@@ -30,23 +31,12 @@ const Page = () => {
       <TitlePage />
       <Banner />
       <Video />
-      <Crocard />
+      {/* <Crocard /> */}
       <Work />
       <Testimonial />
       <Funfacts />
-      <Contact />
-      <Faq />
+      <Blogcard />
       <Footer />
-      <Fromblog />
-      <OurOffice />
-      <OurNews />
-      <Aboutkofo />
-
-      {/* <Button /> */}
-
-      {/* <Developercard /> */}
-
-      {/* <Blackapple /> */}
     </>
   );
 };

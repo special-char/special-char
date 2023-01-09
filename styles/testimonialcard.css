@@ -1,0 +1,16 @@
+.testimonialcard {
+  @apply p-0 opacity-60 hover:opacity-100;
+}
+
+.testimonial__body {
+  @apply flex flex-col bg-neutral-100 items-center py-10 px-9 max-w-[460px];
+  /* @apply m-2 flex max-w-[420px] flex-col  items-center justify-center bg-neutral-100  py-10 px-4  hover:bg-secondary2; */
+}
+
+.testimonial__author {
+  @apply flex gap-10 items-center justify-center;
+}
+
+.testimonial__avatar {
+  @apply w-20 h-20 rounded-full;
+}
