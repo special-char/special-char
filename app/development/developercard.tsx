@@ -34,7 +34,7 @@ const teacherData = [
 
 const Developercard = (props: Props) => {
   return (
-    <section className="py-20">
+    <section className="py-20 relative">
       <h2 className="h2">The Team</h2>
       <div className="card">
         {teacherData.map((x) => (
@@ -45,7 +45,7 @@ const Developercard = (props: Props) => {
             <div className="card__body">
               <h3 className="card__title">{x.title}</h3>
               <p className="card__desc">{x.desc}</p>
-              {/* <SocialIcon /> */}
+              <SocialIcon />
             </div>
           </a>
         ))}

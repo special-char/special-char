@@ -41,12 +41,12 @@ const Data1 = [
 const Testimonial = ({
   className,
   id,
-  description,
-  star,
-  neme,
-  designation,
-  url,
-}: Props) => {
+}: // description,
+// star,
+// name,
+// designation,
+// url,
+Props) => {
   return (
     <section
       id={clsx('Testimonial', {

@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import TitlePage from '@/ui/titlePage';
 import Link from 'next/link';
-import TwolineSvg from '@/public/icons/twoline.svg';
+
 import OurCompanies from '@/ui/OurCompanies';
 import Section from '@/ui/Section';
 
@@ -59,7 +59,6 @@ const Video = (props: Props) => {
         </div>
       </div> */}
       <Section />
-      <TwolineSvg className="hidden w-28 md:block" />
     </section>
   );
 };

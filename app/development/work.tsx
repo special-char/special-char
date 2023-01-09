@@ -25,12 +25,6 @@ const WorkData = [
     title: 'Development',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
   },
-  {
-    id: 3,
-    svg: <TrainingSvg />,
-    title: 'Training',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-  },
 ];
 
 const Work = (props: Props) => {

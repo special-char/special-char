@@ -2,6 +2,8 @@ import Image from 'next/image';
 import '@/styles/video.css';
 import Link from 'next/link';
 import React from 'react';
+import PlaySvg from '@/public/icons/play.svg';
+import TwolineSvg from '@/public/icons/twoline.svg';
 
 type Props = {};
 
@@ -15,17 +17,14 @@ const Section = (props: Props) => {
           fill
         />
       </div>
-      <div className="effort__info">
+      <div className="effort__info relative">
         <p className="pb-8 text-xxl">
           We bring together innovative designers, pixel perfect developers and
           data driven strategy to create a boutique experience at enterprise
           scale.
         </p>
-        <div>
-          <Link
-            href="https://www.youtube.com/watch?v=wkhRnmLxKH4"
-            className="relative"
-          >
+        <div className="relative">
+          <Link href="https://www.youtube.com/watch?v=wkhRnmLxKH4" className="">
             <Image
               src="https://assets.website-files.com/6315d6de2357050021f26e96/63172afabaf3d9640b2e3b00_play-p-500.png"
               alt="video"
@@ -33,15 +32,8 @@ const Section = (props: Props) => {
               height={100}
               className="vidimg"
             />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
-              viewBox="0 0 24 24"
-              fill="white"
-            >
-              <path d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18c.62-.39.62-1.29 0-1.69L9.54 5.98C8.87 5.55 8 6.03 8 6.82z" />
-            </svg>
+            <PlaySvg className=" effort__svg absolute" />
+            <TwolineSvg className="effort__twoline " />
           </Link>
         </div>
       </div>
