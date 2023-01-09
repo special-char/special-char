@@ -21,13 +21,13 @@ const Banner = (props: Props) => {
       <div className="banner__content">
         <div className="banner__desc">
           <p>
-            "We are an award-winning branding and web agency committed to
-            excellence since forever."
+            We are an award-winning branding and web agency committed to
+            excellence since forever.
           </p>
           <p>
-            "We set the standard of exceptional design creatively, technically,
+            We set the standard of exceptional design creatively, technically,
             sustainably, and ethically so that you can make the extraordinary
-            impact impact that you seek."
+            impact impact that you seek.
           </p>
         </div>
         <div className="banner__button">
