@@ -1,5 +1,5 @@
 .contact {
-  @apply pt-8 pb-8;
+  @apply pt-12 pb-8;
 
   &__title {
     @apply grid justify-between gap-5 pb-14 md:items-center;
@@ -7,12 +7,12 @@
       grid-template-columns: 2fr 1fr;
     }
     .contact__tag {
-      @apply absolute right-0 hidden w-28 md:block;
+      @apply absolute right-44 hidden w-28 md:block;
       animation: mymove 3s 1;
       @keyframes mymove {
         0% {
           top: 0px;
-          transform: translateX(160px);
+          transform: translateX(260px);
         }
         100% {
           top: 0px;

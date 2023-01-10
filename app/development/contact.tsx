@@ -21,9 +21,9 @@ const Contact = ({ btn, description, title }: Props) => {
     <section id="contact" className="contact">
       <div className="contact__title">
         <h1>{data.title}</h1>
-        <div className="relative">
+        <div className="">
           <p>{data.description}</p>
-          <Link href="/" className="btn btn--primary">
+          <Link href="/" className="btn btn--primary relative">
             {data.btn}
           </Link>
           <RoketSvg className="contact__tag" />

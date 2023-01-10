@@ -1,5 +1,6 @@
 import React from 'react';
 import Rating from '@/ui/Rating';
+import Image from 'next/image';
 import '@/styles/testimonialcard.css';
 
 export default function TestimonialCard({ data }) {
@@ -9,13 +10,9 @@ export default function TestimonialCard({ data }) {
         <Rating rate={4} />
         <p className="text-center">{data.description}</p>
 
-        <div className="testimonial__author ">
-          <div className="placeholder">
-            <img
-              className="testimonial__avatar"
-              src={data.url}
-              alt={data.name}
-            />
+        <div className="testimonial__author">
+          <div className="testimonial__image">
+            <Image src={data.url} alt={data.name} fill />
           </div>
           <div className="testimonial__demo">
             <h3>{data.name}</h3>

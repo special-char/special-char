@@ -21,7 +21,7 @@
     @apply text-neutral-500;
   }
   &__design {
-    @apply absolute w-28 md:left-1 lg:left-16 md:bottom-2 lg:bottom-10 hidden md:block;
+    @apply absolute w-28 md:left-1 lg:left-16 md:bottom-2 lg:bottom-16 hidden md:block;
   }
 }
 .h2 {

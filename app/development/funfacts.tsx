@@ -2,6 +2,7 @@ import '@/styles/funfacts.css';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import ImageTransition from '@/ui/ImageTransition';
 type Props = {};
 const data = [
   {
@@ -31,6 +32,7 @@ function Funfacts({}: Props) {
     <section className="facts">
       <div className="facts__header">
         <div className="facts__image">
+          <ImageTransition />
           <Image
             src="https://assets.website-files.com/6315d6de2357050021f26e96/6317511da3f8cf2ff69330b3_photo-3.jpg"
             alt=""
