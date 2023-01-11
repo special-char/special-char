@@ -13,8 +13,8 @@ const Page = () => {
       <NavBar />
       <Scrollbutton />
       <Contact />
-      <ContactForm />
       <OurOffice />
+      <ContactForm />
 
       <Faq />
       <Footer />

@@ -37,7 +37,7 @@ const Srollbutton = (props: Props) => {
         title="Go to top"
         className="srcbtn"
         onClick={goToTop}
-        style={{ display: visible ? 'inline' : 'none' }}
+        style={{ display: visible ? 'flex' : 'none' }}
       >
         Up
       </Link>

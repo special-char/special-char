@@ -19,14 +19,16 @@ const data = {
 const Contact = ({ btn, description, title }: Props) => {
   return (
     <section id="contact" className="contact">
-      <div className="contact__title">
+      <div className="contact__title ">
         <h1>{data.title}</h1>
-        <div className="">
-          <p>{data.description}</p>
-          <Link href="/" className="btn btn--primary relative">
-            {data.btn}
-          </Link>
-          <RoketSvg className="contact__tag" />
+        <div>
+          <p className="text-left">{data.description}</p>
+          <div className="relative flex">
+            <Link href="/" className="btn btn--primary">
+              {data.btn}
+            </Link>
+            <RoketSvg className="contact__tag" />
+          </div>
         </div>
       </div>
       {/* <ContactForm /> */}

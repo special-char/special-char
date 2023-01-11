@@ -39,11 +39,11 @@ const FormData = [
 
 const ContactForm = (props: Props) => {
   return (
-    <section id="contact" className="contact">
-      <div className="contact__body  lg:w-[60%] lg:mx-auto">
+    <section id="contact" className="contactform">
+      <div className="contactform__body  lg:w-[60%] lg:mx-auto">
         {FormData.map((formData) => {
           return (
-            <div className="form ">
+            <div key={formData.id} className="form ">
               {formData.type === 'textarea' ? (
                 <textarea
                   name=""

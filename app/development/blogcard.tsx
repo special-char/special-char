@@ -33,15 +33,15 @@ const projectdata = [
 
 function Blogcard({}: Props) {
   return (
-    <section className="bg-secondary3 py-10">
-      <div className="header">
+    <section className="py-10">
+      {/* <div className="header">
         <h2>From Blog</h2>
         <div>
           <Link href="#" className="btn btn--white border-0 pl-1">
             View All Post
           </Link>
         </div>
-      </div>
+      </div> */}
       <div className="blogcard">
         {projectdata.map((x) => (
           // eslint-disable-next-line react/jsx-key

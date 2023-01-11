@@ -29,7 +29,7 @@ const Page = () => {
     <>
       <NavBar />
       <OurNews />
-      <Empty />
+
       <Blogcard />
       <Scrollbutton />
       <Footer />

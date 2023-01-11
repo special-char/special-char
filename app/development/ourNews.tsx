@@ -5,6 +5,7 @@ import '@/styles/ourNews.css';
 import '@/styles/card.css';
 import '@/styles/title.css';
 import Link from 'next/link';
+import RoketSvg from '@/public/icons/roket.svg';
 
 type Props = {
   btn: any;
@@ -54,9 +55,12 @@ const OurNews = ({ btn, description, title }: Props) => {
         </h1>
         <div>
           <p>{data.description}</p>
-          <Link href="/" className="btn btn--primary">
-            {data.btn}
-          </Link>
+          <div className="relative flex">
+            <Link href="/" className="btn btn--primary">
+              {data.btn}
+            </Link>
+            <RoketSvg className="ourNews__title__svg" />
+          </div>
         </div>
       </div>
       <div className="ourNews__content">
