@@ -5,6 +5,7 @@ import Scrollbutton from '../scrollbutton';
 import Faq from '../faq';
 import OurOffice from '../ourOffice';
 import Footer from '../footer';
+import ContactForm from './contactForm';
 
 const Page = () => {
   return (
@@ -13,6 +14,8 @@ const Page = () => {
       <Scrollbutton />
       <Contact />
       <OurOffice />
+      <ContactForm />
+
       <Faq />
       <Footer />
     </>

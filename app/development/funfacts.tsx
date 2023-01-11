@@ -1,41 +1,42 @@
-import "@/styles/funfacts.css";
-import React from "react";
-import Image from "next/image";
-
+import '@/styles/funfacts.css';
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import ImageTransition from '@/ui/ImageTransition';
 type Props = {};
 const data = [
   {
     id: 1,
-    title: "7",
-    description: "Members",
+    title: '7',
+    description: 'Members',
   },
 
   {
     id: 2,
-    title: "340+",
-    description: "Project Done",
+    title: '340+',
+    description: 'Project Done',
   },
   {
     id: 3,
-    title: "99%",
-    description: "Top Feedback",
+    title: '99%',
+    description: 'Top Feedback',
   },
   {
     id: 4,
-    title: "4",
-    description: "Global Offices",
+    title: '4',
+    description: 'Global Offices',
   },
 ];
 function Funfacts({}: Props) {
   return (
-    <section className=" facts">
+    <section className="facts">
       <div className="facts__header">
         <div className="facts__image">
+          <ImageTransition />
           <Image
             src="https://assets.website-files.com/6315d6de2357050021f26e96/6317511da3f8cf2ff69330b3_photo-3.jpg"
             alt=""
             fill
-            className="aspect-image"
           />
         </div>
         <div className=" facts__content">
@@ -44,12 +45,14 @@ function Funfacts({}: Props) {
             <>
               <div className="">
                 <h2>{x.title}</h2>
-                <span className="">{x.description}</span>
+                <span className="text-neutral-200">{x.description}</span>
               </div>
             </>
           ))}
           <div className="">
-            <button className="btn btn--primary">Join us</button>
+            <Link href="/" className="btn btn--primary">
+              Join us
+            </Link>
           </div>
         </div>
       </div>

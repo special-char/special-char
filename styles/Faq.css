@@ -1,5 +1,5 @@
 .faq__section {
-  @apply min-h-screen content-center items-center justify-center py-24 px-4 md:py-44 md:px-6;
+  @apply min-h-screen content-center items-center justify-center py-24  md:py-44;
 }
 .faq__h2 {
   @apply mx-auto mb-14 items-center justify-center text-center text-6xl md:w-[585px] md:px-6;

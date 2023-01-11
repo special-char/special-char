@@ -2,9 +2,10 @@ import '@/styles/video.css';
 import React from 'react';
 import Image from 'next/image';
 import TitlePage from '@/ui/titlePage';
-import Iceberg from '@/public/Iceberg.svg';
 import Link from 'next/link';
-import TwolineSvg from '@/public/icons/twoline.svg';
+
+import OurCompanies from '@/ui/OurCompanies';
+import Section from '@/ui/Section';
 
 type Props = {};
 
@@ -17,24 +18,8 @@ const Video = (props: Props) => {
         className=""
       />
 
-      <div className="company">
-        <span>
-          <Iceberg />
-        </span>
-        <span>
-          <Iceberg />
-        </span>
-        <span>
-          <Iceberg />
-        </span>
-        <span>
-          <Iceberg />
-        </span>
-        <span>
-          <Iceberg />
-        </span>
-      </div>
-      <div className="effort">
+      <OurCompanies />
+      {/* <div className="effort">
         <div className="effort__image md:order-1">
           <Image
             src="https://assets.website-files.com/6315d6de2357050021f26e96/63172900c798f906c10618bf_photo-1-p-500.jpg"
@@ -72,8 +57,8 @@ const Video = (props: Props) => {
             </Link>
           </div>
         </div>
-      </div>
-      <TwolineSvg className="hidden w-28 md:block" />
+      </div> */}
+      <Section />
     </section>
   );
 };
