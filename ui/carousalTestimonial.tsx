@@ -10,7 +10,6 @@ import React, {
 } from 'react';
 import clsx from 'clsx';
 import LeftSvg from '@/public/icons/left.svg';
-import RightSvg from '@/public/icons/right.svg';
 
 type Props = {} & PropsWithChildren;
 
@@ -106,7 +105,7 @@ const CarousalTestimonial = ({ children }: Props) => {
           className="carousal__control btn btn--white btn--round"
           onClick={scrollLeft}
         >
-          <RightSvg />
+          <LeftSvg />
         </button>
       </div>
 
