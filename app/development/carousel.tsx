@@ -65,7 +65,7 @@ const Crocard = (props: Props) => {
   return (
     <section className="carousel ">
       <div className="carousel--sticky">
-        <h3>Work</h3>
+        <h2>Featured Work</h2>
         <div className="carousel--wrapper">
           {CroData.map((crodData) => (
             <Link key={crodData.id} className="carousel__card" href="#">
