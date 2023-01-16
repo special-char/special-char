@@ -63,11 +63,7 @@ const OurNews = ({ btn, description, title }: Props) => {
           </div>
         </div>
       </div>
-      <div className="ourNews__content">
-        {/* {NewsData.map((card) => (
-          <Card data={card} />
-        ))} */}
-      </div>
+      <div className="ourNews__content"></div>
     </section>
   );
 };
