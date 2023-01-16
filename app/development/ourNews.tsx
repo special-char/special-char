@@ -17,8 +17,7 @@ const data = {
   btn: 'Work with Us',
   title: 'Our',
   title1: 'News',
-  description:
-    'We share our thoughts on design. We design awesome things. We share our thoughts on design. We design awesome things.',
+  description: 'We share our thoughts on design. We design awesome things. ',
 };
 
 const NewsData = [
