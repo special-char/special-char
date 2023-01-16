@@ -17,11 +17,9 @@
     animation: mymove 3s 1;
     @keyframes mymove {
       0% {
-        top: 0px;
-        transform: translateX(460px);
+        transform: translateX(260px);
       }
       100% {
-        top: 0px;
         transform: translateX(0px);
       }
     }

@@ -3,12 +3,24 @@
 }
 
 .title__body {
-  @apply mx-auto md:max-w-[500px] lg:max-w-[700px] text-center;
+  @apply mx-auto md:max-w-[500px] lg:max-w-[700px] text-center mb-12;
 }
 .title__h4 {
-  @apply underline;
-
-  .title__h4::after {
-    @apply underline;
-  }
+  @apply relative leading-7 font-semibold;
+}
+.title__h4::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.title__h4:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
