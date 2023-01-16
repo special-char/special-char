@@ -46,7 +46,7 @@
 } */
 
 .carousel {
-  @apply py-10 px-0 bg-secondary2;
+  @apply py-10 px-0 ;
   &--sticky {
     @apply w-full overflow-hidden sticky top-[50px] lg:pl-20;
   }

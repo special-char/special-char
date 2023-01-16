@@ -5,7 +5,7 @@ type Props = {};
 
 const OurCompanies = (props: Props) => {
   return (
-    <section className="company p-0">
+    <section className="company p-0 lg:w-[75%] lg:mx-auto">
       <span>
         <Iceberg />
       </span>

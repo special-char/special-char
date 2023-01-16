@@ -39,7 +39,7 @@ const FormData = [
 
 const ContactForm = (props: Props) => {
   return (
-    <section id="contact" className="contact">
+    <section>
       <div className="contact__body">
         {FormData.map((formData) => {
           return (

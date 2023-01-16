@@ -21,27 +21,27 @@ const projectdata = [
     date: 'February 25,2021',
     cont: 'Read More',
   },
-  {
-    id: 3,
-    img: 'https://assets.website-files.com/6315d6de235705e568f26e9b/63176314bf708f01020ea732_blog-2.jpg',
-    button: 'Code',
-    description: 'Communication between studio departments',
-    date: 'March 9,2021',
-    cont: 'Read More',
-  },
+  // {
+  //   id: 3,
+  //   img: 'https://assets.website-files.com/6315d6de235705e568f26e9b/63176314bf708f01020ea732_blog-2.jpg',
+  //   button: 'Code',
+  //   description: 'Communication between studio departments',
+  //   date: 'March 9,2021',
+  //   cont: 'Read More',
+  // },
 ];
 
 function Blogcard({}: Props) {
   return (
     <section className="py-10">
-      {/* <div className="header">
+      <div className="header">
         <h2>From Blog</h2>
         <div>
           <Link href="#" className="btn btn--white border-0 pl-1">
             View All Post
           </Link>
         </div>
-      </div> */}
+      </div>
       <div className="blogcard">
         {projectdata.map((x) => (
           // eslint-disable-next-line react/jsx-key
@@ -54,7 +54,7 @@ function Blogcard({}: Props) {
 
             <div className="blogcard__body">
               <div className="blogcard__content">
-                <button className="btn btn--white p-3">{x.button}</button>
+                <button className="btn btn--white py-1 px-2">{x.button}</button>
                 <span className="text-base">{x.date}</span>
               </div>
               <h3 className="h3">{x.description}</h3>

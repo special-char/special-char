@@ -45,13 +45,13 @@ const Testimonial = ({ className, id }: Props) => {
       id={clsx('Testimonial', {
         [className]: !!className,
       })}
-      className="testimonial "
+      className="testimonial lg:px-0 "
     >
       <TitlePage
         title="Our clients feedback is important for us."
         desc="Work With Us"
       />
-      <div key={id} className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div key={id} className="card-container">
         {Data1.map((x) => (
           <TestimonialCard key={x.id} data={x} />
         ))}

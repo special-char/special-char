@@ -32,7 +32,7 @@ const Page = () => {
       <Banner />
       <Scrollbutton />
       <Video />
-      {/* <Crocard /> */}
+      <Crocard />
       <Work />
       <Testimonial />
       <Funfacts />

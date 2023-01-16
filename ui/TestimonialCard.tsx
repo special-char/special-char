@@ -5,7 +5,7 @@ import '@/styles/testimonialcard.css';
 
 export default function TestimonialCard({ data }) {
   return (
-    <section className="testimonialcard">
+    <section className="testimonialcard ">
       <div className="testimonial__body ">
         <Rating rate={4} />
         <p className="text-center">{data.description}</p>
