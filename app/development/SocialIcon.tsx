@@ -41,7 +41,7 @@ const SocialIcon = (props: Props) => {
         <span
           key={icon.icon}
           className={clsx(
-            `p-0 h-4 w-4 box-content rounded-full hover:scale-110 ease-in-out duration-300 hover:rounded-full hover:fill-neutral-400`,
+            `p-2 h-4 w-4 box-content rounded-full  hover:scale-110 ease-in-out duration-300 hover:rounded-full hover:fill-neutral-400`,
             {
               [icon.className]: true,
             },

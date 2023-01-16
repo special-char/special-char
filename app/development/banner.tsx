@@ -20,11 +20,11 @@ const Banner = (props: Props) => {
       </div>
       <div className="banner__content">
         <div className="banner__desc">
-          <p>
+          <p className="text-xxl">
             We are an award-winning branding and web agency committed to
             excellence since forever.
           </p>
-          <p>
+          <p className="text-xxl">
             We set the standard of exceptional design creatively, technically,
             sustainably, and ethically so that you can make the extraordinary
             impact impact that you seek.

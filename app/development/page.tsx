@@ -30,6 +30,7 @@ const Page = () => {
       {/* <Title /> */}
       <TitlePage />
       <Banner />
+      <Scrollbutton />
       <Video />
       {/* <Crocard /> */}
       <Work />

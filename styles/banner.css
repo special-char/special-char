@@ -14,7 +14,7 @@
     @apply flex flex-col md:gap-4 lg:gap-6;
   }
   &__desc {
-    @apply flex flex-col lg:gap-20;
+    @apply flex flex-col pb-3 lg:gap-20;
   }
   &__button {
     @apply relative flex  items-center;
