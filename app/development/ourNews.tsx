@@ -56,7 +56,7 @@ const OurNews = ({ btn, description, title }: Props) => {
         <div>
           <p>{data.description}</p>
           <div className="relative flex">
-            <Link href="/" className="btn btn--primary border-b">
+            <Link href="/" className="btn btn--primary">
               {data.btn}
             </Link>
             <RoketSvg className="ourNews__title__svg" />
