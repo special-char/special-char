@@ -4,6 +4,8 @@ import clsx from 'clsx';
 import TitlePage from '@/ui/titlePage';
 
 import TestimonialCard from '@/ui/TestimonialCard';
+import CarousalTestimonial from '@/ui/CarousalTestimonial';
+import TestimonialBullets from '@/ui/TestimonialBullets';
 
 type Props = {
   id: any;
@@ -37,6 +39,14 @@ const Data1 = [
     designation: 'Developer',
     url: 'https://assets.website-files.com/6315d6de2357050021f26e96/6315d6de235705000ff26f3f_user-1.jpeg',
   },
+  {
+    id: 3,
+    description:
+      '"The public is more fam, in effect, conditioned to prefer bad design, because that is what it lives with."',
+    name: 'Pruthvish',
+    designation: 'Developer',
+    url: 'https://assets.website-files.com/6315d6de2357050021f26e96/6315d6de235705000ff26f3f_user-1.jpeg',
+  },
 ];
 
 const Testimonial = ({ className, id }: Props) => {
@@ -52,9 +62,11 @@ const Testimonial = ({ className, id }: Props) => {
         desc="Work With Us"
       />
       <div key={id} className="card-container">
-        {Data1.map((x) => (
-          <TestimonialCard key={x.id} data={x} />
-        ))}
+        <CarousalTestimonial>
+          {Data1.map((x) => (
+            <TestimonialCard key={x.id} data={x} />
+          ))}
+        </CarousalTestimonial>
       </div>
     </section>
   );

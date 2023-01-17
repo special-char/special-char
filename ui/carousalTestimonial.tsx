@@ -10,6 +10,7 @@ import React, {
 } from 'react';
 import clsx from 'clsx';
 import LeftSvg from '@/public/icons/left.svg';
+import RightSvg from '@/public/icons/right.svg';
 
 type Props = {} & PropsWithChildren;
 
@@ -81,7 +82,7 @@ const CarousalTestimonial = ({ children }: Props) => {
 
   return (
     <div className="carousal">
-      <ul ref={scrollerRef} className="carousal__scroller">
+      <ul ref={scrollerRef} className="carousal__scroller px-0">
         {React.Children.map(children, (child) => {
           const item = child as ReactElement<PropsWithChildren<any>>;
           const { style, ...props } = item.props;
@@ -105,7 +106,7 @@ const CarousalTestimonial = ({ children }: Props) => {
           className="carousal__control btn btn--white btn--round"
           onClick={scrollLeft}
         >
-          <LeftSvg />
+          <RightSvg />
         </button>
       </div>
 
@@ -115,7 +116,7 @@ const CarousalTestimonial = ({ children }: Props) => {
             return (
               <div
                 onClick={() => moveToIndex(i)}
-                className={clsx('h-2 w-2 rounded-full bg-neutral-400', {
+                className={clsx('h-2 w-2 rounded-full bg-secondary1 ', {
                   'bg-primary duration-200': i === index,
                 })}
               ></div>
