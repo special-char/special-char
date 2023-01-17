@@ -1,11 +1,11 @@
 .testimonial {
   @apply grid content-center justify-items-center pb-16 md:pb-32;
 }
-.card-container {
-  @apply grid md:grid-cols-3 gap-4 md:gap-8;
-}
+/* .card-container {
+  @apply grid  gap-4 md:gap-8;
+} */
 .testimonialcard {
-  @apply  flex flex-col items-center justify-center overflow-x-hidden md:flex-row;
+  @apply flex flex-col items-center justify-center overflow-x-hidden md:flex-row;
 }
 .testimonial__paragraph {
   @apply m-2 flex max-w-[420px] flex-col  items-center justify-center bg-neutral-100  py-10 px-4  hover:bg-secondary2;

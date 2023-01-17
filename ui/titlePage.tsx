@@ -16,7 +16,7 @@ const TitlePage = ({ className, title, desc }: Props) => {
       })}
     >
       <h2 className="text-neutral-700">{title}</h2>
-      <h4 className="title__h4">{desc}</h4>
+      <span className="title__h4">{desc}</span>
     </div>
   );
 };
