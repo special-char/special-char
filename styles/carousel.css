@@ -46,12 +46,12 @@
 } */
 
 .carousel {
-  @apply py-10 px-0 ;
+  @apply py-10 px-4 !h-full;
   &--sticky {
     @apply w-full overflow-hidden sticky top-[50px] lg:pl-20;
   }
   &--wrapper {
-    @apply relative grid lg:flex  lg:gap-4 md:grid-cols-2 py-8;
+    @apply relative grid lg:flex lg:gap-4 md:grid-cols-2 py-8;
   }
   &__card {
     @apply flex-shrink-0 bg-secondary1 aspect-square relative lg:w-[550px] lg:h-[550px] lg:gap-4 overflow-hidden hover:cursor-pointer;

@@ -50,7 +50,10 @@ const Crocard = (props: Props) => {
     let scrollDistance = distFromTop + horizontalLength - windowWidth;
     document.querySelector('.carousel');
 
-    document.querySelector('.carousel')!.style.height = horizontalLength + 'px';
+    if (horizontalLength && horizontalLength > 425) {
+      document.querySelector('.carousel')!.style.height =
+        horizontalLength + 'px';
+    }
 
     window.onscroll = function () {
       let scrollTop = window.pageYOffset;
@@ -63,7 +66,7 @@ const Crocard = (props: Props) => {
   }, []);
 
   return (
-    <section className="carousel ">
+    <section className="carousel">
       <div className="carousel--sticky">
         <h2>Featured Work</h2>
         <div className="carousel--wrapper">
