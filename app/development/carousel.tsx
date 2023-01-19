@@ -44,8 +44,10 @@ const Crocard = (props: Props) => {
 
     let scrollDistance = distFromTop + horizontalLength - windowWidth;
     document.querySelector('.carousel');
-
-    document.querySelector('.carousel')!.style.height = horizontalLength + 'px';
+    if (windowWidth > 425) {
+      document.querySelector('.carousel')!.style.height =
+        horizontalLength + 'px';
+    }
 
     window.onscroll = function () {
       let scrollTop = window.pageYOffset;
@@ -62,8 +64,8 @@ const Crocard = (props: Props) => {
       <div className="carousel--sticky">
         <h3>Work</h3>
         <div className="carousel--wrapper">
-          {CroData.map((crodData) => (
-            <Link className="carousel__card" href="#">
+          {CroData.map((crodData, i) => (
+            <Link key={i} className="carousel__card" href="#">
               <Image
                 src={crodData.url}
                 alt="projects done by us"
