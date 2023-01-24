@@ -27,35 +27,44 @@ const CarousalTestimonial = ({ children }: Props) => {
     }
   }, []);
 
-  const scrollLeft = useCallback(() => {
-    if (scrollerRef.current && element) {
-      const paddingLeft = parseInt(getComputedStyle(element)?.paddingLeft);
-      scrollerRef.current.scrollTo({
-        left:
-          scrollerRef.current.scrollLeft + (element.clientWidth - paddingLeft),
-        behavior: 'smooth',
-      });
+  // const scrollLeft = useCallback(() => {
+  //   if (scrollerRef.current && element) {
+  //     const paddingLeft = parseInt(getComputedStyle(element)?.paddingLeft);
+  //     scrollerRef.current.scrollTo({
+  //       left:
+  //         scrollerRef.current.scrollLeft + (element.clientWidth - paddingLeft),
+  //       behavior: 'smooth',
+  //     });
 
-      if (element.nextElementSibling) {
-        setElement(element.nextElementSibling);
-      }
-    }
-  }, [element]);
+  //     if (element.nextElementSibling) {
+  //       setElement(element.nextElementSibling);
+  //     }
+  //   }
+  // }, [element]);
 
-  const scrollRight = useCallback(() => {
-    if (scrollerRef.current && element) {
-      const paddingRight = parseInt(getComputedStyle(element)?.paddingLeft);
-      scrollerRef.current.scrollTo({
-        left:
-          scrollerRef.current.scrollLeft - (element.clientWidth - paddingRight),
-        behavior: 'smooth',
-      });
+  // const scrollRight = useCallback(() => {
+  //   if (scrollerRef.current && element) {
+  //     const paddingRight = parseInt(getComputedStyle(element)?.paddingLeft);
+  //     scrollerRef.current.scrollTo({
+  //       left:
+  //         scrollerRef.current.scrollLeft - (element.clientWidth - paddingRight),
+  //       behavior: 'smooth',
+  //     });
 
-      if (element.previousElementSibling) {
-        setElement(element.previousElementSibling);
-      }
-    }
-  }, [element]);
+  //     if (element.previousElementSibling) {
+  //       setElement(element.previousElementSibling);
+  //     }
+  //   }
+  // }, [element]);
+  // var slides = document.querySelectorAll('.slide');
+  // var currentSlide = 0;
+  // var slideInterval = setInterval(nextSlide, 2000);
+
+  // function nextSlide() {
+  //   slides[currentSlide].classList.remove('active-slide');
+  //   currentSlide = (currentSlide + 1) % slides.length;
+  //   slides[currentSlide].classList.add('active-slide');
+  // }
 
   const moveToIndex = useCallback((index: number) => {
     const scrollport = scrollerRef.current;
@@ -93,7 +102,7 @@ const CarousalTestimonial = ({ children }: Props) => {
           );
         })}
       </ul>
-      <div className="carousal__controls">
+      {/* <div className="carousal__controls">
         <button
           type="button"
           className="carousal__control btn btn--white btn--round"
@@ -108,10 +117,10 @@ const CarousalTestimonial = ({ children }: Props) => {
         >
           <RightSvg />
         </button>
-      </div>
+      </div> */}
 
-      <div className="relative col-span-3 mx-auto flex w-full md:hidden">
-        <div className=" absolute mx-auto  flex w-full items-center justify-center gap-3">
+      <div className=" col-span-3 mx-auto flex w-full ">
+        <div className="  mx-auto  flex w-full items-center justify-center gap-3">
           {React.Children.map(children, (child, i) => {
             return (
               <div

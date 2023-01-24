@@ -5,7 +5,7 @@ import SocialIcon from './SocialIcon';
 import TwoLineSvg from '@/public/icons/twoline.svg';
 
 type Props = {};
-const teacherData = [
+const developerData = [
   {
     id: 1,
     img: 'https://assets.website-files.com/622f2476e95ec7155b37e7b0/622f2476e95ec7a53037e871_team-1.jpg',
@@ -37,10 +37,10 @@ const Developercard = (props: Props) => {
     <section className="py-20 relative">
       <h2 className="h2">The Team</h2>
       <div className="card">
-        {teacherData.map((x) => (
+        {developerData.map((x) => (
           <a key={x.id} href="#">
             <div className="card__image">
-              <Image src={x.img} alt="" className="" fill />
+              <Image src={x.img} alt="image" fill />
             </div>
             <div className="card__body">
               <h3 className="card__title">{x.title}</h3>

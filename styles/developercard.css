@@ -1,8 +1,8 @@
 .card {
-  @apply grid  gap-10 md:grid-cols-2 lg:grid-cols-4 w-full;
+  @apply grid  gap-7 md:grid-cols-2 lg:grid-cols-4 w-full;
 
   &__image {
-    @apply relative  min-h-[300px] w-full rounded overflow-hidden;
+    @apply relative min-h-[290px] md:min-h-[350px] lg:min-h-[270px] w-full overflow-hidden;
   }
 
   &__header {
