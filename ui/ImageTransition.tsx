@@ -1,13 +1,13 @@
 'use client';
-import { useIntersection } from '@/hooks/useIntersection';
+// import { useIntersection } from '@/hooks/useIntersection';
 import React, { useEffect, useRef, useState } from 'react';
 
 type Props = {};
 const ImageTransition = () => {
   const divRef = useRef();
   const [transitionPer, setTransitionPer] = useState<boolean>(false);
-  const inViewPort = useIntersection(divRef, '0px');
-  console.log({ inViewPort });
+  // const inViewPort = useIntersection(divRef, '0px');
+  // console.log({ inViewPort });
   // useEffect(() => {
   //   const perTimeOut = setTimeout(() => {
   //     if (inViewPort) {
@@ -21,16 +21,16 @@ const ImageTransition = () => {
   //   };
   // }, []);
 
-  useEffect(() => {
-    const perTimeOut = setTimeout(() => {
-      if (inViewPort) {
-        setTransitionPer(inViewPort);
-      }
-    }, 300);
-    return () => {
-      clearTimeout(perTimeOut);
-    };
-  }, [transitionPer, inViewPort]);
+  // useEffect(() => {
+  //   const perTimeOut = setTimeout(() => {
+  //     if (inViewPort) {
+  //       setTransitionPer(inViewPort);
+  //     }
+  //   }, 300);
+  //   return () => {
+  //     clearTimeout(perTimeOut);
+  //   };
+  // }, [transitionPer, inViewPort]);
 
   return (
     <div
