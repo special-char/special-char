@@ -1,12 +1,12 @@
 .work {
-  @apply grid min-h-fit content-center items-center py-16 lg:py-32;
+  @apply grid min-h-fit content-center items-center py-16 lg:pb-32;
 
   &__title {
     @apply mb-8 text-left;
   }
 
   &__item {
-    @apply grid justify-items-center gap-8;
+    @apply grid justify-items-center gap-8 md:grid-cols-2;
     @media only screen and (min-width: 1010px) {
       grid-template-columns: repeat(3, auto);
     }
@@ -19,7 +19,11 @@
     }
 
     &__content {
-      @apply flex h-full flex-col justify-between gap-10 p-8;
+      @apply flex h-full flex-col  justify-between gap-10 p-8;
+    }
+
+    &__svg {
+      @apply mb-8 h-14 w-14;
     }
 
     &__title {

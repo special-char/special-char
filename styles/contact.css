@@ -1,21 +1,21 @@
 .contact {
-  @apply pt-8 pb-8;
+  @apply pt-44 ;
 
   &__title {
-    @apply grid justify-between gap-5 pb-14 md:items-center;
+    @apply grid justify-between lg:gap-5 pb-14 md:items-center;
     @media only screen and (min-width: 1010px) {
       grid-template-columns: 2fr 1fr;
     }
     .contact__tag {
-      @apply absolute right-0 hidden w-28 md:block;
+      @apply absolute right-0 top-8 hidden w-28 md:block;
       animation: mymove 3s 1;
       @keyframes mymove {
         0% {
-          top: 0px;
-          transform: translateX(160px);
+          /* top: 0px; */
+          transform: translateX(260px);
         }
         100% {
-          top: 0px;
+          /* top: 0px; */
           transform: translateX(0px);
         }
       }
@@ -42,7 +42,7 @@
   }
 
   &__body {
-    @apply grid gap-8;
+    @apply lg:w-[60%] lg:mx-auto grid gap-8;
 
     & .form {
       &:nth-child(6) {

@@ -7,26 +7,31 @@ import Link from 'next/link';
 type Props = {};
 const CroData = [
   {
+    id: 1,
     url: 'https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg',
     name: 'Confrence',
     chip: 'Art&nbsp;Direction,Design',
   },
   {
+    id: 2,
     url: 'https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg',
     name: 'Confrence',
     chip: 'Art&nbsp;Direction,Design',
   },
   {
+    id: 3,
     url: 'https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg',
     name: 'Confrence',
     chip: 'Art&nbsp;Direction,Design',
   },
   {
+    id: 4,
     url: 'https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg',
     name: 'Confrence',
     chip: 'Art&nbsp;Direction,Design',
   },
   {
+    id: 5,
     url: 'https://assets.website-files.com/6315d6de235705e568f26e9b/631736ebb25d2476070021f5_work-1-p-1080.jpg',
     name: 'Confrence',
     chip: 'Art&nbsp;Direction,Design',
@@ -44,8 +49,10 @@ const Crocard = (props: Props) => {
 
     let scrollDistance = distFromTop + horizontalLength - windowWidth;
     document.querySelector('.carousel');
-
-    document.querySelector('.carousel')!.style.height = horizontalLength + 'px';
+    if (windowWidth > 425) {
+      document.querySelector('.carousel')!.style.height =
+        horizontalLength + 'px';
+    }
 
     window.onscroll = function () {
       let scrollTop = window.pageYOffset;
@@ -58,12 +65,12 @@ const Crocard = (props: Props) => {
   }, []);
 
   return (
-    <section className="carousel ">
+    <section className="carousel">
       <div className="carousel--sticky">
-        <h3>Work</h3>
+        <h2>Featured Work</h2>
         <div className="carousel--wrapper">
-          {CroData.map((crodData) => (
-            <Link className="carousel__card" href="#">
+          {CroData.map((crodData, i) => (
+            <Link key={i} className="carousel__card" href="#">
               <Image
                 src={crodData.url}
                 alt="projects done by us"

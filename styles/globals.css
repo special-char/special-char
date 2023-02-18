@@ -130,10 +130,10 @@
   }
 
   details {
-    @apply max-w-full rounded-md px-2 text-left drop-shadow-lg transition-all md:px-8;
+    @apply max-w-full rounded-md  text-left drop-shadow-lg transition-all md:px-8;
 
     & > summary {
-      @apply flex cursor-pointer list-none items-start justify-start border-b-[1px] border-neutral-100 py-6 text-xl font-bold md:items-center;
+      @apply flex cursor-pointer list-none items-center justify-start border-b-[1px] border-neutral-100 py-6 text-xl font-bold md:items-center;
 
       &::marker {
         @apply hidden;
@@ -141,14 +141,8 @@
 
       &::before {
         content: '\002B';
-        @apply mr-4 aspect-square h-12 w-12 rotate-90 rounded-full text-center text-3xl duration-300;
+        @apply mr-3 aspect-square rotate-90 rounded-full text-center text-3xl duration-300;
       }
-      /* content: '\002B';
-        @apply text-neutral-600 mr-4 aspect-square h-12 w-12 rotate-90 rounded-full bg-neutral-300 text-center text-4xl font-bold duration-300;
-      } */
-      /* content: '+';
-        @apply aspect-square h-12 w-12 rotate-180 text-center text-5xl duration-300 md:h-12 md:w-12;
-      } */
     }
     & > p {
       @apply mb-0 overflow-hidden border-none py-4 text-left text-base md:pl-4;
@@ -159,7 +153,7 @@
     & > summary {
       &::before {
         content: '\2212';
-        @apply mr-4 aspect-square h-12 w-12 rotate-0 rounded-full text-center text-4xl duration-300;
+        @apply mr-3 aspect-square rotate-0 rounded-full text-center text-3xl duration-300;
       }
     }
   }
@@ -188,15 +182,15 @@
     }
 
     /* &--secondary {
-      @apply bg-neutral-300 text-neutral-700;
+      @apply border-2 border-[#c9c9c9] py-2 px-3 rounded text-[#747474] font-medium;
     }
 
     &--secondary:hover {
-      @apply bg-neutral-400 text-neutral-700;
+      @apply text-[#747473];
     } */
 
     &--white {
-      @apply border-[1px] border-neutral-500 text-secondary1;
+      @apply border-neutral-500 text-secondary1;
     }
 
     &-white:hover {
@@ -222,14 +216,6 @@
     &--primary {
       @apply bg-transparent text-neutral-400;
     }
-
-    /* &--secondary {
-      @apply bg-neutral-300 text-neutral-700;
-    }
-
-    &--white {
-      @apply bg-neutral-100 text-neutral-800;
-    } */
   }
 
   .avatar {
@@ -327,7 +313,7 @@
       [carousel-pagination] var(--_carousel-pagination-size);
 
     &__scroller {
-      @apply flex snap-x snap-mandatory gap-8 overflow-x-scroll overscroll-contain;
+      @apply flex snap-x gap-4 md:gap-0 snap-mandatory overflow-x-scroll overscroll-contain;
       scrollbar-width: none;
       scroll-padding-inline: var(--_carousel-gutters);
       padding-inline: var(--_carousel-gutters);
@@ -344,7 +330,7 @@
     }
 
     &__items {
-      @apply max-w-xl flex-shrink-0 flex-grow basis-full snap-center snap-always;
+      @apply md:max-w-lg flex-shrink-0 flex-grow basis-full snap-center snap-always;
     }
 
     &__controls {
@@ -417,7 +403,7 @@
     }
 
     &__input {
-      @apply h-14 w-full py-2 outline-neutral-400 focus:outline;
+      @apply h-14 w-full py-2 px-4 outline-neutral-400 focus:outline;
     }
   }
 }

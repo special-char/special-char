@@ -2,9 +2,10 @@ import '@/styles/developercard.css';
 import React from 'react';
 import Image from 'next/image';
 import SocialIcon from './SocialIcon';
+import TwoLineSvg from '@/public/icons/twoline.svg';
 
 type Props = {};
-const teacherData = [
+const developerData = [
   {
     id: 1,
     img: 'https://assets.website-files.com/622f2476e95ec7155b37e7b0/622f2476e95ec7a53037e871_team-1.jpg',
@@ -21,7 +22,7 @@ const teacherData = [
     id: 3,
     img: 'https://assets.website-files.com/622f2476e95ec7155b37e7b0/622f2476e95ec7c38b37e87a_team-2.jpg',
     title: 'Demi Mason',
-    desc: 'Social Media Expert',
+    desc: 'Media Expert',
   },
   {
     id: 4,
@@ -33,12 +34,14 @@ const teacherData = [
 
 const Developercard = (props: Props) => {
   return (
-    <section className="px-container ">
-      <h2 className="text-[85px] text-center mb-10">The Team</h2>
-      <div className="main">
-        {teacherData.map((x) => (
-          <a key={x.id} href="#" className="">
-            <Image src={x.img} alt="" height={500} width={500} />
+    <section className="py-20 relative">
+      <h2 className="h2">The Team</h2>
+      <div className="card">
+        {developerData.map((x) => (
+          <a key={x.id} href="#">
+            <div className="card__image">
+              <Image src={x.img} alt="image" fill />
+            </div>
             <div className="card__body">
               <h3 className="card__title">{x.title}</h3>
               <p className="card__desc">{x.desc}</p>
@@ -47,6 +50,7 @@ const Developercard = (props: Props) => {
           </a>
         ))}
       </div>
+      <TwoLineSvg className="card__design" />
     </section>
   );
 };
