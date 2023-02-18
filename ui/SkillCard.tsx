@@ -5,8 +5,6 @@ import Link from 'next/link';
 type Props = {};
 
 const SkillCard = ({ data }) => {
-  console.log('data:', data);
-
   return (
     <section className="p-0">
       <div className="grid gap-12 justify-between overflow-hidden min-h-[250px] max-w-[360px] p-8 bg-secondary3">

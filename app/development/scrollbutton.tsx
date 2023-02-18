@@ -1,22 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '@/styles/scrollbutton.css';
 
 type Props = {};
 
 const Srollbutton = (props: Props) => {
   const [visible, setVisible] = useState(false);
-
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setVisible(true);
-    } else if (scrolled <= 300) {
-      setVisible(false);
-    }
-  };
 
   const goToTop = () => {
     window.scrollTo({
@@ -27,7 +18,21 @@ const Srollbutton = (props: Props) => {
     });
   };
 
-  window.addEventListener('scroll', toggleVisible);
+  useEffect(() => {
+    const toggleVisible = () => {
+      const scrolled = document.documentElement.scrollTop;
+      if (scrolled > 300) {
+        setVisible(true);
+      } else if (scrolled <= 300) {
+        setVisible(false);
+      }
+    };
+    document.addEventListener('scroll', toggleVisible);
+
+    return () => {
+      document.removeEventListener('scroll', toggleVisible);
+    };
+  }, []);
 
   return (
     <div>
