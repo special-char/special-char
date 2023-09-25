@@ -23,7 +23,7 @@ const Page = () => {
       <Empty />
       <Testimonial />
       <Empty />
-      <Scrollbutton />
+      {/* <Scrollbutton /> */}
       <Footer />
     </>
   );
