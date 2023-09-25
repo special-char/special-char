@@ -1,8 +1,10 @@
 import React from 'react';
+import Card from './card';
 import Title from './title';
 import '@/styles/ourNews.css';
-
+import '@/styles/card.css';
 import '@/styles/title.css';
+import Link from 'next/link';
 
 type Props = {
   btn: any;
@@ -52,7 +54,9 @@ const OurNews = ({ btn, description, title }: Props) => {
         </h1>
         <div>
           <p>{data.description}</p>
-          <button className="btn btn--primary">{data.btn}</button>
+          <Link href="/" className="btn btn--primary">
+            {data.btn}
+          </Link>
         </div>
       </div>
       <div className="ourNews__content">

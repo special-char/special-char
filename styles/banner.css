@@ -1,8 +1,9 @@
 .banner {
-  @apply relative top-[15vh] grid  min-h-fit content-center items-center gap-8 mb-8;
+  @apply grid min-h-fit content-center items-center py-20;
   @media only screen and (min-width: 1010px) {
     grid-template-columns: 2fr 1fr;
   }
+
   &__body {
     @apply m-0;
   }
@@ -10,13 +11,13 @@
     @apply text-left;
   }
   &__content {
-    @apply lg:pt-10;
+    @apply flex flex-col md:gap-4 lg:gap-6;
   }
   &__desc {
-    @apply flex flex-col gap-16;
+    @apply flex flex-col pb-3 lg:gap-20;
   }
   &__button {
-    @apply relative my-8 flex items-center;
+    @apply relative flex  items-center;
   }
   &__svg {
     @apply absolute right-0 hidden w-28 md:block;

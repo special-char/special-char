@@ -14,16 +14,16 @@ const Page = () => {
     <>
       <NavBar />
       <Aboutkofo />
-      <Empty />
       <Video />
-      <Empty />
       <Developercard />
-      <Empty />
       <Work />
-      <Empty />
       <Testimonial />
+<<<<<<< HEAD
       <Empty />
       {/* <Scrollbutton /> */}
+=======
+      <Scrollbutton />
+>>>>>>> 25ac62f8b612d314a6cc688afd62cf7dd94ad1b4
       <Footer />
     </>
   );

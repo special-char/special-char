@@ -1,10 +1,13 @@
 .effort {
-  @apply grid md:grid-cols-2 px-container md:gap-32 gap-4 lg:items-center;
+  @apply grid gap-8 justify-items-stretch  md:grid-cols-2 md:gap-10 overflow-hidden;
+
+  /* @apply grid px-container md:grid-cols-2 md:gap-10 lg:items-center; */
   &__image {
-    @apply relative mx-auto md:justify-center min-h-[300px] md:h-[400px] md:w-[300px] w-full  overflow-hidden rounded  lg:min-h-[600px] lg:w-[400px];
+    @apply relative w-full min-h-[300px] aspect-image overflow-hidden rounded;
   }
-  __info {
-    @apply flex gap-4;
+
+  &__info {
+    @apply flex flex-col md:justify-center lg:py-10 gap-5 md:py-28;
   }
   .vidimg {
     @apply box-content rounded-full bg-neutral-300 p-3;
@@ -23,6 +26,5 @@
   }
 }
 .company {
-  display: grid;
-  @apply mt-8 mb-28 grid-cols-2 justify-items-center gap-4 md:grid-cols-3 lg:grid-cols-5;
+  @apply grid  mt-8 mb-28 grid-cols-2 justify-items-center gap-4 md:grid-cols-3 lg:grid-cols-5;
 }

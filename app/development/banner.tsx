@@ -1,5 +1,5 @@
-import '@/styles/banner.css';
 import React from 'react';
+import '@/styles/banner.css';
 import RoketSvg from '@/public/icons/roket.svg';
 
 type Props = {};
@@ -20,14 +20,14 @@ const Banner = (props: Props) => {
       </div>
       <div className="banner__content">
         <div className="banner__desc">
-          <p>
-            "We are an award-winning branding and web agency committed to
-            excellence since forever."
+          <p className="text-xxl">
+            We are an award-winning branding and web agency committed to
+            excellence since forever.
           </p>
-          <p>
-            "We set the standard of exceptional design creatively, technically,
+          <p className="text-xxl">
+            We set the standard of exceptional design creatively, technically,
             sustainably, and ethically so that you can make the extraordinary
-            impact impact that you seek."
+            impact impact that you seek.
           </p>
         </div>
         <div className="banner__button">

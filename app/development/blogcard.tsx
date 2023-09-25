@@ -1,4 +1,4 @@
-import '@/styles/projectcard.css';
+import '@/styles/blogcard.css';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -31,7 +31,7 @@ const projectdata = [
   },
 ];
 
-function Projectcard({}: Props) {
+function Blogcard({}: Props) {
   return (
     <section className="bg-secondary3 py-10">
       <div className="header">
@@ -42,18 +42,18 @@ function Projectcard({}: Props) {
           </Link>
         </div>
       </div>
-      <div className="projectcard">
+      <div className="blogcard">
         {projectdata.map((x) => (
           // eslint-disable-next-line react/jsx-key
           <div className="bg-neutral-400">
             <Link href="#">
-              <div className="projectcard__image">
+              <div className="blogcard__image">
                 <Image src={x.img} alt="" fill />
               </div>
             </Link>
 
-            <div className="projectcard__body">
-              <div className="projectcard__content">
+            <div className="blogcard__body">
+              <div className="blogcard__content">
                 <button className="btn btn--white p-3">{x.button}</button>
                 <span className="text-base">{x.date}</span>
               </div>
@@ -67,4 +67,4 @@ function Projectcard({}: Props) {
   );
 }
 
-export default Projectcard;
+export default Blogcard;

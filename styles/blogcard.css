@@ -1,4 +1,4 @@
-.projectcard {
+.blogcard {
   @apply grid md:grid-cols-2  gap-8 pt-4 lg:pt-10;
   &__image {
     @apply relative min-h-[200px] md:aspect-video w-full overflow-hidden;
